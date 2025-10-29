@@ -578,7 +578,7 @@ const projects = [
             'images/grocery-4.png',
            
         ],
-        thumbnail: 'images/heroSection.png'
+        thumbnail: 'images/HeroSection.png'
     },
 
         {
