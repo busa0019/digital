@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Functional Designer Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#121212',
+                        'secondary-dark': '#1F1F1F',
+                        'accent': '#10B981',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-primary-dark text-gray-100 font-sans antialiased">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-primary-dark/95 backdrop-blur-sm shadow-xl">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- <a href="#" class="flex items-center">
+                <img src="images/my logo.jpg" alt="my_logo.png" class="h-10 w-auto rounded">
+            </a> -->
+            <a href="#" class="flex items-center">
+                <!-- Logo Placement: Placeholder used for my_logo.png -->
+                <img src="https://placehold.co/120x40/1F1F1F/10B981?text=FAOZEE" alt="my_logo.png" class="h-10 w-auto rounded">
+            </a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#about" class="hover:text-accent transition duration-200">About</a>
+                <a href="#services" class="hover:text-accent transition duration-200">Services</a>
+                <a href="#portfolio" class="hover:text-accent transition duration-200">Portfolio</a>
+                <a href="#contact" class="hover:text-accent transition duration-200">Contact</a>
+            </div>
+            <button id="menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Drawers -->
+    <div id="mobile-menu" class="fixed inset-0 bg-black/90 z-40 hidden md:hidden transition-opacity duration-300 opacity-0">
+        <div class="p-6 flex justify-end">
+            <button id="close-menu-button" class="text-gray-100 hover:text-accent text-3xl focus:outline-none">&times;</button>
+        </div>
+        <div class="flex flex-col items-center space-y-6 text-xl">
+            <a href="#about" class="hover:text-accent transition duration-200" onclick="closeMenu()">About</a>
+            <a href="#services" class="hover:text-accent transition duration-200" onclick="closeMenu()">Skills</a>
+            <a href="#portfolio" class="hover:text-accent transition duration-200" onclick="closeMenu()">Portfolio</a>
+            <a href="#contact" class="hover:text-accent transition duration-200" onclick="closeMenu()">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative h-[60vh] md:h-[80vh] overflow-hidden">
+            <div id="slideshow" class="absolute inset-0">
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-100" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1920&auto=format&fit=crop');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1920&auto=format&fit=crop');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1920&auto=format&fit=crop');"></div>
+            </div>
+            <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center p-4">
+                <h1 class="text-4xl md:text-7xl font-extrabold mb-4 opacity-0 translate-y-5 transition-all duration-700" data-animate data-delay="200">
+                    The <span class="text-accent">Designer</span>, The Developer
+                </h1>
+                <p id="dynamic-tagline" class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto h-12 flex items-center justify-center opacity-0 translate-y-5 transition-all duration-700" data-animate data-delay="400"></p>
+                <div class="flex space-x-4 opacity-0 translate-y-5 duration-700" data-animate data-delay="600">
+                    <a href="#contact" class="bg-gray-700 text-gray-100 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-600 transition duration-300 transform hover:scale-105">Contact Me</a>
+                    <a href="#portfolio" class="bg-accent text-primary-dark font-bold py-3 px-8 rounded-full shadow-lg cta-glow-button hover:bg-emerald-600 transition duration-300 transform hover:scale-105 animate-pulse-subtle">View Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-10 border-b-2 border-accent/50 pb-2 opacity-0 translate-y-5" data-animate>The Designer Who Does It All</h2>
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-start">
+                <div class="lg:w-2/3 text-lg leading-relaxed opacity-0 translate-y-5" data-animate data-delay="100">
+                    <h1 class="text-3xl font-extrabold mb-6">I am a <span class="highlight-text font-bold"></span></h1>
+                    <p class="text-xl md:text-2xl text-gray-100 leading-relaxed mb-8">
+                        Hi, I’m <span class="text-gray-50 font-extrabold">Faoziyyah Busari</span>. I design digital products that feel <span class="text-accent font-semibold">effortless to use</span> and <span class="text-accent font-semibold">impossible to ignore</span>.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-6">
+                        My process leads with <span class="text-accent font-semibold">UI/UX</span>, guided by <span class="text-accent font-semibold">data</span> and grounded in real <span class="text-accent font-semibold">human needs</span>. Understanding people is where my work begins: what they want, what slows them down, what sparks delight. From insights to design systems, I create experiences that are measurable, scalable, and built to perform.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8">
+                        My <span class="text-accent font-semibold">technical fluency</span> isn’t a bonus. It’s a bridge. As a developer, I work seamlessly with engineers and craft interfaces that translate beautifully from idea to implementation. This eliminates guesswork and friction, ensuring thoughtful design ships successfully.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8">
+                        When you add my background in <span class="text-accent font-semibold">branding and visual storytelling</span>, you get digital products that don’t simply function, but connect emotionally through clarity and character.
+                    </p>
+                    <p class="text-xl text-gray-100 font-semibold border-t pt-4 border-gray-700">
+                        If you’re seeking a designer who thinks deeply, builds boldly, and cares about the humans behind the screen, let’s create something meaningful.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center bg-accent text-primary-dark font-bold py-3 px-8 rounded-full shadow-lg hover:bg-emerald-600 transition duration-300 transform hover:scale-[1.02] mt-6 cta-glow-button">
+                        Start a Project
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+                <div class="lg:w-1/3 w-full opacity-0 translate-y-5 lg:order-last order-first" data-animate data-delay="200">
+                    <img src="images/Faozee.jpg" alt="professional headshot photo" class="w-full h-auto object-cover rounded-xl shadow-2xl border-4 border-accent/50">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="bg-secondary-dark px-4 py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 opacity-0 translate-y-5" data-animate>My End-to-End Digital Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="service-card bg-primary-dark rounded-xl shadow-2xl p-6 cursor-pointer hover:bg-gray-800 transition duration-300 transform hover:-translate-y-1 opacity-0 translate-y-5" onclick="toggleService(this)" data-animate data-delay="100">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-accent">Product Design (UI/UX)</h3>
+                            <span class="click-sign text-2xl font-bold text-gray-400">&plus;</span>
+                        </div>
+<p class="service-details hidden text-gray-400">
+    <strong>Strategic Product Design Process:</strong>
+    <br><strong>Discovery:</strong> User research, competitive analysis, stakeholder interviews
+    <br><strong>Strategy:</strong> User personas, journey maps, information architecture
+    <br><strong>Design:</strong> Wireframing, prototyping, visual design, design systems
+    <br><strong>Validation:</strong> Usability testing, A/B testing, iteration
+    <br><strong>Delivery:</strong> Developer handoff, design specs, asset export
+</p>
+                    </div>
+                    <div class="service-card bg-primary-dark rounded-xl shadow-2xl p-6 cursor-pointer hover:bg-gray-800 transition duration-300 transform hover:-translate-y-1 opacity-0 translate-y-5" onclick="toggleService(this)" data-animate data-delay="200">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-accent">Visual Identity & Branding</h3>
+                            <span class="click-sign text-2xl font-bold text-gray-400">&plus;</span>
+                        </div>
+                       <p class="service-details hidden text-gray-400">
+    <strong>Branding & Identity</strong> and <strong>Graphic Design:</strong> Logo creation, style guides, custom illustrations, and marketing collateral design to establish a cohesive brand presence.
+</p>
+                    </div>
+                    <div class="service-card bg-primary-dark rounded-xl shadow-2xl p-6 cursor-pointer hover:bg-gray-800 transition duration-300 transform hover:-translate-y-1 opacity-0 translate-y-5" onclick="toggleService(this)" data-animate data-delay="300">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-accent">Technical Implementation</h3>
+                            <span class="click-sign text-2xl font-bold text-gray-400">&plus;</span>
+                        </div>
+                       <p class="service-details hidden text-gray-400">
+    <strong>Full-Stack Technical Expertise:</strong>
+    <br><strong>Frontend:</strong> React, Vue, modern JavaScript, responsive design
+    <br><strong>Backend:</strong> Node.js, Express, API development, database design
+    <br><strong>Tools & Platforms:</strong> Git, AWS, Netlify, Vercel
+    <br><strong>CMS & E-commerce:</strong> WordPress, Shopify, custom solutions
+    <br><strong>Methodologies:</strong> Agile development, responsive design, performance optimization
+</p>
+                    </div>
+                    <div class="service-card bg-primary-dark rounded-xl shadow-2xl p-6 cursor-pointer hover:bg-gray-800 transition duration-300 transform hover:-translate-y-1 opacity-0 translate-y-5" onclick="toggleService(this)" data-animate data-delay="400">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-xl font-semibold text-accent">High-Fidelity Assets & Media</h3>
+                            <span class="click-sign text-2xl font-bold text-gray-400">&plus;</span>
+                        </div>
+                      <p class="service-details hidden text-gray-400">
+    <strong>Photography & Visuals:</strong> Expertise in producing, editing, and optimizing high-quality visual content that elevates a digital product's overall polish and brand narrative.
+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-4 border-b-2 border-accent/50 pb-2 opacity-0 translate-y-5" data-animate>My Latest Work</h2>
+            <p class="text-center text-gray-400 mb-10 max-w-3xl mx-auto opacity-0 translate-y-5" data-animate data-delay="100">
+                A selection of my recent projects ranging from detailed UI/UX case studies to full-scale web applications. Click any card for an in-depth look.
+            </p>
+            <div class="flex flex-wrap justify-center space-x-2 mb-8 opacity-0 translate-y-5" data-animate data-delay="200">
+                <button class="filter-btn py-2 px-4 rounded-full text-sm font-semibold bg-accent text-primary-dark transition duration-200" data-filter="all">All Projects</button>
+                <button class="filter-btn py-2 px-4 rounded-full text-sm font-semibold bg-secondary-dark text-gray-300 hover:bg-accent hover:text-primary-dark transition duration-200" data-filter="web-dev">Web Dev</button>
+                <button class="filter-btn py-2 px-4 rounded-full text-sm font-semibold bg-secondary-dark text-gray-300 hover:bg-accent hover:text-primary-dark transition duration-200" data-filter="ui-ux">UI/UX</button>
+                <button class="filter-btn py-2 px-4 rounded-full text-sm font-semibold bg-secondary-dark text-gray-300 hover:bg-accent hover:text-primary-dark transition duration-200" data-filter="branding">Branding</button>
+            </div>
+            <div id="portfolio-carousel" class="portfolio-carousel flex overflow-x-scroll snap-x snap-mandatory space-x-6 pb-4"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-secondary-dark px-4 py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 opacity-0 translate-y-5" data-animate>Get In Touch</h2>
+                <div class="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto">
+                    <div class="lg:w-2/3 bg-primary-dark p-6 md:p-10 rounded-xl shadow-2xl opacity-0 translate-y-5" data-animate data-delay="100">
+                        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                            <h3 class="text-2xl font-semibold mb-6 text-accent">Send a Message</h3>
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-secondary-dark border border-gray-700 rounded-lg focus:ring-accent focus:border-accent outline-none text-gray-100">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-secondary-dark border border-gray-700 rounded-lg focus:ring-accent focus:border-accent outline-none text-gray-100">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message / Project Details</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-secondary-dark border border-gray-700 rounded-lg focus:ring-accent focus:border-accent outline-none text-gray-100"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-accent text-primary-dark font-bold py-3 rounded-lg hover:bg-emerald-600 transition duration-300 transform hover:scale-[1.01] cta-glow-button">Send Inquiry</button>
+                        </form>
+                        <div id="form-message" class="mt-4 text-center hidden"></div>
+                    </div>
+                    <div class="lg:w-1/3 space-y-8 opacity-0 translate-y-5" data-animate data-delay="300">
+                        <div class="map-container border-gray-700/50 rounded-lg overflow-hidden">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1430270.132362293!2d-76.86147145!3d45.34993349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1690000000000!5m2!1sen!2sca" 
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        class="rounded-lg">
+    </iframe>
+</div>
+                        <div class="p-6 bg-primary-dark rounded-xl shadow-xl space-y-4">
+                            <h3 class="text-xl font-semibold text-accent mb-4">Contact Details</h3>
+                            <p class="flex items-center text-gray-300">
+                                <svg class="w-5 h-5 mr-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26c.55.36 1.25.36 1.8 0L21 8m-2 4v7a2 2 0 01-2 2H5a2 2 0 01-2-2v-7"></path></svg>
+                                <a href="mailto:your.email@example.com" class="hover:text-accent transition">busarifaoziyyah@gmail.com</a>
+                            </p>
+                            <p class="flex items-center text-gray-300">
+                                <svg class="w-5 h-5 mr-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l.85 2.55a1 1 0 00.95.68 1 1 0 01.95.68l.85 2.55a1 1 0 00.95.68h3.28a2 2 0 012 2v2a2 2 0 01-2 2h-4a2 2 0 01-2-2v-4a2 2 0 012-2h4"></path></svg>
+                                <span>+1 (613) 410-2869</span>
+                            </p>
+                            <p class="flex items-center text-gray-300">
+                                <svg class="w-5 h-5 mr-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9A2 2 0 0110.586 20.9L6.343 16.657A8 8 0 1117.657 16.657zM12 13a3 3 0 100-6 3 3 0 000 6z"></path></svg>
+                                <span>Ottawa, Canada</span>
+                            </p>
+
+                            <p class="flex items-center text-gray-300">
+                                <svg class="w-5 h-5 mr-3 text-accent" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.059-1.865-3.059-1.865 0-2.151 1.459-2.151 2.964v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.562 2.841-1.562 3.039 0 3.6 2.001 3.6 4.601v5.594z"/>
+                                </svg>
+                                <a href="https://www.linkedin.com/in/faoziyyahbusari/" target="_blank" rel="noopener" class="hover:text-accent transition">linkedin.com/in/faoziyyahbusari/</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-primary-dark py-8 text-center text-gray-400 text-sm border-t border-gray-800">
+            <p>&copy; <span id="current-year"></span> Faozee. All rights reserved.</p>
+            <p class="mt-2">Built with HTML, Tailwind CSS, and JavaScript.</p>
+        </footer>
+
+        <!-- Project Modal -->
+        <div id="project-modal" class="fixed inset-0 bg-black/80 z-[100] hidden flex justify-center items-center p-4 transition-opacity duration-300 opacity-0" onclick="handleBackdropClose(event)">
+            <div class="bg-secondary-dark w-full max-w-5xl max-h-[90vh] rounded-xl shadow-2xl overflow-y-auto" onclick="event.stopPropagation()">
+                <div class="p-6 md:p-10">
+                    <div class="flex justify-end">
+                        <button class="text-gray-400 hover:text-accent text-3xl" onclick="closeProjectModal()">&times;</button>
+                    </div>
+                    <h3 id="modal-title" class="text-3xl font-bold text-accent mb-4">Project Title</h3>
+                    <div class="flex flex-wrap space-x-4 mb-6 text-sm">
+                        <a id="modal-github" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.11.817-.258.817-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.372-1.325-1.737-1.325-1.737-1.089-.745.083-.73.083-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.77.42-1.304.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.469-2.383 1.238-3.225-.124-.304-.535-1.524.118-3.18 0 0 1.008-.322 3.3-.12.95-.262 1.956-.394 3-.398 1.042.004 2.05.136 3 .398 2.29-.202 3.297.12 3.297.12.653 1.657.242 2.876.118 3.18.77.842 1.235 1.915 1.235 3.225 0 4.61-2.805 5.62-5.475 5.923.43.37.807.962.807 1.933 0 1.396-.013 2.518-.013 2.858 0 .323.21.69.825.575C20.565 21.79 24 17.29 24 12 24 5.373 18.627 0 12 0z"/></svg>
+                            GitHub Repo
+                        </a>
+                        <a id="modal-live" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center">
+                            <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            Live Demo
+                        </a>
+                        <a id="modal-case-study" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center hidden">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM6.5 9.5a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm-7.96 4.93a5.5 5.5 0 0110.92 0L10 17.5l-2.46-3.07z"></path></svg>
+                            Case Study
+                        </a>
+                    </div>
+                    <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
+                    <div class="lg:flex lg:space-x-8">
+                        <div id="modal-image-gallery" class="lg:w-3/5 mb-6 lg:mb-0">
+                            <div class="relative mb-4 rounded-lg overflow-hidden border-2 border-gray-700 shadow-xl">
+                                <img id="main-project-image" src="" alt="Main Project Screenshot" class="w-full h-[30vh] md:h-[55vh] object-contain cursor-zoom-in bg-black transition-opacity duration-300" onclick="openLightbox(this.src)">
+                                <button id="prev-btn" class="nav-btn absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-accent/80 transition z-10 hidden" onclick="navigateImage(-1); event.stopPropagation();">&lt;</button>
+                                <button id="next-btn" class="nav-btn absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-accent/80 transition z-10 hidden" onclick="navigateImage(1); event.stopPropagation();">&gt;</button>
+                            </div>
+                            <div id="thumbnail-carousel" class="thumbnail-carousel flex overflow-x-scroll space-x-3 pb-2"></div>
+                        </div>
+                        <div class="lg:w-2/5">
+                            <h4 class="text-xl font-semibold mb-3 text-gray-200">Project Details</h4>
+                            <div id="modal-description" class="text-gray-300 leading-relaxed max-h-[70vh] lg:max-h-[60vh] overflow-y-auto pr-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="fixed inset-0 bg-black/95 z-[200] hidden flex justify-center items-center p-4 transition-opacity duration-300 opacity-0" onclick="closeLightbox(event)">
+            <button class="absolute top-4 right-4 text-white text-4xl hover:text-accent z-[210] focus:outline-none" onclick="closeLightbox(event)">&times;</button>
+            <img id="lightbox-image" src="" alt="Zoomed Project Image" class="max-w-[95vw] max-h-[95vh] object-contain">
+        </div>
+    </main>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

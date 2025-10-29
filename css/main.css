@@ -1,0 +1,90 @@
+/* Pulse animation for the main CTA */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.02); opacity: 0.95; }
+}
+.animate-pulse-subtle {
+    animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Subtle Glow effect on the CTA */
+.cta-glow-button {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.7);
+}
+
+/* Custom scrollbar styling for the portfolio carousel */
+.portfolio-carousel::-webkit-scrollbar, .thumbnail-carousel::-webkit-scrollbar {
+    height: 6px;
+}
+.portfolio-carousel::-webkit-scrollbar-thumb, .thumbnail-carousel::-webkit-scrollbar-thumb {
+    background-color: #374151;
+    border-radius: 3px;
+}
+.portfolio-carousel::-webkit-scrollbar-track, .thumbnail-carousel::-webkit-scrollbar-track {
+    background-color: #1F1F1F;
+}
+
+/* Smooth transitions for animated elements */
+[data-animate] {
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Styling for the map placeholder */
+.map-placeholder {
+    min-height: 250px;
+    background-color: #121212;
+    border: 1px solid #374151;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Custom list style for the modal description */
+#modal-description ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#modal-description li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+#modal-description li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10B981;
+    font-weight: bold;
+}
+
+/* Custom styling for image navigation buttons */
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animation for dynamic skill cycle */
+@keyframes skill-cycle {
+    0%, 49% { content: "UI/UX Designer"; color: #10B981; }
+    50%, 100% { content: "Full-Stack Developer"; color: #FBBF24; }
+}
+.highlight-text::after {
+    content: "UI/UX Designer";
+    display: inline;
+    font-weight: 700;
+    animation: skill-cycle 6s infinite ease-in-out;
+}
+
+/* Smooth transition for dynamic tagline */
+#dynamic-tagline {
+    transition: opacity 0.5s ease-in-out;
+}
