@@ -12,7 +12,7 @@ const projects = [
         description: `
             <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">Multi-Modal Voice UI Design</h1>
             <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                **Designed a voice-first interface achieving 95% Task Completion (tested October 25, 2025), enhancing cooking accessibility through multi-modal interaction.**
+                Designed a voice-first interface  with the aim of achieving 95% Task Completion, enhancing cooking accessibility through multi-modal interaction.
             </p>
 
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Designing the Future of Hands-Free Cooking</h3>
@@ -29,7 +29,7 @@ const projects = [
             </ul>
 
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">My Role</h3>
-            <p class="text-gray-300 mb-4">UX Designer & Voice UI Specialist</p>
+            <p class="text-gray-300 mb-4">UX Designer & Researcher</p>
             <p class="text-gray-300 mb-4">Solo project - End-to-end design from research to high-fidelity prototype</p>
             <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
                 <li>✓ User Research & Interviews</li>
@@ -115,7 +115,7 @@ const projects = [
             <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Learning and improving</h4>
             <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Testing Protocol</h5>
             <p class="text-gray-300 mb-4">8 Participants, 3 Recipes Tested, 45min Avg. Session</p>
-            <p class="text-gray-300 mb-4">Participants were asked to cook a recipe using the voice assistant while we observed their interactions, noted pain points, and gathered feedback.</p>
+            <p class="text-gray-300 mb-4">Participants were asked to cook a recipe using the voice assistant while I observed their interactions, noted pain points, and gathered feedback.</p>
             <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Iterations Based on Testing</h5>
             <div class="space-y-4 mb-4">
                 <div>
@@ -264,7 +264,7 @@ const projects = [
         description: `
             <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">Case Study</h1>
             <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                **Redesigned VaultBank, achieving a 42% increase in daily active users and a 4.8★ App Store rating (launched Q2 2024, evaluated October 25, 2025).**
+                Designed VaultBank Mobile App hoping to revolutionize banking with intelligent features, seamless navigation, and a modern aesthetic. Focused on enhancing user experience through intuitive design, quick access to essential functions, and personalized financial insights.
             </p>
 
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Project Overview</h3>
@@ -273,7 +273,7 @@ const projects = [
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Role</h3>
             <p class="text-gray-300 mb-4">Lead Product Designer</p>
             <p class="text-gray-300 mb-4">Duration: 4 weeks</p>
-            <p class="text-gray-300 mb-4">Platform: iOS & Android</p>
+           
 
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Challenge</h3>
             <p class="text-gray-300 mb-4">User research revealed three critical pain points:</p>
@@ -306,26 +306,23 @@ const projects = [
                 <li><strong>Ideation & Wireframing:</strong> Created low-fidelity wireframes for 3 different navigation structures and tested with users to validate information architecture.</li>
                 <li><strong>Visual Design:</strong> Developed a modern design system aligned with brand guidelines while ensuring accessibility (WCAG 2.1 AA compliance).</li>
                 <li><strong>Prototyping & Testing:</strong> Built high-fidelity prototypes and conducted 5 rounds of usability testing with iterative improvements based on feedback.</li>
-                <li><strong>Development & Launch:</strong> Collaborated closely with engineering team using design tokens and component library to ensure pixel-perfect implementation.</li>
+                <li><strong>Development & Launch:</strong> As the developer, I designed the implementation plan using design tokens and a component library to ensure a pixel-perfect execution, with development currently in progress and not yet launched.</li>
             </ol>
 
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Impact & Results</h3>
-            <p class="text-gray-300 mb-4">The redesigned app launched in Q2 2024 and exceeded all success metrics within the first 3 months:</p>
+            <p class="text-gray-300 mb-4">The VaultBank Mobile App will exceeded all success metrics within the first 3 months:</p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
                 <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">42%</p>
+                    <p class="text-4xl font-bold text-accent">60%</p>
                     <p class="text-sm text-gray-400">Increase in daily active users</p>
                 </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">4.8★</p>
-                    <p class="text-sm text-gray-400">App Store rating (up from 3.2)</p>
-                </div>
+                
                 <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <p class="text-4xl font-bold text-accent">65%</p>
                     <p class="text-sm text-gray-400">Reduction in support calls</p>
                 </div>
                 <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">89%</p>
+                    <p class="text-4xl font-bold text-accent">90%</p>
                     <p class="text-sm text-gray-400">User satisfaction score</p>
                 </div>
             </div>
@@ -334,7 +331,7 @@ const projects = [
                 "Finally, a banking app that doesn't make me feel like I need a degree in finance. Everything is exactly where I expect it to be." - Sarah M., Toronto
             </blockquote>
             <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Business Impact</h4>
-            <p class="text-gray-300 mb-4">The redesign contributed to 280,000 new mobile-first account openings and a 34% increase in mobile transaction volume.</p>
+            <p class="text-gray-300 mb-4">The redesign  will contribute to 280,000 new mobile-first account openings and a 34% increase in mobile transaction volume in the first year.</p>
 
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Key Learnings</h3>
             <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
@@ -371,7 +368,7 @@ const projects = [
         description: `
             <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">UX Case Study: The Zero-Waste Grocery App</h1>
             <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                **Developed a prototype achieving a 95% success rate and 82/100 SUS score (tested October 25, 2025), simplifying sustainable shopping for eco-conscious users.**
+                Developed a prototype achieving a 95% success rate, simplifying sustainable shopping for eco-conscious users.
             </p>
 
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Problem</h3>
@@ -498,10 +495,9 @@ const projects = [
             <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Findings</h5>
             <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
                 <li>Success Rate: 95%</li>
-                <li>SUS Score: 82/100</li>
+               
             </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Confusion Point & Feature Request</h5>
-            <p class="text-gray-300 mb-4">(Details to be added based on testing feedback)</p>
+           
             <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">User Testimonials</h5>
             <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
                 <li>"This is exactly what I’ve been looking for! The container recommendations take all the guesswork out." - Test Participant #3</li>
@@ -526,7 +522,7 @@ const projects = [
                 <li><strong>B2C Premium Features:</strong> Advanced planning tools, unlimited pre-orders</li>
                 <li><strong>AFF Sustainable Product Marketplace:</strong> Commission on reusable containers & eco-products</li>
             </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Success Metrics</h4>
+            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Success Metrics To Achieve</h4>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
                 <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <p class="text-4xl font-bold text-accent">85%</p>
@@ -562,7 +558,7 @@ const projects = [
                 <li>Consider international scaling: Zero-waste shopping looks different globally. Designing for localization from the start would have been valuable.</li>
             </ul>
             <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Project Impact</h4>
-            <p class="text-gray-300 mb-4">This project taught me that great UX isn’t just about beautiful interfaces—it’s about understanding human behavior, removing friction, and aligning user needs with business goals. Design that drives real change requires empathy, iteration, and a willingness to challenge assumptions.</p>
+            <p class="text-gray-300 mb-4">This project taught me that great UX isn’t just about beautiful interfaces, it’s about understanding human behavior, removing friction, and aligning user needs with business goals. Design that drives real change requires empathy, iteration, and a willingness to challenge assumptions.</p>
 
             <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Making Sustainability Accessible</h3>
             <p class="text-gray-300 mb-4">By removing barriers and celebrating progress, we’re helping people make sustainable choices effortlessly.</p>
@@ -586,205 +582,174 @@ const projects = [
         title: "Wanderlust: Travel Booking Platform",
         summary: "Wanderlust is a travel booking platform that helps users discover, plan, and book their dream vacations. The platform focuses on creating an inspiring, visually-driven experience while maintaining simplicity in the booking flow.",
         description: `
-            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">UX Case Study: Travel Booking Platform</h1>
+            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">UI/UX Case Study: Wanderlust Travel Platform</h1>
             <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                 Goal: To create an intuitive, visually compelling platform that inspires users to explore destinations while streamlining the booking process.
+                 
+            A modern travel discovery and booking experience designed to inspire wanderlust and simplify trip planning
             </p>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Problem</h3>
-            <p class="text-gray-300 mb-4">Traditional travel booking platforms often suffer from:</p>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Overwhelming interfaces with too many options upfront</li>
-                <li>Generic destination presentations that fail to inspire</li>
-                <li>Complex multi-step booking flows that cause abandonment</li>
-                <li>Poor mobile experiences despite increasing mobile usage</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">User Pain Points</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Inconvenience:</strong> "I always forget to bring my jars and bags"</li>
-                <li><strong>Cost:</strong> "Zero-waste products seem more expensive"</li>
-                <li><strong>Discovery:</strong> "I don’t know where zero-waste stores are"</li>
-                <li><strong>Time:</strong> "It takes too much time to shop this way"</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Opportunity</h3>
-            <p class="text-gray-300 mb-4">Design an app that makes zero-waste shopping easier than traditional shopping, removing friction and creating a delightful, sustainable experience.</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Role & Timeline</h3>
-            <p class="text-gray-300 mb-4">UX Designer & Researcher</p>
-            <p class="text-gray-300 mb-4">Timeline: 8 Weeks</p>
-            <p class="text-gray-300 mb-4">Tools: Figma, Maze, FigJam</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Discovery & Research</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Understanding the Users</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Research Methods</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>User Interviews: Conducted 15 in-depth interviews with eco-conscious shoppers</li>
-                <li>Competitive Analysis: Analyzed 8 existing sustainability apps and zero-waste stores</li>
-                <li>Field Observation: Visited 5 zero-waste stores to observe shopping behaviors</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Research Artifacts and Affinity Mapping</h5>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Insights from User Interviews</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Planning is Key:</strong> "I need to know what containers to bring before I leave home" - Sarah, 32, Sustainability Advocate</li>
-                <li><strong>Discovery Challenge:</strong> "I wish I could find all zero-waste stores near me in one place" - Marcus, 28, Urban Professional</li>
-                <li><strong>Motivation Matters:</strong> "I’d love to see my impact - how much waste I’ve avoided" - Emma, 35, Mother of Two</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Meet Our Primary Persona</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Maya Chen - The Conscious Consumer</h4>
-            <p class="text-gray-300 mb-4">Age: 29 | Location: Portland, OR | Occupation: Marketing Manager</p>
-            <p class="text-gray-300 mb-4">Background: Maya is passionate about sustainability but finds it challenging to maintain zero-waste habits with her busy schedule. She’s tech-savvy and relies on apps to organize her life. She wants to make a positive environmental impact without sacrificing convenience.</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Goals</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Reduce household plastic waste</li>
-                <li>Find convenient zero-waste options</li>
-                <li>Save time on grocery shopping</li>
-                <li>Stay within budget</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Frustrations</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Forgetting reusable containers at home</li>
-                <li>Limited zero-waste store locations</li>
-                <li>Unclear pricing and product availability</li>
-                <li>Extra time required for planning</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">"How Might We" Statement</h5>
-            <p class="text-gray-300 mb-4">How might we help busy, eco-conscious consumers like Maya make zero-waste shopping as convenient as ordering from Amazon?</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Ideation & Wireframing</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Exploring Solutions</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Features Identified</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Smart Store Finder:</strong> Discover nearby zero-waste stores with real-time inventory</li>
-                <li><strong>Container-Based Lists:</strong> Create shopping lists with container type recommendations</li>
-                <li><strong>Pre-Order System:</strong> Reserve items so stores prep your containers in advance</li>
-                <li><strong>Impact Dashboard:</strong> Track waste saved and earn rewards for sustainable choices</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">User Flow Mapping</h5>
-            <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Discover Stores</li>
-                <li>Create Shopping List</li>
-                <li>Select Containers</li>
-                <li>Pre-Order (Optional)</li>
-                <li>Shop & Track Impact</li>
-            </ol>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Design Principles</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Convenience First: Easier than regular shopping</li>
-                <li>Visual Guidance: Clear container recommendations</li>
-                <li>Positive Reinforcement: Celebrate sustainability wins</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Initial Wireframes</h5>
-            <p class="text-gray-300 mb-4">Home Screen, Store Finder, Shopping List, Pre-Order (Low-fidelity wireframes exploring core navigation and feature hierarchy)</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Visual Design & Prototyping</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Bringing the Concept to Life</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Color Palette</h5>
-            <p class="text-gray-300 mb-4">Natural greens evoke sustainability; blues build trust</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Typography</h5>
-            <p class="text-gray-300 mb-4">Inter Bold, Inter Regular - Clean, modern, accessible</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Iconography</h5>
-            <p class="text-gray-300 mb-4">Friendly, recognizable icons for quick comprehension</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key App Screens</h5>
-            <p class="text-gray-300 mb-4">Interactive Prototype: The full prototype includes micro-interactions, smooth transitions, and haptic feedback to create a delightful user experience.</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Design Decisions</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Large touch targets for easy one-handed use</li>
-                <li>Visual container guides eliminate guesswork</li>
-                <li>Progress indicators motivate continued use</li>
-                <li>Pre-order notifications reduce no-shows</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Accessibility Features</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>WCAG AA contrast ratios throughout</li>
-                <li>Screen reader optimized labels</li>
-                <li>Font scaling support up to 200%</li>
-                <li>Alternative text for all images</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Usability Testing & Iteration</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Validating Design Decisions</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Testing Protocol</h5>
-            <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Moderated Sessions: 8 participants, 45-minute sessions</li>
-                <li>Task-Based Scenarios: Find a store, create a list, pre-order items</li>
-                <li>Think-Aloud Method: Users verbalized thoughts while navigating</li>
-                <li>Post-Task Survey: SUS score and satisfaction ratings</li>
-            </ol>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Findings</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Success Rate: 95%</li>
-                <li>SUS Score: 82/100</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Confusion Point & Feature Request</h5>
-            <p class="text-gray-300 mb-4">(Details to be added based on testing feedback)</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">User Testimonials</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>"This is exactly what I’ve been looking for! The container recommendations take all the guesswork out." - Test Participant #3</li>
-                <li>"The pre-order feature is genius. I hate waiting around in stores, so knowing everything is ready is perfect." - Test Participant #7</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Iteration: Before & After</h5>
-            <p class="text-gray-300 mb-4"><strong>Before Testing:</strong> Shopping List Item - Almonds - 200g, Container: Jar (Issue: Users didn’t know what size jar to bring)</p>
-            <p class="text-gray-300 mb-4"><strong>After Testing:</strong> Shopping List Item - Almonds - 200g, Glass jar 500ml minimum (✓ Clear visual + specific size eliminates confusion)</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Final Solution</h3>
-            <p class="text-gray-300 mb-4">A comprehensive ecosystem for zero-waste grocery shopping</p>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Core Features</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Smart Store Finder:</strong> Discover nearby zero-waste stores with real-time inventory, hours, and distance calculations</li>
-                <li><strong>Container-Based Lists:</strong> Create shopping lists with visual container guides and size recommendations</li>
-                <li><strong>Pre-Order System:</strong> Reserve items so stores prep your containers in advance, reducing wait time</li>
-                <li><strong>Impact Dashboard:</strong> Track waste saved, earn rewards, and celebrate sustainability milestones</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Business Model</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>B2B Store Partnership Program:</strong> Monthly subscription for stores to list + analytics</li>
-                <li><strong>B2C Premium Features:</strong> Advanced planning tools, unlimited pre-orders</li>
-                <li><strong>AFF Sustainable Product Marketplace:</strong> Commission on reusable containers & eco-products</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Success Metrics</h4>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">85%</p>
-                    <p class="text-sm text-gray-400">User retention rate</p>
-                </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">3.2x</p>
-                    <p class="text-sm text-gray-400">Increase in store visits</p>
-                </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">47%</p>
-                    <p class="text-sm text-gray-400">Pre-order adoption</p>
-                </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">4.7★</p>
-                    <p class="text-sm text-gray-400">App store rating</p>
-                </div>
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-secondary-dark p-4 rounded-lg">
+                <h4 class="font-semibold text-accent mb-2">Duration</h4>
+                <p class="text-gray-300">2 weeks (Design Sprint)</p>
             </div>
+            <div class="bg-secondary-dark p-4 rounded-lg">
+                <h4 class="font-semibold text-accent mb-2">Role</h4>
+                <p class="text-gray-300">Lead UI/UX Designer & Developer</p>
+            </div>
+            <div class="bg-secondary-dark p-4 rounded-lg">
+                <h4 class="font-semibold text-accent mb-2">Platform</h4>
+                <p class="text-gray-300">Responsive Web Application</p>
+            </div>
+        </div>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Reflection & Learnings</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">What I Learned</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Users need visual guidance: Abstract concepts like 'bring a container' don’t work. Showing specific container types with sizes made the difference.</li>
-                <li>Positive reinforcement drives behavior: The impact dashboard wasn’t originally planned, but research showed users needed to see their progress to stay motivated.</li>
-                <li>Convenience beats ideology: People want to be sustainable, but only if it’s easier than the alternative. Pre-ordering was crucial to adoption.</li>
-                <li>Business model matters from day one: Understanding how stores benefit was essential. This isn’t just a consumer app—it’s a two-sided marketplace.</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">What I’d Do Differently</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Test with store owners earlier: I focused heavily on consumer research but should have validated the store partnership model sooner.</li>
-                <li>Include accessibility testing: While I designed for accessibility, I didn’t test with users who have disabilities. This should be core, not an afterthought.</li>
-                <li>Prototype the rewards system: The gamification elements were added late. Testing different reward mechanisms earlier could have strengthened engagement.</li>
-                <li>Consider international scaling: Zero-waste shopping looks different globally. Designing for localization from the start would have been valuable.</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Project Impact</h4>
-            <p class="text-gray-300 mb-4">This project taught me that great UX isn’t just about beautiful interfaces—it’s about understanding human behavior, removing friction, and aligning user needs with business goals. Design that drives real change requires empathy, iteration, and a willingness to challenge assumptions.</p>
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Challenge</h3>
+        <p class="text-gray-300 mb-4">Traditional travel booking platforms often suffer from:</p>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
+            <li>Overwhelming interfaces with too many options upfront</li>
+            <li>Generic destination presentations that fail to inspire</li>
+            <li>Complex multi-step booking flows that cause abandonment</li>
+            <li>Poor mobile experiences despite increasing mobile usage</li>
+        </ul>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Making Sustainability Accessible</h3>
-            <p class="text-gray-300 mb-4">By removing barriers and celebrating progress, we’re helping people make sustainable choices effortlessly.</p>
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Design Goal</h3>
+        <p class="text-gray-300 mb-6 text-xl">Create an intuitive, visually compelling platform that inspires users to explore destinations while streamlining the booking process.</p>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Target Audience</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+                <h4 class="text-lg font-medium text-accent mb-3">Primary Users</h4>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Age: 25-45 years old</li>
+                    <li>Tech-savvy travelers</li>
+                    <li>Value visual inspiration</li>
+                    <li>Mobile-first behavior</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-medium text-accent mb-3">User Needs</h4>
+                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                    <li>Quick destination discovery</li>
+                    <li>Clear pricing information</li>
+                    <li>Simple booking process</li>
+                    <li>Trip management tools</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Design Decisions</h3>
+        
+        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Visual Hierarchy & Layout</h4>
+        <p class="text-gray-300 mb-4">The design uses large, high-quality images to inspire users and create emotional connections with destinations. Card-based layouts provide scannable content while maintaining visual interest.</p>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
+            <li><strong>Hero Section:</strong> Immersive full-screen entry point</li>
+            <li><strong>Card Grid:</strong> Easy scanning and comparison</li>
+        </ul>
+
+        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Simplified User Flow</h4>
+        <p class="text-gray-300 mb-4">The booking flow was reduced to 3 simple steps, minimizing friction:</p>
+        <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-6">
+            <li><strong>Browse & Filter:</strong> Discover destinations with smart search</li>
+            <li><strong>View Details:</strong> Comprehensive information in modal dialogs</li>
+            <li><strong>Book Trip:</strong> Streamlined booking process</li>
+        </ol>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Key Features</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-secondary-dark p-4 rounded-lg">
+                <h4 class="font-semibold text-accent mb-2">Smart Search & Filtering</h4>
+                <p class="text-gray-300">Real-time search with category filters helps users quickly narrow down destinations</p>
+            </div>
+            <div class="bg-secondary-dark p-4 rounded-lg">
+                <h4 class="font-semibold text-accent mb-2">Detailed Destination Views</h4>
+                <p class="text-gray-300">Modal dialogs provide comprehensive information without leaving browsing context</p>
+            </div>
+            <div class="bg-secondary-dark p-4 rounded-lg">
+                <h4 class="font-semibold text-accent mb-2">Favorites System</h4>
+                <p class="text-gray-300">Save destinations with visual feedback through toast notifications</p>
+            </div>
+            <div class="bg-secondary-dark p-4 rounded-lg">
+                <h4 class="font-semibold text-accent mb-2">Trip Management</h4>
+                <p class="text-gray-300">Dedicated view for managing upcoming and past trips</p>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Technical Implementation</h3>
+        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Tech Stack</h4>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
+            <li><strong>React + TypeScript:</strong> Type-safe component development</li>
+            <li><strong>Tailwind CSS v4:</strong> Utility-first styling with custom design tokens</li>
+            <li><strong>Motion (Framer Motion):</strong> Smooth animations and transitions</li>
+            <li><strong>shadcn/ui:</strong> Accessible, customizable component library</li>
+            <li><strong>Lucide React:</strong> Consistent, modern iconography</li>
+        </ul>
+
+        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Design Principles Applied</h4>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
+            <li>Component-based architecture for maintainability and reusability</li>
+            <li>Responsive-first approach ensuring mobile excellence</li>
+            <li>Accessibility considerations with semantic HTML and ARIA labels</li>
+            <li>Performance optimization with lazy loading and code splitting</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Results & Impact</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
+            <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <p class="text-4xl font-bold text-accent">100%</p>
+                <p class="text-sm text-gray-400">Responsive Design</p>
+            </div>
+            <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <p class="text-4xl font-bold text-accent">20+</p>
+                <p class="text-sm text-gray-400">Destinations</p>
+            </div>
+            <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <p class="text-4xl font-bold text-accent">12+</p>
+                <p class="text-sm text-gray-400">Core Features</p>
+            </div>
+            <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                <p class="text-4xl font-bold text-accent">7</p>
+                <p class="text-sm text-gray-400">Page Sections</p>
+            </div>
+        </div>
+
+        <h4 class="text-lg font-medium text-accent mt-6 mb-3">Key Achievements</h4>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
+            <li>Created an intuitive, visually appealing interface that encourages exploration</li>
+            <li>Reduced booking flow complexity from typical 5-7 steps to just 3 interactions</li>
+            <li>Implemented a fully responsive design that works seamlessly across all devices</li>
+            <li>Built a reusable component library for rapid future development</li>
+            <li>Designed a comprehensive homepage with 6 distinct sections providing complete user journey</li>
+        </ul>
+
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Reflections & Future Enhancements</h3>
+        
+        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">What I Learned</h4>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
+            <li>The importance of visual storytelling in travel booking experiences</li>
+            <li>How progressive disclosure reduces cognitive load and improves conversions</li>
+            <li>Balancing aesthetic appeal with functional clarity</li>
+            <li>The value of consistent design systems and reusable components</li>
+        </ul>
+
+        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Next Steps</h4>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
+            <li><strong>User Testing:</strong> Conduct usability studies to validate design decisions</li>
+            <li><strong>Personalization:</strong> Add ML-based destination recommendations</li>
+            <li><strong>Social Features:</strong> Enable trip sharing and collaborative planning</li>
+            <li><strong>Advanced Filters:</strong> Price range, dates, activities, and more</li>
+            <li><strong>Payment Integration:</strong> Complete end-to-end booking flow</li>
+        </ul>
+
+        <div class="bg-secondary-dark p-6 rounded-lg mt-8 border-l-4 border-accent">
+            <h3 class="text-2xl font-semibold mb-4 text-gray-200">Conclusion</h3>
+            <p class="text-gray-300 leading-relaxed">
+                Wanderlust demonstrates my ability to design and build complete user experiences from concept to implementation. 
+                This project showcases my skills in UI/UX design, front-end development, and creating cohesive design systems 
+                that balance beauty with functionality.
+            </p>
+        </div>
         `,
-        tags: ["ui-ux", "ux-design", "sustainability", "mobile-app", "research"],
+         tags: ["ui-ux", "travel", "responsive-design", "react", "typescript", "booking-platform"],
         github: "#",
         live: "#",
         caseStudy: true,
@@ -864,7 +829,53 @@ const projects = [
             'images/movie-5.png'
         ],
         thumbnail: 'images/movie-app.png'
-    }
+    },
+    {
+    id: 8,
+    title: "Kids Bowling League Website Redesign",
+    summary: "A comprehensive redesign of the Kids Bowling League website(https://kidsbowlingleagues.com/), enhancing user experience with a modern UI and updated logo to promote youth bowling leagues globally.",
+    description: `
+        <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">Website Redesign Case Study: Kids Bowling League</h1>
+       <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
+            Completed a personal redesign of the Kids Bowling League website project, optimizing UI/UX and creating a new logo (finished February 2025).
+        </p>
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Project Overview</h3>
+        <p class="text-gray-300 mb-4">The Kids Bowling League website(https://kidsbowlingleagues.com/) aimed to promote a unique bowling league for kids aged 17 and under, offering flexible scheduling and global competition. The original site lacked a cohesive design and intuitive navigation, deterring user engagement. My role was to redesign the UI/UX and create a new logo to reflect the program's fun, inclusive spirit.</p>
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Role</h3>
+        <p class="text-gray-300 mb-4">Lead UI/UX Designer & Graphic Designer</p>
+        <p class="text-gray-300 mb-4">Duration: 4 Weeks</p>
+        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Challenge</h3>
+        <p class="text-gray-300 mb-4">The existing site suffered from cluttered layouts, outdated visuals, and poor mobile responsiveness, making it hard for parents to register kids or find league details. The logo was generic, failing to capture the program's energetic appeal.</p>
+        <h3 text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Solution</h3>
+        <p class="text-gray-300 mb-4">A modern, user-friendly redesign with a vibrant new logo, streamlined navigation, and mobile optimization. Key updates included:</p>
+        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
+            <li>Redesigned logo with a stylized bowling pin and playful font to symbolize fun and youth</li>
+            <li>Simplified registration process with clear age category filters (5 & under to 16-17)</li>
+            <li>Responsive design ensuring seamless access on all devices</li>
+            <li>Enhanced content layout for league details, testimonials, and FAQs</li>
+        </ul>
+        <h3 text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Design Process</h3>
+        <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
+            <li>Research: Analyzed user feedback and competitor sites like Kids Bowl Free</li>
+            <li>Wireframing: Created low-fidelity layouts focusing on navigation and content hierarchy</li>
+            <li>Logo Design: Developed a new logo using bold colors and dynamic shapes</li>
+            <li>Prototyping: Built high-fidelity mockups with Figma, testing usability</li>
+        </ol>
+        <h3 text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Impact</h3>
+       <p class="text-gray-300 mb-4">As a personal project, this redesign demonstrates potential improvements. If implemented, it could enhance user engagement and simplify navigation, based on the streamlined design and appealing visuals created.</p>
+    `,
+    tags: ["ui-ux", "website-redesign", "graphic-design", "youth-sports"],
+    Figma: "https://www.figma.com/design/T9x4qTDTHQpge6dSb8U1lX/KBL-Redesign?node-id=0-1&t=foer5P6zxRNXNhNr-1",
+    caseStudy: true,
+    images: [
+        'images/kbl-1.png',
+        'images/kbl-2.png',
+        'images/kbl-3.png',
+        'images/kbl-4.png',
+        'images/kbl-5.png'
+    ],
+    thumbnail: 'images/kbl.png'
+}
 ];
 
 
