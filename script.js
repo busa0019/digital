@@ -425,7 +425,7 @@ const projects = [
             </div>
         </section>
 
-        // Add this section right after the "Core Features" section in your ON-Road project
+       
 
 <!-- Interactive Prototypes -->
 <section class="mb-8">
