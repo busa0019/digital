@@ -49,18 +49,20 @@
         </nav>
     </header>
 
-    <!-- Mobile Menu Drawers -->
-    <div id="mobile-menu" class="fixed inset-0 bg-black/90 z-40 hidden md:hidden transition-opacity duration-300 opacity-0">
-        <div class="p-6 flex justify-end">
-            <button id="close-menu-button" class="text-gray-100 hover:text-accent text-3xl focus:outline-none">&times;</button>
-        </div>
-        <div class="flex flex-col items-center space-y-6 text-xl">
-            <a href="#about" class="hover:text-accent transition duration-200" onclick="closeMenu()">About</a>
-            <a href="#services" class="hover:text-accent transition duration-200" onclick="closeMenu()">Skills</a>
-            <a href="#portfolio" class="hover:text-accent transition duration-200" onclick="closeMenu()">Portfolio</a>
-            <a href="#contact" class="hover:text-accent transition duration-200" onclick="closeMenu()">Contact</a>
-        </div>
+   <!-- Mobile Menu Drawer -->
+<div id="mobile-menu" class="fixed inset-0 bg-black/95 z-50 hidden transition-opacity duration-300 opacity-0">
+    <div class="absolute top-6 right-6 z-50">
+        <button id="close-menu-button" class="text-white hover:text-accent text-4xl p-2 bg-primary-dark rounded-full w-12 h-12 flex items-center justify-center shadow-2xl border border-gray-700">
+            &times;
+        </button>
     </div>
+    <div class="flex flex-col items-center justify-center h-full space-y-8 text-2xl px-6">
+        <a href="#about" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">About</a>
+        <a href="#services" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">Services</a>
+        <a href="#portfolio" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">Portfolio</a>
+        <a href="#contact" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">Contact</a>
+    </div>
+</div>
 
     <!-- Main Content -->
     <main>
@@ -256,45 +258,80 @@
         </footer>
 
         <!-- Project Modal -->
-        <div id="project-modal" class="fixed inset-0 bg-black/80 z-[100] hidden flex justify-center items-center p-4 transition-opacity duration-300 opacity-0" onclick="handleBackdropClose(event)">
-            <div class="bg-secondary-dark w-full max-w-5xl max-h-[90vh] rounded-xl shadow-2xl overflow-y-auto" onclick="event.stopPropagation()">
-                <div class="p-6 md:p-10">
-                    <div class="flex justify-end">
-                        <button class="text-gray-400 hover:text-accent text-3xl" onclick="closeProjectModal()">&times;</button>
-                    </div>
+ <!-- Project Modal -->
+<div id="project-modal" class="fixed inset-0 bg-black/80 z-[100] hidden flex justify-center items-center p-4 transition-opacity duration-300 opacity-0" onclick="handleBackdropClose(event)">
+    <div class="bg-secondary-dark w-full max-w-6xl max-h-[90vh] rounded-xl shadow-2xl overflow-y-auto" onclick="event.stopPropagation()">
+        <div class="p-6 md:p-10">
+            <!-- Header -->
+            <div class="flex justify-between items-start mb-8">
+                <div class="flex-1">
                     <h3 id="modal-title" class="text-3xl font-bold text-accent mb-4">Project Title</h3>
-                    <div class="flex flex-wrap space-x-4 mb-6 text-sm">
-                        <a id="modal-github" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center">
-                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.11.817-.258.817-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.372-1.325-1.737-1.325-1.737-1.089-.745.083-.73.083-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.77.42-1.304.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.469-2.383 1.238-3.225-.124-.304-.535-1.524.118-3.18 0 0 1.008-.322 3.3-.12.95-.262 1.956-.394 3-.398 1.042.004 2.05.136 3 .398 2.29-.202 3.297.12 3.297.12.653 1.657.242 2.876.118 3.18.77.842 1.235 1.915 1.235 3.225 0 4.61-2.805 5.62-5.475 5.923.43.37.807.962.807 1.933 0 1.396-.013 2.518-.013 2.858 0 .323.21.69.825.575C20.565 21.79 24 17.29 24 12 24 5.373 18.627 0 12 0z"/></svg>
-                            GitHub Repo
+                    <div class="flex flex-wrap gap-4 mb-4 text-sm">
+                        <!-- GitHub Link (for web-dev projects) -->
+                        <a id="modal-github" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center hidden">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.11.817-.258.817-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.372-1.325-1.737-1.325-1.737-1.089-.745.083-.73.083-.73 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.809 1.305 3.495.998.108-.77.42-1.304.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.469-2.383 1.238-3.225-.124-.304-.535-1.524.118-3.18 0 0 1.008-.322 3.3-.12.95-.262 1.956-.394 3-.398 1.042.004 2.05.136 3 .398 2.29-.202 3.297.12 3.297.12.653 1.657.242 2.876.118 3.18.77.842 1.235 1.915 1.235 3.225 0 4.61-2.805 5.62-5.475 5.923.43.37.807.962.807 1.933 0 1.396-.013 2.518-.013 2.858 0 .323.21.69.825.575C20.565 21.79 24 17.29 24 12 24 5.373 18.627 0 12 0z"/>
+                            </svg>
+                            GitHub
                         </a>
-                        <a id="modal-live" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center">
-                            <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        
+                        <!-- Live Demo Link -->
+                        <a id="modal-live" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center hidden">
+                            <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                            </svg>
                             Live Demo
                         </a>
-                        <a id="modal-case-study" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center hidden">
-                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM6.5 9.5a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm-7.96 4.93a5.5 5.5 0 0110.92 0L10 17.5l-2.46-3.07z"></path></svg>
-                            Case Study
+                        
+                        <!-- Figma Link (for UI/UX projects) -->
+                        <a id="modal-figma" href="#" target="_blank" class="text-gray-300 hover:text-accent transition duration-200 flex items-center hidden">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M15.5 2C13.54 2 12 3.52 12 5.5V7H8.5C6.54 7 5 8.52 5 10.5S6.54 14 8.5 14H12v1.5c0 1.98 1.54 3.5 3.5 3.5s3.5-1.52 3.5-3.5S17.04 12 15.5 12H12V7h3.5C17.46 7 19 5.48 19 3.5S17.46 0 15.5 0zM8.5 9C7.67 9 7 9.67 7 10.5S7.67 12 8.5 12H12V9H8.5zM15.5 9C14.67 9 14 9.67 14 10.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S16.33 9 15.5 9z"/>
+                            </svg>
+                            Figma Prototype
                         </a>
                     </div>
-                    <div id="modal-tags" class="flex flex-wrap gap-2 mb-6"></div>
-                    <div class="lg:flex lg:space-x-8">
-                        <div id="modal-image-gallery" class="lg:w-3/5 mb-6 lg:mb-0">
-                            <div class="relative mb-4 rounded-lg overflow-hidden border-2 border-gray-700 shadow-xl">
-                                <img id="main-project-image" src="" alt="Main Project Screenshot" class="w-full h-[30vh] md:h-[55vh] object-contain cursor-zoom-in bg-black transition-opacity duration-300" onclick="openLightbox(this.src)">
-                                <button id="prev-btn" class="nav-btn absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-accent/80 transition z-10 hidden" onclick="navigateImage(-1); event.stopPropagation();">&lt;</button>
-                                <button id="next-btn" class="nav-btn absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-accent/80 transition z-10 hidden" onclick="navigateImage(1); event.stopPropagation();">&gt;</button>
-                            </div>
-                            <div id="thumbnail-carousel" class="thumbnail-carousel flex overflow-x-scroll space-x-3 pb-2"></div>
-                        </div>
-                        <div class="lg:w-2/5">
-                            <h4 class="text-xl font-semibold mb-3 text-gray-200">Project Details</h4>
-                            <div id="modal-description" class="text-gray-300 leading-relaxed max-h-[70vh] lg:max-h-[60vh] overflow-y-auto pr-2"></div>
+                    <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+                </div>
+                <button class="text-gray-400 hover:text-accent text-3xl ml-4 flex-shrink-0" onclick="closeProjectModal()">&times;</button>
+            </div>
+
+            <!-- Main Content - Magazine Style -->
+            <div class="case-study-content">
+                <!-- Hero Image Section -->
+                <div class="hero-image-section mb-8">
+                    <div class="relative rounded-xl overflow-hidden border-2 border-gray-700 shadow-2xl bg-black">
+                        <img id="main-project-image" src="" alt="Main Project Screenshot" 
+                             class="w-full h-auto max-h-96 object-contain cursor-zoom-in transition-opacity duration-300" 
+                             onclick="openLightbox(this.src)">
+                        <button id="prev-btn" class="nav-btn absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 text-white p-3 rounded-full hover:bg-accent/80 transition z-10 hidden" 
+                                onclick="navigateImage(-1); event.stopPropagation();">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button id="next-btn" class="nav-btn absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 text-white p-3 rounded-full hover:bg-accent/80 transition z-10 hidden" 
+                                onclick="navigateImage(1); event.stopPropagation();">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- Thumbnail Strip -->
+                    <div class="mt-4 bg-primary-dark/50 p-4 rounded-lg">
+                        <div id="thumbnail-carousel" class="thumbnail-carousel flex overflow-x-auto space-x-3 pb-2 scrollbar-thin">
+                            <!-- Thumbnails will be inserted here by JavaScript -->
                         </div>
                     </div>
                 </div>
+
+                <!-- Case Study Content with Inline Images -->
+                <div id="modal-description" class="text-gray-300 leading-relaxed space-y-8 magazine-layout"></div>
             </div>
         </div>
+    </div>
+</div>
 
         <!-- Lightbox Modal -->
         <div id="lightbox-modal" class="fixed inset-0 bg-black/95 z-[200] hidden flex justify-center items-center p-4 transition-opacity duration-300 opacity-0" onclick="closeLightbox(event)">

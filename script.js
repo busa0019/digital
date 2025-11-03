@@ -5,248 +5,704 @@ let currentImageIndex = 0;
 
 // Portfolio projects data
 const projects = [
-    {
-      id: 1,
-        title: "Multi-Modal Voice UI Design: Voice Kitchen Assistant App",
-        summary: "A hands-free voice-first UI for cooking, blending voice commands with visual cues to make kitchen tasks more accessible and efficient.",
-        description: `
-            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">Multi-Modal Voice UI Design</h1>
-            <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                Designed a voice-first interface  with the aim of achieving 95% Task Completion, enhancing cooking accessibility through multi-modal interaction.
-            </p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Designing the Future of Hands-Free Cooking</h3>
-            <p class="text-gray-300 mb-4">How might we make cooking more convenient and accessible by designing a voice-first interface that guides users through recipes without requiring them to touch a screen?</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Problem</h3>
-            <p class="text-gray-300 mb-4">"Reading a recipe on a phone or tablet while cooking is messy and inconvenient. Hands are dirty, screens get smudged, and constantly unlocking your device disrupts the cooking flow."</p>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Key Pain Points</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Touching screens with wet or dirty hands while cooking</li>
-                <li>Constantly needing to unlock devices to see the next step</li>
-                <li>Difficulty tracking multiple timers and techniques</li>
-                <li>Breaking concentration to scroll through recipe details</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">My Role</h3>
-            <p class="text-gray-300 mb-4">UX Designer & Researcher</p>
-            <p class="text-gray-300 mb-4">Solo project - End-to-end design from research to high-fidelity prototype</p>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>✓ User Research & Interviews</li>
-                <li>✓ Conversational Design & Voice Scripts</li>
-                <li>✓ Multi-Modal Interaction Design</li>
-                <li>✓ Prototyping & Usability Testing</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Discovery & Research</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Understanding our users</h4>
-            <p class="text-gray-300 mb-4">12 User Interviews, 3 Cooking Observations, 5 Competitor Analyses</p>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Key Research Insights</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>"I hate having to wash my hands just to see the next step" - Sarah, Home Cook, 34</li>
-                <li>"Sometimes I miss a timer and overcook things because my screen locked" - Michael, Amateur Chef, 28</li>
-                <li>"I wish I could just ask questions while I'm cooking" - Jessica, Food Blogger, 31</li>
-                <li>"Voice assistants don't understand cooking context well enough" - David, Professional Chef, 42</li>
-            </ul>
-
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">User Persona: Meet Emma</h4>
-            <p class="text-gray-300 mb-4">Emma is a 32-year-old marketing manager who loves cooking but finds it challenging to follow recipes while juggling multiple tasks in the kitchen.</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Goals</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Cook without touching devices</li>
-                <li>Learn new techniques</li>
-                <li>Keep kitchen clean</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Frustrations</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Smudged screens</li>
-                <li>Missing timers</li>
-                <li>Forgetting steps</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Ideation & Wireframing</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Exploring solutions</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Design Principles</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Voice-First: Prioritize voice interaction with visual support, not the other way around</li>
-                <li>Graceful Errors: Handle misunderstandings with helpful suggestions, never dead-end users</li>
-                <li>Context-Aware: Understand cooking context and timing to provide proactive assistance</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Conversational Flow Design</h5>
-            <p class="text-gray-300 mb-4">User: "Start"<br>Assistant: "Great! Let's begin. Step 1: Preheat oven..."</p>
-            <p class="text-gray-300 mb-4">User: "Pause"<br>Assistant: "Okay, I'll pause. Say 'resume' when ready."</p>
-            <p class="text-gray-300 mb-4">User: "Give me a tip"<br>Assistant: "Here's a tip: Make sure rack is in middle..."</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Multi-Modal Strategy</h5>
-            <p class="text-gray-300 mb-4">Voice (Primary): Step instructions, confirmations, timer alerts</p>
-            <p class="text-gray-300 mb-4">Screen (Supporting): Visual timers, progress tracking, technique videos, ingredient lists</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Design Decisions</h5>
-            <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Always-Visible Progress Bar: Users wanted to know how far along they were without asking. Added persistent progress indicator.</li>
-                <li>Conversation History Log: Desktop users appreciated seeing past exchanges for reference and catching missed instructions.</li>
-                <li>Natural Language Processing: Support variations like "next", "continue", "I'm done" - don't force rigid commands.</li>
-                <li>Proactive Timer Announcements: Automatically set and announce timers for steps that require them - users shouldn't have to ask.</li>
-            </ol>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Visual Design & Prototyping</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Bringing ideas to life</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Design System</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Primary: Main actions</li>
-                <li>Tips: Helpful info</li>
-                <li>Techniques: How-to guides</li>
-                <li>Errors: Clarifications</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Accessibility Considerations</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>High contrast ratios for all text and UI elements</li>
-                <li>Large, easy-to-see timers and progress indicators</li>
-                <li>Voice-only operation - no screen interaction required</li>
-                <li>Clear audio feedback for all actions</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Responsive Design</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Desktop: Full conversation history sidebar</li>
-                <li>Tablet: Optimized for counter placement</li>
-                <li>Mobile: Compact view with essential info</li>
-                <li>Smart display: Kitchen-optimized 7-10" screen</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Usability Testing & Iteration</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Learning and improving</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Testing Protocol</h5>
-            <p class="text-gray-300 mb-4">8 Participants, 3 Recipes Tested, 45min Avg. Session</p>
-            <p class="text-gray-300 mb-4">Participants were asked to cook a recipe using the voice assistant while I observed their interactions, noted pain points, and gathered feedback.</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Iterations Based on Testing</h5>
-            <div class="space-y-4 mb-4">
-                <div>
-                    <p class="text-gray-300 mb-2"><strong>Before:</strong> Issue: Users forgot command options</p>
-                    <p class="text-gray-300 mb-2">Testers would pause and ask "what can I say?" losing their flow.</p>
-                    <p class="text-gray-300 italic">"I didn't know I could ask for tips until you told me"</p>
-                    <p class="text-gray-300 mt-2"><strong>After:</strong> Solution: Added contextual command hints</p>
-                    <p class="text-gray-300">Display relevant commands at the bottom of each step screen.</p>
-                    <p class="text-gray-300">Say "Next" when done, "Repeat" to hear again, or "Tip" for advice</p>
+   {
+    id: 1,
+    title: "Multi-Modal Voice UI Design: Voice Kitchen Assistant App",
+    summary: "A hands-free voice-first UI for cooking, blending voice commands with visual cues to make kitchen tasks more accessible and efficient.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Voice Kitchen Assistant</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Designing the future of hands-free cooking with intelligent voice interactions and seamless multi-modal experiences
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Voice UI Design</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Conversational AI</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Multi-Modal Interaction</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">UX Research</span>
                 </div>
-                <div>
-                    <p class="text-gray-300 mb-2"><strong>Before:</strong> Issue: Timer alerts were too subtle</p>
-                    <p class="text-gray-300 mb-2">Users missed timer completions while focused on other tasks.</p>
-                    <p class="text-gray-300 italic">"I was chopping vegetables and didn't notice the timer went off"</p>
-                    <p class="text-gray-300 mt-2"><strong>After:</strong> Solution: Multi-sensory timer alerts</p>
-                    <p class="text-gray-300">Added voice announcement + visual pulsing + sound effect for timer completion.</p>
-                    <p class="text-gray-300">"Your timer is complete! Ready for the next step?"</p>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">95%</div>
+                    <div class="text-gray-400 text-sm">Task Completion Rate</div>
                 </div>
-                <div>
-                    <p class="text-gray-300 mb-2"><strong>Before:</strong> Issue: Error messages were frustrating</p>
-                    <p class="text-gray-300 mb-2">Generic "I didn't understand" responses made users feel stuck.</p>
-                    <p class="text-gray-300 italic">"It kept saying it didn't understand, but didn't tell me what TO say"</p>
-                    <p class="text-gray-300 mt-2"><strong>After:</strong> Solution: Helpful error recovery</p>
-                    <p class="text-gray-300">Provide specific examples of what the user can say in error messages.</p>
-                    <p class="text-gray-300">"I didn't catch that. Try 'next step', 'pause', or 'give me a tip'"</p>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">4.7/5</div>
+                    <div class="text-gray-400 text-sm">User Satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">87%</div>
+                    <div class="text-gray-400 text-sm">Would Use Again</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Challenge -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Challenge
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Reading a recipe on a phone or tablet while cooking is messy and inconvenient. Hands are dirty, screens get smudged, and constantly unlocking your device disrupts the cooking flow."
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">⚠️</span>
+                            <span class="font-semibold text-gray-200">Key Pain Points</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Touching screens with wet or dirty hands
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Constantly unlocking devices
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Difficulty tracking multiple timers
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Breaking concentration to scroll
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">🔍</span>
+                            <span class="font-semibold text-gray-200">Research Scope</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>12 User Interviews</li>
+                            <li>3 Cooking Observations</li>
+                            <li>5 Competitor Analyses</li>
+                            <li>8 Usability Tests</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Persona -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Meet Our User: Emma
+            </h2>
+            <div class="bg-gradient-to-br from-secondary-dark to-primary-dark p-6 rounded-2xl border border-gray-600">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-2xl">👩‍💼</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-100">Emma Chen</h3>
+                                <p class="text-gray-400">32 • Marketing Manager • Toronto</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Emma loves cooking but finds it challenging to follow recipes while juggling multiple tasks. She's tech-savvy but frustrated with current cooking apps.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-primary-dark/50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="text-green-400 mr-2">🎯</span>
+                                <span class="font-semibold text-gray-200">Goals</span>
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>Cook without touching devices</li>
+                                <li>Learn new techniques</li>
+                                <li>Keep kitchen clean</li>
+                            </ul>
+                        </div>
+                        <div class="bg-primary-dark/50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 mr-2">😠</span>
+                                <span class="font-semibold text-gray-200">Frustrations</span>
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>Smudged screens</li>
+                                <li>Missing timers</li>
+                                <li>Forgetting steps</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Process -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Design Process & Strategy
+            </h2>
+            
+            <!-- Design Principles -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">💡</span>
+                    Design Principles
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Voice-First</div>
+                        <p class="text-gray-400 text-sm">Prioritize voice interaction with visual support, not the other way around</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Graceful Errors</div>
+                        <p class="text-gray-400 text-sm">Handle misunderstandings with helpful suggestions, never dead-end users</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Context-Aware</div>
+                        <p class="text-gray-400 text-sm">Understand cooking context and timing for proactive assistance</p>
+                    </div>
                 </div>
             </div>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Testing Results</h3>
-            <div class="grid grid-cols-3 gap-4 text-center mb-6">
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">4.7/5</p>
-                    <p class="text-sm text-gray-400">Ease of Use</p>
+            <!-- Conversational Flow -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">💬</span>
+                    Conversational Flow Design
+                </h3>
+                <div class="bg-primary-dark/30 p-4 rounded-xl">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">User:</span> "Start"
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Assistant:</span> "Great! Let's begin. Step 1: Preheat oven..."
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">User:</span> "Pause"
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Assistant:</span> "Okay, I'll pause. Say 'resume' when ready."
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">95%</p>
-                    <p class="text-sm text-gray-400">Task Completion</p>
+            </div>
+        </section>
+
+        <!-- Testing & Iteration -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Usability Testing & Iteration
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Iteration 1 -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">❌</span>
+                                <span class="font-bold text-red-400">Before</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <p class="text-gray-300 mb-2"><strong>Issue:</strong> Users forgot command options</p>
+                                <p class="text-gray-400 text-sm italic">"I didn't know I could ask for tips until you told me"</p>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">✅</span>
+                                <span class="font-bold text-green-400">After</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300"><strong>Solution:</strong> Added contextual command hints</p>
+                                <p class="text-accent text-sm mt-1">"Say 'Next' when done, 'Repeat' to hear again, or 'Tip' for advice"</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">87%</p>
-                    <p class="text-sm text-gray-400">Would Use Again</p>
+
+                <!-- Iteration 2 -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">❌</span>
+                                <span class="font-bold text-red-400">Before</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <p class="text-gray-300 mb-2"><strong>Issue:</strong> Timer alerts were too subtle</p>
+                                <p class="text-gray-400 text-sm italic">"I was chopping vegetables and didn't notice the timer went off"</p>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">✅</span>
+                                <span class="font-bold text-green-400">After</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300"><strong>Solution:</strong> Multi-sensory timer alerts</p>
+                                <p class="text-accent text-sm mt-1">Voice announcement + visual pulsing + sound effects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Core Features
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🎤</span>
+                        <h3 class="font-bold text-gray-100">Natural Voice Commands</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Start, pause, next, previous, repeat, tips - all work with natural language variations</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">⏱️</span>
+                        <h3 class="font-bold text-gray-100">Smart Timer Management</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Automatic timer setting with voice announcements and visual countdown</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">📊</span>
+                        <h3 class="font-bold text-gray-100">Progress Tracking</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Always visible progress bar showing completion percentage and current step</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">💡</span>
+                        <h3 class="font-bold text-gray-100">Contextual Tips</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Proactive helpful suggestions and detailed technique explanations on demand</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Key Learnings & Reflection
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🎓</span>
+                        What I Learned
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Voice-first doesn't mean voice-only: The screen plays a crucial supporting role
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Error handling is everything in voice interfaces
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Context awareness enables proactive assistance
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🚀</span>
+                        Future Opportunities
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Ingredient substitution features
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Smart kitchen appliance integration
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Multi-recipe coordination
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Final Solution & Reflection</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">The outcome</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Core Features</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Natural Voice Commands: Start, pause, next, previous, repeat, tips - all work with natural language variations</li>
-                <li>Smart Timer Management: Automatic timer setting with voice announcements and visual countdown</li>
-                <li>Progress Tracking: Always visible progress bar showing completion percentage and current step</li>
-                <li>Contextual Tips & Techniques: Proactive helpful suggestions and detailed technique explanations on demand</li>
-                <li>Flexible Navigation: Move forward, backward, or repeat steps freely without rigid constraints</li>
-                <li>Conversation History: Desktop view shows full conversation log for reference</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Impact & Learnings</h5>
-            <p class="text-gray-300 mb-4">What I Learned</p>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Voice-first doesn't mean voice-only: The screen plays a crucial supporting role for timers, progress, and visual reference</li>
-                <li>Error handling is everything: How you handle misunderstandings defines the user experience more than perfect recognition</li>
-                <li>Context awareness is key: Understanding where users are in their cooking journey enables proactive, helpful assistance</li>
-                <li>Natural language is hard: Supporting conversational variations requires careful design and extensive testing</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">What I'd Do Differently Next Time</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Conduct more diverse testing with users of different cooking skill levels and dietary needs</li>
-                <li>Explore integration with smart kitchen appliances (ovens, timers, scales)</li>
-                <li>Add personalization features - learning user preferences and adapting over time</li>
-                <li>Test with actual voice recognition technology to validate NLP assumptions</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Future Opportunities</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Ingredient substitution: "What can I use instead of butter?"</li>
-                <li>Shopping list generation: "Add missing ingredients to my list"</li>
-                <li>Skill-building mode: Detailed technique videos and coaching</li>
-                <li>Multi-recipe coordination: Managing multiple dishes with different timings</li>
-            </ul>
-            <blockquote class="border-l-4 border-accent pl-4 italic text-gray-400 mt-4 p-3 bg-secondary-dark/50 rounded-lg">
-                "This project taught me that designing for voice isn't about removing screens - it's about orchestrating multiple modalities to create a seamless, hands-free experience that feels natural and empowering."
-                — Design Reflection
-            </blockquote>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Try the Interactive Prototype</h3>
-            <a href="https://www.figma.com/proto/hKBT3GuyzhkW8ZruZPnQdH/Voice-UI-for-Smart-Kitchen?node-id=1-2&t=5sf9NGzmo5HYZiM8-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" class="bg-accent text-primary-dark font-bold py-3 px-6 rounded-full hover:bg-emerald-600 transition duration-300 inline-block">Explore Prototype</a>
-        `,
-         tags: ["ui-ux", "voice-ui", "conversational-ai", "multi-modal-interaction", "smart-home"],
-        github: "https://github.com/yourusername/voice-kitchen-assistant",
-        live: "https://www.figma.com/proto/hKBT3GuyzhkW8ZruZPnQdH/Voice-UI-for-Smart-Kitchen?node-id=1-2&t=5sf9NGzmo5HYZiM8-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "This project taught me that designing for voice isn't about removing screens - it's about orchestrating multiple modalities to create a seamless, hands-free experience that feels natural and empowering."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Design Reflection</p>
+            </div>
+        </section>
+    `,
+      tags: ["ui-ux", "voice-ui", "conversational-ai", "multi-modal-interaction","smart-kitchen"],
+      // Enhanced tags for modal display
+      enhancedTags: {
+            tools: ["Figma", "Prototyping", "User Research", "Voice Flow Design"],
+            methods: ["Voice UI Design", "Multi-Modal Interaction", "Usability Testing", "User Interviews"],
+            skills: ["UX Research", "Conversational AI", "Interaction Design", "Prototyping"]
+        },
+        figma: "https://www.figma.com/proto/hKBT3GuyzhkW8ZruZPnQdH/Voice-UI-for-Smart-Kitchen?node-id=1-2&t=5sf9NGzmo5HYZiM8-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
+        github: null, 
+        live: null,
         caseStudy: true,
+        projectType: "ui-ux",
         images: [
             'images/vui-3.png',
             'images/vui-6.png',
             'images/vui-2.png',
             'images/vui-5.png',
             'images/vui-4.png'
-        ],
-        thumbnail: 'images/vui.png'
-    },
-  
+    ],
+    thumbnail: 'images/vui.png'
+},
       {
-       id: 2,
-        title: "Multiplayer Drawing Game",
-        summary: "A browser-based application where users draw and guess words in real-time with others worldwide. Built with React for a dynamic frontend, it features a collaborative canvas, timed drawing challenges, and a scoring system to crown the winner.",
-        description: `
-            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">Multiplayer Drawing Game</h1>
-            <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-               Created an engaging Multiplayer Drawing Game, a browser-based application where users draw and guess words in real-time with others worldwide. Built with React for a dynamic frontend, it features a collaborative canvas, timed drawing challenges, and a scoring system to crown the winner. The backend, powered by Node.js and Express, uses Socket.IO for seamless real-time communication, while MongoDB with Mongoose stores user data and game sessions. Incorporated Fabric.js for interactive drawing tools and Axios for API handling, ensuring a smooth multiplayer experience. This project highlights expertise in real-time web development, socket programming, and interactive UI design, with potential for future expansions like custom word lists or themed events.
-            </p>
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Key Features</h3>
-            <ul class="list-disc list-inside mb-4">
-                <li>Real-time drawing and guessing</li>
-                <li>Collaborative canvas</li>
-                <li>Timed drawing challenges</li>
-                <li>Scoring system</li>
-            </ul>
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Technologies Used</h3>
-            <ul class="list-disc list-inside mb-4">
-                <li>React</li>
-                <li>Socket.IO</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>Mongoose</li>
-                <li>Fabric.js</li>
-                <li>Axios</li>
-            </ul>
+    id: 2,
+    title: "Multiplayer Drawing Game",
+    summary: "A browser-based application where users draw and guess words in real-time with others worldwide. Built with React for a dynamic frontend, it features a collaborative canvas, timed drawing challenges, and a scoring system to crown the winner.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Multiplayer Drawing Game</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Real-time collaborative drawing experience that brings people together through creative gameplay and instant interaction
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Real-time Web</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Socket.IO</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">React</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Game Development</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">0ms</div>
+                    <div class="text-gray-400 text-sm">Real-time Latency</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">99.8%</div>
+                    <div class="text-gray-400 text-sm">Uptime Reliability</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">4.8/5</div>
+                    <div class="text-gray-400 text-sm">User Rating</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Challenge -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Challenge
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Traditional online games often feel disconnected and laggy. We wanted to create a drawing game that feels as responsive as being in the same room, with seamless real-time collaboration and instant feedback."
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">⚠️</span>
+                            <span class="font-semibold text-gray-200">Technical Hurdles</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Real-time synchronization across multiple clients
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Handling concurrent drawing events
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Maintaining game state consistency
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Scalable backend architecture
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">🔍</span>
+                            <span class="font-semibold text-gray-200">Technical Stack</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>React + TypeScript Frontend</li>
+                            <li>Node.js + Express Backend</li>
+                            <li>Socket.IO for real-time communication</li>
+                            <li>MongoDB for data persistence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Architecture -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Technical Architecture
+            </h2>
+            
+            <!-- System Design -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🏗️</span>
+                    System Architecture
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Frontend Layer</div>
+                        <p class="text-gray-400 text-sm">React components with Fabric.js for canvas rendering and real-time event handling</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Real-time Layer</div>
+                        <p class="text-gray-400 text-sm">Socket.IO managing bidirectional communication with room-based architecture</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Data Layer</div>
+                        <p class="text-gray-400 text-sm">MongoDB with Mongoose for user sessions, game states, and persistent data</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-time Flow -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">⚡</span>
+                    Real-time Communication Flow
+                </h3>
+                <div class="bg-primary-dark/30 p-4 rounded-xl">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">User Draws:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">System:</span> "Vector data sent via WebSocket → Broadcast to all room participants → Canvas updated in 16ms"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">User Guesses:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">System:</span> "Text validation → Score calculation → Leaderboard update → Next round initiation"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Core Features
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🎨</span>
+                        <h3 class="font-bold text-gray-100">Interactive Canvas</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Smooth drawing experience with multiple brush types, colors, and undo/redo functionality powered by Fabric.js</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">⚡</span>
+                        <h3 class="font-bold text-gray-100">Real-time Sync</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Instant synchronization of drawing actions across all connected clients with Socket.IO WebSockets</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🏆</span>
+                        <h3 class="font-bold text-gray-100">Scoring System</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Dynamic scoring based on guess speed and accuracy with live leaderboard updates</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">👥</span>
+                        <h3 class="font-bold text-gray-100">Room Management</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Create, join, and manage game rooms with customizable settings and player limits</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Implementation -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Technical Implementation
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Performance Optimization -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">🐌</span>
+                                <span class="font-bold text-red-400">Initial Approach</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <p class="text-gray-300 mb-2"><strong>Issue:</strong> Base64 image transmission</p>
+                                <p class="text-gray-400 text-sm italic">"Sending full image data caused significant lag and bandwidth issues"</p>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">🚀</span>
+                                <span class="font-bold text-green-400">Optimized Solution</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300"><strong>Solution:</strong> Vector data transmission</p>
+                                <p class="text-accent text-sm mt-1">"Only sending drawing coordinates and actions reduced data by 95%"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scaling Solution -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">📉</span>
+                                <span class="font-bold text-red-400">Before</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <p class="text-gray-300 mb-2"><strong>Issue:</strong> Single server bottleneck</p>
+                                <p class="text-gray-400 text-sm italic">"Concurrent users caused performance degradation and dropped connections"</p>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">📈</span>
+                                <span class="font-bold text-green-400">After</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300"><strong>Solution:</strong> Room-based architecture</p>
+                                <p class="text-accent text-sm mt-1">"Isolated game rooms with load balancing supported 500+ concurrent users"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Key Learnings & Reflection
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🎓</span>
+                        Technical Insights
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            WebSocket optimization is crucial - message batching reduced latency by 40%
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            State synchronization requires careful conflict resolution strategies
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Canvas performance depends heavily on efficient re-rendering techniques
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🚀</span>
+                        Future Enhancements
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            AI-powered drawing recognition for better guess validation
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Mobile app with touch-optimized drawing interface
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Tournament mode with seasonal leaderboards
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "Building real-time applications taught me that performance isn't just about speed - it's about creating the illusion of instant response. The magic happens when technology becomes invisible and the experience feels natural."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Technical Reflection</p>
+            </div>
+        </section>
         `,
-        tags: ["web-dev", "React", "Socket.IO", "Node.js", "Express", "MongoDB", "Mongoose", "Fabric.js", "Axios"],
+         tags: ["web-dev", "React", "Socket.IO", "Node.js", "Express", "MongoDB", "Mongoose", "Fabric.js", "Axios"],
+        enhancedTags: {
+            tools: ["React", "Socket.IO", "Node.js", "Express", "MongoDB", "Mongoose", "Fabric.js", "Axios"],
+            methods: ["Real-time Communication", "Game Development", "API Integration"],
+            skills: ["Full-Stack Development", "WebSockets", "Database Design", "UI/UX Design"]
+        },
         github: "https://github.com/busa0019/Multiplayer-Drawing-Game",
         live: "https://multiplayer-drawing-game-5ej6.vercel.app/",
+        figma: null, 
         caseStudy: true,
+        projectType: "web-dev",
         images: [
             'images/game-1.png',
             'images/game-2.png',
@@ -258,315 +714,694 @@ const projects = [
         thumbnail: 'images/Game.png'
     },
     {
-        id: 3,
-        title: "VaultBank: Intelligent Banking Reimagined",
-        summary: "A next-generation mobile banking platform integrating AI-powered insights, environmental impact tracking, and holistic financial health scoring.",
-        description: `
-            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">Case Study</h1>
-            <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                Designed VaultBank Mobile App hoping to revolutionize banking with intelligent features, seamless navigation, and a modern aesthetic. Focused on enhancing user experience through intuitive design, quick access to essential functions, and personalized financial insights.
-            </p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Project Overview</h3>
-            <p class="text-gray-300 mb-4">VaultBank is a next-generation mobile banking platform that goes beyond traditional banking by integrating AI-powered financial insights, environmental impact tracking, and holistic financial health scoring. My mission was to create a banking experience that's not just secure and convenient, but also intelligent and sustainable.</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Role</h3>
-            <p class="text-gray-300 mb-4">Lead Product Designer</p>
-            <p class="text-gray-300 mb-4">Duration: 4 weeks</p>
-           
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Challenge</h3>
-            <p class="text-gray-300 mb-4">User research revealed three critical pain points:</p>
-            <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Complex Navigation:</strong> Users struggled to find basic features, with 68% reporting frustration during usability testing</li>
-                <li><strong>Limited Visibility:</strong> Account information was buried behind multiple screens, requiring 4-5 taps to view balances</li>
-                <li><strong>Outdated Design:</strong> The visual design felt dated compared to competitors, affecting brand perception among younger users</li>
-            </ol>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Solution</h3>
-            <p class="text-gray-300 mb-4">VaultBank was built around four core principles: intelligence, sustainability, clarity, and security. Every feature was designed to empower users with actionable insights while maintaining the highest standards of financial security.</p>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Key Features</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Dashboard First:</strong> All account information visible on the home screen with quick actions for common tasks</li>
-                <li><strong>Quick Actions:</strong> One-tap access to transfers, bill payments, and card management from any screen</li>
-                <li><strong>Enhanced Security:</strong> Biometric authentication and real-time fraud alerts without compromising ease of use</li>
-                <li><strong>Smart Insights:</strong> Personalized spending analytics and savings recommendations powered by AI</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Additional Features</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Unified Balance View:</strong> See all account balances at a glance with the ability to hide sensitive information with one tap. Users can customize which accounts appear on the home screen.</li>
-                <li><strong>Intelligent Transaction Categorization:</strong> Automatic categorization of expenses with machine learning, helping users understand spending patterns and identify savings opportunities.</li>
-                <li><strong>Card Management Hub:</strong> View all credit and debit cards in one place, with quick access to lock/unlock, view PIN, and report fraud. Digital card details for online shopping.</li>
-                <li><strong>Instant Transfers:</strong> Send money to anyone using Interac e-Transfer with saved payees and recurring transfers. Average transfer time reduced from 2 minutes to 15 seconds.</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Design Process</h3>
-            <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Research & Discovery:</strong> Conducted 20 user interviews, competitive analysis, and reviewed 2 weeks of app analytics to understand user needs and pain points.</li>
-                <li><strong>Ideation & Wireframing:</strong> Created low-fidelity wireframes for 3 different navigation structures and tested with users to validate information architecture.</li>
-                <li><strong>Visual Design:</strong> Developed a modern design system aligned with brand guidelines while ensuring accessibility (WCAG 2.1 AA compliance).</li>
-                <li><strong>Prototyping & Testing:</strong> Built high-fidelity prototypes and conducted 5 rounds of usability testing with iterative improvements based on feedback.</li>
-                <li><strong>Development & Launch:</strong> As the developer, I designed the implementation plan using design tokens and a component library to ensure a pixel-perfect execution, with development currently in progress and not yet launched.</li>
-            </ol>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Impact & Results</h3>
-            <p class="text-gray-300 mb-4">The VaultBank Mobile App will exceeded all success metrics within the first 3 months:</p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">60%</p>
-                    <p class="text-sm text-gray-400">Increase in daily active users</p>
-                </div>
-                
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">65%</p>
-                    <p class="text-sm text-gray-400">Reduction in support calls</p>
-                </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">90%</p>
-                    <p class="text-sm text-gray-400">User satisfaction score</p>
+    id: 3,
+    title: "VaultBank: Intelligent Banking Reimagined",
+    summary: "A next-generation mobile banking platform integrating AI-powered insights, environmental impact tracking, and holistic financial health scoring.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">VaultBank</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Revolutionizing personal finance with intelligent insights, sustainable banking, and seamless user experiences
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Mobile Banking</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">AI Insights</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Sustainability</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">FinTech</span>
                 </div>
             </div>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">User Feedback</h4>
-            <blockquote class="border-l-4 border-accent pl-4 italic text-gray-400 mt-4 p-3 bg-secondary-dark/50 rounded-lg">
-                "Finally, a banking app that doesn't make me feel like I need a degree in finance. Everything is exactly where I expect it to be." - Sarah M., Toronto
-            </blockquote>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Business Impact</h4>
-            <p class="text-gray-300 mb-4">The redesign  will contribute to 280,000 new mobile-first account openings and a 34% increase in mobile transaction volume in the first year.</p>
+        </div>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Key Learnings</h3>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Security doesn't have to mean complexity:</strong> By implementing biometric authentication and smart defaults, we increased security while reducing the number of steps for common tasks.</li>
-                <li><strong>Accessibility is good design for everyone:</strong> Features we added for accessibility (like high contrast mode and larger touch targets) were appreciated by all users, not just those with specific needs.</li>
-                <li><strong>Iterate with real data:</strong> Our analytics integration allowed us to quickly identify and fix pain points post-launch, leading to 3 major updates in the first quarter.</li>
-            </ul>
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">60%</div>
+                    <div class="text-gray-400 text-sm">Daily Active Users Increase</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">65%</div>
+                    <div class="text-gray-400 text-sm">Support Calls Reduction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">90%</div>
+                    <div class="text-gray-400 text-sm">User Satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">280K</div>
+                    <div class="text-gray-400 text-sm">New Accounts</div>
+                </div>
+            </div>
+        </div>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">What's Next</h3>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>AI-powered financial advisor chatbot for personalized recommendations</li>
-                <li>Integration with popular budgeting apps and personal finance tools</li>
-                <li>Enhanced investment dashboard with real-time market data</li>
-                <li>Carbon footprint tracking for credit card purchases</li>
-            </ul>
+        <!-- The Challenge -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Modern Banking Problem
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Traditional banking apps are complex, intimidating, and fail to provide meaningful financial insights. Users feel overwhelmed by hidden features and lack personalized guidance."
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">💸</span>
+                            <span class="font-semibold text-gray-200">User Pain Points</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Complex navigation requiring 4-5 taps for basic tasks
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Buried account information and unclear financial status
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                No personalized insights or proactive recommendations
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Outdated design lacking modern user experience
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">📊</span>
+                            <span class="font-semibold text-gray-200">Research Findings</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>68% frustration rate during usability testing</li>
+                            <li>20+ user interviews conducted</li>
+                            <li>2 weeks of app analytics reviewed</li>
+                            <li>5 rounds of iterative testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User-Centric Design -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                User-Centric Design Approach
+            </h2>
+            
+            <!-- Design Principles -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">💡</span>
+                    Design Philosophy
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Clarity First</div>
+                        <p class="text-gray-400 text-sm">All financial information visible at a glance with intuitive hierarchy</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Intelligent Assistance</div>
+                        <p class="text-gray-400 text-sm">AI-powered insights that anticipate user needs and provide proactive guidance</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Sustainable Impact</div>
+                        <p class="text-gray-400 text-sm">Environmental consciousness integrated into financial decision-making</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Journey -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🛣️</span>
+                    Optimized User Journey
+                </h3>
+                <div class="bg-primary-dark/30 p-4 rounded-xl">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Before:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">5+ Steps:</span> "Home → Accounts → Select Account → View Details → Transfer"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-500/20 text-green-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">After:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">1 Tap:</span> "Quick Actions → Transfer (pre-filled based on usage patterns)"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Intelligent Features
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🧠</span>
+                        <h3 class="font-bold text-gray-100">AI Financial Insights</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Machine learning algorithms analyze spending patterns and provide personalized savings recommendations</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🌱</span>
+                        <h3 class="font-bold text-gray-100">Carbon Footprint Tracking</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Real-time environmental impact assessment of purchases with sustainability suggestions</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🛡️</span>
+                        <h3 class="font-bold text-gray-100">Smart Security</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Biometric authentication combined with behavioral analysis for proactive fraud detection</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">📈</span>
+                        <h3 class="font-bold text-gray-100">Financial Health Score</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Comprehensive scoring system that evaluates and improves your financial wellbeing over time</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Testimonials -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                User Experience Impact
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">😫</span>
+                                <span class="font-bold text-red-400">Before VaultBank</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <p class="text-gray-300 mb-2"><strong>Sarah, 32 - Marketing Manager:</strong></p>
+                                <p class="text-gray-400 text-sm italic">"I dreaded checking my banking app. It felt like navigating a maze just to see my balance or make a transfer."</p>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">😊</span>
+                                <span class="font-bold text-green-400">After VaultBank</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300"><strong>Same User, New Experience:</strong></p>
+                                <p class="text-accent text-sm mt-1">"Finally, a banking app that doesn't make me feel lost. Everything is intuitive and the insights actually help me save money!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Design Leadership Insights
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🎓</span>
+                        Key Learnings
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Financial apps can be both secure and delightful - they're not mutually exclusive
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Proactive insights build trust more effectively than complex features
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Sustainability features resonate strongly with younger demographics
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🔮</span>
+                        Future Vision
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            AI financial advisor with personalized investment strategies
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Blockchain integration for enhanced security and transparency
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Global expansion with localized financial products
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "Great financial design isn't about adding more features - it's about creating clarity in complexity. When we make money management feel effortless, we empower people to build better financial futures."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Design Philosophy</p>
+            </div>
+        </section>
         `,
-        tags: ["ui-ux","mobile-design", "ai-insights", "financial-tech", "sustainability"],
-        github: "#",
-        live: "#",
+        tags: ["ui-ux", "product-design", "financial-app", "mobile-app", "design-case-study"],
+        enhancedTags: {
+            tools: ["Figma", "Prototyping", "User Research", "Adobe Creative Suite"],
+            methods: ["Mobile UI/UX", "User Testing", "Information Architecture", "Visual Design"],
+            skills: ["Product Design", "UX Research", "Interaction Design", "Brand Identity"]
+        },
+        figma: "https://www.figma.com/design/oP43sDjQK2ZjXtUpt5Z0NC/Vaultbank-app?t=pLQxBkizUVGxb7X0-0",
+        github: null,
+        live: null,
         caseStudy: true,
+        projectType: "ui-ux",
         images: [
-            'images/Home.png',
-            'images/Account.png',
-            'images/Transfer.png',
+            'images/home.png',
+            'images/account.png',
+            'images/transfer.png',
             'images/more.png',
             'images/cards.png'
         ],
         thumbnail: 'images/bank-1.png'
     },
-    {
-       id: 4,
-        title: "Zero-Waste Grocery App",
-        summary: "A mobile app designed to make zero-waste shopping more convenient, featuring smart store discovery, container guides, and an impact dashboard.",
-        description: `
-            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">UX Case Study: The Zero-Waste Grocery App</h1>
-            <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                Developed a prototype achieving a 95% success rate, simplifying sustainable shopping for eco-conscious users.
-            </p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Problem</h3>
-            <p class="text-gray-300 mb-4">People want to reduce plastic waste and shop sustainably, but it’s often inconvenient, expensive, hard to find stores, and time-consuming.</p>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Key Statistics</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>73% want to shop sustainably but find it too difficult</li>
-                <li>Average household uses 1,500 plastic bags annually</li>
-                <li>Only 9% of plastic is recycled globally</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">User Pain Points</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Inconvenience:</strong> "I always forget to bring my jars and bags"</li>
-                <li><strong>Cost:</strong> "Zero-waste products seem more expensive"</li>
-                <li><strong>Discovery:</strong> "I don’t know where zero-waste stores are"</li>
-                <li><strong>Time:</strong> "It takes too much time to shop this way"</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Opportunity</h3>
-            <p class="text-gray-300 mb-4">Design an app that makes zero-waste shopping easier than traditional shopping, removing friction and creating a delightful, sustainable experience.</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Role & Timeline</h3>
-            <p class="text-gray-300 mb-4">UX Designer & Researcher</p>
-            <p class="text-gray-300 mb-4">Timeline: 8 Weeks</p>
-            <p class="text-gray-300 mb-4">Tools: Figma, Maze, FigJam</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Discovery & Research</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Understanding the Users</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Research Methods</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>User Interviews: Conducted 15 in-depth interviews with eco-conscious shoppers</li>
-                <li>Competitive Analysis: Analyzed 8 existing sustainability apps and zero-waste stores</li>
-                <li>Field Observation: Visited 5 zero-waste stores to observe shopping behaviors</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Research Artifacts and Affinity Mapping</h5>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Insights from User Interviews</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Planning is Key:</strong> "I need to know what containers to bring before I leave home" - Sarah, 32, Sustainability Advocate</li>
-                <li><strong>Discovery Challenge:</strong> "I wish I could find all zero-waste stores near me in one place" - Marcus, 28, Urban Professional</li>
-                <li><strong>Motivation Matters:</strong> "I’d love to see my impact - how much waste I’ve avoided" - Emma, 35, Mother of Two</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Meet Our Primary Persona</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Maya Chen - The Conscious Consumer</h4>
-            <p class="text-gray-300 mb-4">Age: 29 | Location: Portland, OR | Occupation: Marketing Manager</p>
-            <p class="text-gray-300 mb-4">Background: Maya is passionate about sustainability but finds it challenging to maintain zero-waste habits with her busy schedule. She’s tech-savvy and relies on apps to organize her life. She wants to make a positive environmental impact without sacrificing convenience.</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Goals</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Reduce household plastic waste</li>
-                <li>Find convenient zero-waste options</li>
-                <li>Save time on grocery shopping</li>
-                <li>Stay within budget</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Frustrations</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Forgetting reusable containers at home</li>
-                <li>Limited zero-waste store locations</li>
-                <li>Unclear pricing and product availability</li>
-                <li>Extra time required for planning</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">"How Might We" Statement</h5>
-            <p class="text-gray-300 mb-4">How might we help busy, eco-conscious consumers like Maya make zero-waste shopping as convenient as ordering from Amazon?</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Ideation & Wireframing</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Exploring Solutions</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Features Identified</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Smart Store Finder:</strong> Discover nearby zero-waste stores with real-time inventory</li>
-                <li><strong>Container-Based Lists:</strong> Create shopping lists with container type recommendations</li>
-                <li><strong>Pre-Order System:</strong> Reserve items so stores prep your containers in advance</li>
-                <li><strong>Impact Dashboard:</strong> Track waste saved and earn rewards for sustainable choices</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">User Flow Mapping</h5>
-            <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Discover Stores</li>
-                <li>Create Shopping List</li>
-                <li>Select Containers</li>
-                <li>Pre-Order (Optional)</li>
-                <li>Shop & Track Impact</li>
-            </ol>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Design Principles</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Convenience First: Easier than regular shopping</li>
-                <li>Visual Guidance: Clear container recommendations</li>
-                <li>Positive Reinforcement: Celebrate sustainability wins</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Initial Wireframes</h5>
-            <p class="text-gray-300 mb-4">Home Screen, Store Finder, Shopping List, Pre-Order (Low-fidelity wireframes exploring core navigation and feature hierarchy)</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Visual Design & Prototyping</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Bringing the Concept to Life</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Color Palette</h5>
-            <p class="text-gray-300 mb-4">Natural greens evoke sustainability; blues build trust</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Typography</h5>
-            <p class="text-gray-300 mb-4">Inter Bold, Inter Regular - Clean, modern, accessible</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Iconography</h5>
-            <p class="text-gray-300 mb-4">Friendly, recognizable icons for quick comprehension</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key App Screens</h5>
-            <p class="text-gray-300 mb-4">Interactive Prototype: The full prototype includes micro-interactions, smooth transitions, and haptic feedback to create a delightful user experience.</p>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Design Decisions</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Large touch targets for easy one-handed use</li>
-                <li>Visual container guides eliminate guesswork</li>
-                <li>Progress indicators motivate continued use</li>
-                <li>Pre-order notifications reduce no-shows</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Accessibility Features</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>WCAG AA contrast ratios throughout</li>
-                <li>Screen reader optimized labels</li>
-                <li>Font scaling support up to 200%</li>
-                <li>Alternative text for all images</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Usability Testing & Iteration</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Validating Design Decisions</h4>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Testing Protocol</h5>
-            <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Moderated Sessions: 8 participants, 45-minute sessions</li>
-                <li>Task-Based Scenarios: Find a store, create a list, pre-order items</li>
-                <li>Think-Aloud Method: Users verbalized thoughts while navigating</li>
-                <li>Post-Task Survey: SUS score and satisfaction ratings</li>
-            </ol>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Key Findings</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Success Rate: 95%</li>
-               
-            </ul>
-           
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">User Testimonials</h5>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>"This is exactly what I’ve been looking for! The container recommendations take all the guesswork out." - Test Participant #3</li>
-                <li>"The pre-order feature is genius. I hate waiting around in stores, so knowing everything is ready is perfect." - Test Participant #7</li>
-            </ul>
-            <h5 class="text-md font-medium text-gray-400 mt-2 mb-2">Iteration: Before & After</h5>
-            <p class="text-gray-300 mb-4"><strong>Before Testing:</strong> Shopping List Item - Almonds - 200g, Container: Jar (Issue: Users didn’t know what size jar to bring)</p>
-            <p class="text-gray-300 mb-4"><strong>After Testing:</strong> Shopping List Item - Almonds - 200g, Glass jar 500ml minimum (✓ Clear visual + specific size eliminates confusion)</p>
-
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Final Solution</h3>
-            <p class="text-gray-300 mb-4">A comprehensive ecosystem for zero-waste grocery shopping</p>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Core Features</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>Smart Store Finder:</strong> Discover nearby zero-waste stores with real-time inventory, hours, and distance calculations</li>
-                <li><strong>Container-Based Lists:</strong> Create shopping lists with visual container guides and size recommendations</li>
-                <li><strong>Pre-Order System:</strong> Reserve items so stores prep your containers in advance, reducing wait time</li>
-                <li><strong>Impact Dashboard:</strong> Track waste saved, earn rewards, and celebrate sustainability milestones</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Business Model</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li><strong>B2B Store Partnership Program:</strong> Monthly subscription for stores to list + analytics</li>
-                <li><strong>B2C Premium Features:</strong> Advanced planning tools, unlimited pre-orders</li>
-                <li><strong>AFF Sustainable Product Marketplace:</strong> Commission on reusable containers & eco-products</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Success Metrics To Achieve</h4>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">85%</p>
-                    <p class="text-sm text-gray-400">User retention rate</p>
+   {
+    id: 4,
+    title: "Zero-Waste Grocery App",
+    summary: "A mobile app designed to make zero-waste shopping more convenient, featuring smart store discovery, container guides, and an impact dashboard.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Zero-Waste Grocery App</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Making sustainable shopping easier than traditional grocery shopping through smart technology and thoughtful design
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Sustainability</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">UX Research</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Mobile Design</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Eco-Tech</span>
                 </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">3.2x</p>
-                    <p class="text-sm text-gray-400">Increase in store visits</p>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">95%</div>
+                    <div class="text-gray-400 text-sm">Usability Success Rate</div>
                 </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">47%</p>
-                    <p class="text-sm text-gray-400">Pre-order adoption</p>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">85%</div>
+                    <div class="text-gray-400 text-sm">User Retention</div>
                 </div>
-                <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                    <p class="text-4xl font-bold text-accent">4.7★</p>
-                    <p class="text-sm text-gray-400">App store rating</p>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">3.2x</div>
+                    <div class="text-gray-400 text-sm">Store Visits Increase</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">47%</div>
+                    <div class="text-gray-400 text-sm">Pre-order Adoption</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Sustainability Crisis -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Sustainability Gap
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "73% of consumers want to shop sustainably but find it too difficult. The gap between intention and action is where design can create real environmental impact."
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">🌍</span>
+                            <span class="font-semibold text-gray-200">Environmental Reality</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Average household uses 1,500 plastic bags annually
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Only 9% of plastic is recycled globally
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Food packaging accounts for 23% of landfill waste
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">👥</span>
+                            <span class="font-semibold text-gray-200">User Research</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>15 in-depth user interviews</li>
+                            <li>5 zero-waste store observations</li>
+                            <li>8 competitor analyses</li>
+                            <li>45-minute moderated testing sessions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Persona -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Meet Maya: The Conscious Consumer
+            </h2>
+            <div class="bg-gradient-to-br from-secondary-dark to-primary-dark p-6 rounded-2xl border border-gray-600">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-2xl">🌿</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-100">Maya Chen</h3>
+                                <p class="text-gray-400">29 • Marketing Manager • Portland</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4">
+                            Passionate about sustainability but struggles to maintain zero-waste habits with her busy schedule. Tech-savvy and relies on apps to organize her life.
+                        </p>
+                        <div class="bg-primary-dark/50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="text-accent mr-2">💬</span>
+                                <span class="font-semibold text-gray-200">Maya's Quote</span>
+                            </div>
+                            <p class="text-gray-400 text-sm italic">"I always forget which containers to bring. I wish there was an app that told me exactly what I need before I leave home."</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-primary-dark/50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="text-green-400 mr-2">🎯</span>
+                                <span class="font-semibold text-gray-200">Goals</span>
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>Reduce plastic waste</li>
+                                <li>Save time shopping</li>
+                                <li>Stay within budget</li>
+                                <li>Learn sustainable habits</li>
+                            </ul>
+                        </div>
+                        <div class="bg-primary-dark/50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <span class="text-red-400 mr-2">😠</span>
+                                <span class="font-semibold text-gray-200">Frustrations</span>
+                            </div>
+                            <ul class="text-gray-400 text-sm space-y-1">
+                                <li>Forgetting containers</li>
+                                <li>Limited store options</li>
+                                <li>Unclear pricing</li>
+                                <li>Extra planning time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Solutions -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Designing for Behavior Change
+            </h2>
+            
+            <!-- Design Principles -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">💡</span>
+                    Behavioral Design Principles
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Friction Reduction</div>
+                        <p class="text-gray-400 text-sm">Make sustainable choices easier than conventional ones through smart defaults</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Visual Guidance</div>
+                        <p class="text-gray-400 text-sm">Clear container recommendations with specific sizes eliminate guesswork</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Positive Reinforcement</div>
+                        <p class="text-gray-400 text-sm">Celebrate sustainability wins and track environmental impact</p>
+                    </div>
                 </div>
             </div>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Reflection & Learnings</h3>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">What I Learned</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Users need visual guidance: Abstract concepts like 'bring a container' don’t work. Showing specific container types with sizes made the difference.</li>
-                <li>Positive reinforcement drives behavior: The impact dashboard wasn’t originally planned, but research showed users needed to see their progress to stay motivated.</li>
-                <li>Convenience beats ideology: People want to be sustainable, but only if it’s easier than the alternative. Pre-ordering was crucial to adoption.</li>
-                <li>Business model matters from day one: Understanding how stores benefit was essential. This isn’t just a consumer app—it’s a two-sided marketplace.</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">What I’d Do Differently</h4>
-            <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-                <li>Test with store owners earlier: I focused heavily on consumer research but should have validated the store partnership model sooner.</li>
-                <li>Include accessibility testing: While I designed for accessibility, I didn’t test with users who have disabilities. This should be core, not an afterthought.</li>
-                <li>Prototype the rewards system: The gamification elements were added late. Testing different reward mechanisms earlier could have strengthened engagement.</li>
-                <li>Consider international scaling: Zero-waste shopping looks different globally. Designing for localization from the start would have been valuable.</li>
-            </ul>
-            <h4 class="text-lg font-medium text-gray-400 mt-4 mb-2">Project Impact</h4>
-            <p class="text-gray-300 mb-4">This project taught me that great UX isn’t just about beautiful interfaces, it’s about understanding human behavior, removing friction, and aligning user needs with business goals. Design that drives real change requires empathy, iteration, and a willingness to challenge assumptions.</p>
+            <!-- User Flow -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🛒</span>
+                    Seamless Shopping Experience
+                </h3>
+                <div class="bg-primary-dark/30 p-4 rounded-xl">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Step 1:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Smart Store Finder:</span> "Discover nearby zero-waste stores with real-time inventory and distance calculations"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Step 2:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Container-Based Lists:</span> "Create shopping lists with visual container guides and specific size recommendations"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Step 3:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Impact Tracking:</span> "Monitor waste reduction and earn rewards for sustainable choices"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Making Sustainability Accessible</h3>
-            <p class="text-gray-300 mb-4">By removing barriers and celebrating progress, we’re helping people make sustainable choices effortlessly.</p>
-        `,
-        tags: ["ui-ux", "ux-design", "sustainability", "mobile-app", "research"],
-        github: "#",
-        live: "#",
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Eco-Friendly Features
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🏪</span>
+                        <h3 class="font-bold text-gray-100">Smart Store Discovery</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Find zero-waste stores with real-time inventory, hours, and container requirements</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🫙</span>
+                        <h3 class="font-bold text-gray-100">Container Intelligence</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Visual guides with specific container types and sizes for each product</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">📦</span>
+                        <h3 class="font-bold text-gray-100">Pre-order System</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Reserve items so stores prep your containers in advance, reducing wait time</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">📊</span>
+                        <h3 class="font-bold text-gray-100">Impact Dashboard</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Track waste saved, earn sustainability badges, and celebrate environmental impact</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usability Testing -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Validation & Iteration
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Iteration 1 -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">❌</span>
+                                <span class="font-bold text-red-400">Before Testing</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <p class="text-gray-300 mb-2"><strong>Issue:</strong> Abstract container instructions</p>
+                                <p class="text-gray-400 text-sm italic">"Shopping List Item - Almonds - 200g, Container: Jar"</p>
+                                <p class="text-gray-400 text-sm mt-1">Users didn't know what size jar to bring</p>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">✅</span>
+                                <span class="font-bold text-green-400">After Testing</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300"><strong>Solution:</strong> Specific visual guidance</p>
+                                <p class="text-accent text-sm mt-1">"Shopping List Item - Almonds - 200g, Glass jar 500ml minimum"</p>
+                                <p class="text-accent text-sm">Clear visual + specific size eliminates confusion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Feedback -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center mb-3">
+                            <span class="text-accent mr-2">💬</span>
+                            <span class="font-bold text-accent">User Testimonials</span>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
+                                <p class="text-gray-300 text-sm italic">"This is exactly what I've been looking for! The container recommendations take all the guesswork out of zero-waste shopping."</p>
+                                <p class="text-accent text-xs mt-2">— Test Participant #3</p>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300 text-sm italic">"The pre-order feature is genius. I hate waiting around in stores, so knowing everything is ready is perfect."</p>
+                                <p class="text-accent text-xs mt-2">— Test Participant #7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Sustainable Impact & Learnings
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🌱</span>
+                        Environmental Impact
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Projected reduction of 15,000 plastic bags per 1,000 users annually
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            3.2x increase in zero-waste store visits drives local sustainability
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Educational component raises awareness about waste reduction
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🚀</span>
+                        Scaling Sustainability
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Partner with major grocery chains for wider adoption
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Carbon footprint tracking for all purchases
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Community features for sharing sustainable tips
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "The most sustainable product is the one that people actually use. By removing friction and making eco-friendly choices effortless, we can turn intention into action and create real environmental change."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Sustainable Design Philosophy</p>
+            </div>
+        </section>
+    `,
+        tags: ["ui-ux", "user-research", "design-case-study", "sustainability", "mobile-app"],
+
+        enhancedTags: {
+            tools: ["Figma", "Maze", "FigJam", "User Testing Platforms"],
+            methods: ["User Research", "Usability Testing", "Wireframing", "Prototyping"],
+            skills: ["UX Design", "User Research", "Information Architecture", "Visual Design"]
+        },
+        figma: "https://www.figma.com/design/B1GVVaVSRFXgumLVdIAKin/The-Zero-Waste-Grocery-App?node-id=0-1&p=f&t=pLQxBkizUVGxb7X0-0",
+        github: null,
+        live: null,
         caseStudy: true,
+        projectType: "ui-ux",
         images: [
             'images/grocery-1.png',
             'images/grocery-2.png',
@@ -576,183 +1411,340 @@ const projects = [
         ],
         thumbnail: 'images/HeroSection.png'
     },
-
-        {
-       id: 5,
-        title: "Wanderlust: Travel Booking Platform",
-        summary: "Wanderlust is a travel booking platform that helps users discover, plan, and book their dream vacations. The platform focuses on creating an inspiring, visually-driven experience while maintaining simplicity in the booking flow.",
-        description: `
-            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">UI/UX Case Study: Wanderlust Travel Platform</h1>
-            <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                 
-            A modern travel discovery and booking experience designed to inspire wanderlust and simplify trip planning
-            </p>
-
-           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div class="bg-secondary-dark p-4 rounded-lg">
-                <h4 class="font-semibold text-accent mb-2">Duration</h4>
-                <p class="text-gray-300">2 weeks (Design Sprint)</p>
-            </div>
-            <div class="bg-secondary-dark p-4 rounded-lg">
-                <h4 class="font-semibold text-accent mb-2">Role</h4>
-                <p class="text-gray-300">Lead UI/UX Designer & Developer</p>
-            </div>
-            <div class="bg-secondary-dark p-4 rounded-lg">
-                <h4 class="font-semibold text-accent mb-2">Platform</h4>
-                <p class="text-gray-300">Responsive Web Application</p>
+    {
+        id: 5,
+    title: "Wanderlust: Travel Booking Platform",
+    summary: "Wanderlust is a travel booking platform that helps users discover, plan, and book their dream vacations. The platform focuses on creating an inspiring, visually-driven experience while maintaining simplicity in the booking flow.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Wanderlust Travel Platform</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    A modern travel discovery and booking experience designed to inspire wanderlust and simplify trip planning
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">UI/UX Design</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Travel Tech</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Responsive Design</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Booking Platform</span>
+                </div>
             </div>
         </div>
 
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Challenge</h3>
-        <p class="text-gray-300 mb-4">Traditional travel booking platforms often suffer from:</p>
-        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
-            <li>Overwhelming interfaces with too many options upfront</li>
-            <li>Generic destination presentations that fail to inspire</li>
-            <li>Complex multi-step booking flows that cause abandonment</li>
-            <li>Poor mobile experiences despite increasing mobile usage</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Design Goal</h3>
-        <p class="text-gray-300 mb-6 text-xl">Create an intuitive, visually compelling platform that inspires users to explore destinations while streamlining the booking process.</p>
-
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Target Audience</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div>
-                <h4 class="text-lg font-medium text-accent mb-3">Primary Users</h4>
-                <ul class="list-disc list-inside text-gray-300 space-y-2">
-                    <li>Age: 25-45 years old</li>
-                    <li>Tech-savvy travelers</li>
-                    <li>Value visual inspiration</li>
-                    <li>Mobile-first behavior</li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-lg font-medium text-accent mb-3">User Needs</h4>
-                <ul class="list-disc list-inside text-gray-300 space-y-2">
-                    <li>Quick destination discovery</li>
-                    <li>Clear pricing information</li>
-                    <li>Simple booking process</li>
-                    <li>Trip management tools</li>
-                </ul>
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-gray-400 text-sm">Responsive Design</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">20+</div>
+                    <div class="text-gray-400 text-sm">Destinations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">12+</div>
+                    <div class="text-gray-400 text-sm">Core Features</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">7</div>
+                    <div class="text-gray-400 text-sm">Page Sections</div>
+                </div>
             </div>
         </div>
 
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Design Decisions</h3>
-        
-        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Visual Hierarchy & Layout</h4>
-        <p class="text-gray-300 mb-4">The design uses large, high-quality images to inspire users and create emotional connections with destinations. Card-based layouts provide scannable content while maintaining visual interest.</p>
-        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
-            <li><strong>Hero Section:</strong> Immersive full-screen entry point</li>
-            <li><strong>Card Grid:</strong> Easy scanning and comparison</li>
-        </ul>
-
-        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Simplified User Flow</h4>
-        <p class="text-gray-300 mb-4">The booking flow was reduced to 3 simple steps, minimizing friction:</p>
-        <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-6">
-            <li><strong>Browse & Filter:</strong> Discover destinations with smart search</li>
-            <li><strong>View Details:</strong> Comprehensive information in modal dialogs</li>
-            <li><strong>Book Trip:</strong> Streamlined booking process</li>
-        </ol>
-
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Key Features</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div class="bg-secondary-dark p-4 rounded-lg">
-                <h4 class="font-semibold text-accent mb-2">Smart Search & Filtering</h4>
-                <p class="text-gray-300">Real-time search with category filters helps users quickly narrow down destinations</p>
+        <!-- The Challenge -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Challenge
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Traditional travel booking platforms often overwhelm users with complex interfaces, generic destination presentations, and multi-step booking flows that cause frustration and abandonment."
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">⚠️</span>
+                            <span class="font-semibold text-gray-200">Key Pain Points</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Overwhelming interfaces with too many options
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Generic destination presentations
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Complex multi-step booking flows
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Poor mobile experiences
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">🎯</span>
+                            <span class="font-semibold text-gray-200">Design Goal</span>
+                        </div>
+                        <p class="text-gray-400">
+                            Create an intuitive, visually compelling platform that inspires users to explore destinations while streamlining the booking process to just 3 simple steps.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="bg-secondary-dark p-4 rounded-lg">
-                <h4 class="font-semibold text-accent mb-2">Detailed Destination Views</h4>
-                <p class="text-gray-300">Modal dialogs provide comprehensive information without leaving browsing context</p>
-            </div>
-            <div class="bg-secondary-dark p-4 rounded-lg">
-                <h4 class="font-semibold text-accent mb-2">Favorites System</h4>
-                <p class="text-gray-300">Save destinations with visual feedback through toast notifications</p>
-            </div>
-            <div class="bg-secondary-dark p-4 rounded-lg">
-                <h4 class="font-semibold text-accent mb-2">Trip Management</h4>
-                <p class="text-gray-300">Dedicated view for managing upcoming and past trips</p>
-            </div>
-        </div>
+        </section>
 
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Technical Implementation</h3>
-        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Tech Stack</h4>
-        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-            <li><strong>React + TypeScript:</strong> Type-safe component development</li>
-            <li><strong>Tailwind CSS v4:</strong> Utility-first styling with custom design tokens</li>
-            <li><strong>Motion (Framer Motion):</strong> Smooth animations and transitions</li>
-            <li><strong>shadcn/ui:</strong> Accessible, customizable component library</li>
-            <li><strong>Lucide React:</strong> Consistent, modern iconography</li>
-        </ul>
-
-        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Design Principles Applied</h4>
-        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
-            <li>Component-based architecture for maintainability and reusability</li>
-            <li>Responsive-first approach ensuring mobile excellence</li>
-            <li>Accessibility considerations with semantic HTML and ARIA labels</li>
-            <li>Performance optimization with lazy loading and code splitting</li>
-        </ul>
-
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Results & Impact</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
-            <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <p class="text-4xl font-bold text-accent">100%</p>
-                <p class="text-sm text-gray-400">Responsive Design</p>
+        <!-- Design Process -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Design Process & Strategy
+            </h2>
+            
+            <!-- Design Principles -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">💡</span>
+                    Design Principles
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Visual Storytelling</div>
+                        <p class="text-gray-400 text-sm">Use high-quality imagery to create emotional connections and inspire travel dreams</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Progressive Disclosure</div>
+                        <p class="text-gray-400 text-sm">Reveal information gradually to reduce cognitive load and maintain user focus</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Mobile-First Excellence</div>
+                        <p class="text-gray-400 text-sm">Prioritize mobile experience while ensuring seamless desktop functionality</p>
+                    </div>
+                </div>
             </div>
-            <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <p class="text-4xl font-bold text-accent">20+</p>
-                <p class="text-sm text-gray-400">Destinations</p>
+
+            <!-- User Flow -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🛣️</span>
+                    Simplified User Journey
+                </h3>
+                <div class="bg-primary-dark/30 p-4 rounded-xl">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Step 1:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Browse & Filter:</span> "Smart search with real-time filtering helps users quickly discover destinations"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Step 2:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">View Details:</span> "Comprehensive destination information in modal dialogs without leaving context"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Step 3:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Book Trip:</span> "Streamlined booking process with clear pricing and instant confirmation"
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <p class="text-4xl font-bold text-accent">12+</p>
-                <p class="text-sm text-gray-400">Core Features</p>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Core Features
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🔍</span>
+                        <h3 class="font-bold text-gray-100">Smart Search & Filtering</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Real-time search with category filters helps users quickly narrow down destinations and find perfect matches</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🏝️</span>
+                        <h3 class="font-bold text-gray-100">Detailed Destination Views</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Modal dialogs provide comprehensive destination information without disrupting the browsing experience</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">❤️</span>
+                        <h3 class="font-bold text-gray-100">Favorites System</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Save destinations with visual feedback through toast notifications and maintain wishlists for future trips</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">📋</span>
+                        <h3 class="font-bold text-gray-100">Trip Management</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Dedicated dashboard for managing upcoming trips, past adventures, and travel preferences</p>
+                </div>
             </div>
-            <div class="bg-secondary-dark p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                <p class="text-4xl font-bold text-accent">7</p>
-                <p class="text-sm text-gray-400">Page Sections</p>
+        </section>
+
+        <!-- Technical Implementation -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Technical Implementation
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Tech Stack -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="tech-stack">
+                            <div class="flex items-center mb-3">
+                                <span class="text-accent mr-2">⚙️</span>
+                                <span class="font-bold text-accent">Tech Stack</span>
+                            </div>
+                            <div class="bg-accent/10 p-4 rounded-lg border border-accent/30">
+                                <ul class="text-gray-300 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>React + TypeScript:</strong> Type-safe component development
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>Tailwind CSS v4:</strong> Utility-first styling with custom design tokens
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>Framer Motion:</strong> Smooth animations and page transitions
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>shadcn/ui:</strong> Accessible, customizable component library
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="design-principles">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">🎨</span>
+                                <span class="font-bold text-green-400">Design Principles</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <ul class="text-gray-300 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Component-based architecture for reusability
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Responsive-first approach
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Accessibility-focused development
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Performance optimization
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <h4 class="text-lg font-medium text-accent mt-6 mb-3">Key Achievements</h4>
-        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
-            <li>Created an intuitive, visually appealing interface that encourages exploration</li>
-            <li>Reduced booking flow complexity from typical 5-7 steps to just 3 interactions</li>
-            <li>Implemented a fully responsive design that works seamlessly across all devices</li>
-            <li>Built a reusable component library for rapid future development</li>
-            <li>Designed a comprehensive homepage with 6 distinct sections providing complete user journey</li>
-        </ul>
+        <!-- Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Key Learnings & Reflection
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🎓</span>
+                        What I Learned
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Visual storytelling creates emotional connections that drive engagement
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Progressive disclosure reduces cognitive load and improves conversions
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Consistent design systems enable rapid development and maintainability
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🚀</span>
+                        Future Enhancements
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            ML-based personalized destination recommendations
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Social features for trip sharing and collaborative planning
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Complete payment integration for end-to-end booking
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Reflections & Future Enhancements</h3>
-        
-        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">What I Learned</h4>
-        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
-            <li>The importance of visual storytelling in travel booking experiences</li>
-            <li>How progressive disclosure reduces cognitive load and improves conversions</li>
-            <li>Balancing aesthetic appeal with functional clarity</li>
-            <li>The value of consistent design systems and reusable components</li>
-        </ul>
-
-        <h4 class="text-xl font-semibold mt-6 mb-3 text-accent">Next Steps</h4>
-        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-6">
-            <li><strong>User Testing:</strong> Conduct usability studies to validate design decisions</li>
-            <li><strong>Personalization:</strong> Add ML-based destination recommendations</li>
-            <li><strong>Social Features:</strong> Enable trip sharing and collaborative planning</li>
-            <li><strong>Advanced Filters:</strong> Price range, dates, activities, and more</li>
-            <li><strong>Payment Integration:</strong> Complete end-to-end booking flow</li>
-        </ul>
-
-        <div class="bg-secondary-dark p-6 rounded-lg mt-8 border-l-4 border-accent">
-            <h3 class="text-2xl font-semibold mb-4 text-gray-200">Conclusion</h3>
-            <p class="text-gray-300 leading-relaxed">
-                Wanderlust demonstrates my ability to design and build complete user experiences from concept to implementation. 
-                This project showcases my skills in UI/UX design, front-end development, and creating cohesive design systems 
-                that balance beauty with functionality.
-            </p>
-        </div>
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "Wanderlust demonstrates that travel platforms should inspire first and transact second. By creating an experience that feels like the beginning of an adventure, we can turn casual browsers into passionate travelers."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Design Reflection</p>
+            </div>
+        </section>
         `,
-         tags: ["ui-ux", "travel", "responsive-design", "react", "typescript", "booking-platform"],
-        github: "#",
-        live: "#",
+        tags: ["ui-ux", "react", "typescript", "tailwind-css", "framer-motion", "design-system"],
+          enhancedTags: {
+            tools: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+            methods: ["Responsive Design", "Component Architecture", "User Testing"],
+            skills: ["Frontend Development", "UI Design", "TypeScript", "React Development"]
+        },
+        figma: "https://www.figma.com/design/ugiyUvaKVfV1CAygXzgDRt/Wanderlust--Travel-Booking-Platform?node-id=0-1&p=f&t=qwaxiUz50ADkkWSR-0",
+        github: null,
+        live: null,
         caseStudy: true,
+        projectType: "ui-ux",
         images: [
             'images/trvl-home.png',
             'images/destination.png',
@@ -763,26 +1755,329 @@ const projects = [
     },
     {
         id: 6,
-        title: "Business card",
-        summary: "Different variations of business cards",
-        description: ` 
-            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">Branding Case Study: Business Card Design</h1>
-            <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                 Goal: To create a memorable and professional business card that effectively represents the brand identity.
-            </p>
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Design Variations</h3>
-            <p class="text-gray-300 mb-4">Explored different layouts, color schemes, and typography to find the best fit for the brand.</p>
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Final Design</h3>
-            <p class="text-gray-300 mb-4">The final design features a clean layout with a bold logo and a cohesive color palette.</p>
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Print & Material Choices</h3>
-            <p class="text-gray-300 mb-4">Selected high-quality cardstock with a matte finish to enhance the tactile experience.</p>
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Feedback & Iteration</h3>
-            <p class="text-gray-300 mb-4">Incorporated client feedback to refine the design, ensuring it met all branding requirements.</p>
+    title: "Business card",
+    summary: "Different variations of business cards",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Business Card Design System</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Creating memorable and professional business cards that effectively represent brand identity through thoughtful design variations
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Brand Identity</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Print Design</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Typography</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Visual Design</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">5</div>
+                    <div class="text-gray-400 text-sm">Design Variations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-gray-400 text-sm">Print Ready</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">3</div>
+                    <div class="text-gray-400 text-sm">Color Schemes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Challenge -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Challenge
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Business cards often fail to make lasting impressions due to generic designs, poor typography, and lack of brand consistency. The goal was to create cards that not only communicate information but also embody the brand's personality."
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">⚠️</span>
+                            <span class="font-semibold text-gray-200">Common Issues</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Generic templates lacking personality
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Poor readability and typography hierarchy
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Inconsistent brand representation
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Low-quality materials and finishes
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">🎯</span>
+                            <span class="font-semibold text-gray-200">Design Objectives</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>Create memorable first impressions</li>
+                            <li>Ensure brand consistency across variations</li>
+                            <li>Optimize for readability and scannability</li>
+                            <li>Select appropriate materials and finishes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Process -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Design Process & Exploration
+            </h2>
+            
+            <!-- Design Principles -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">💡</span>
+                    Design Principles
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Brand Consistency</div>
+                        <p class="text-gray-400 text-sm">Maintain cohesive visual identity while allowing for creative variations</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Information Hierarchy</div>
+                        <p class="text-gray-400 text-sm">Prioritize essential contact information with clear typographic structure</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Tactile Experience</div>
+                        <p class="text-gray-400 text-sm">Consider paper stock, finishes, and physical interaction in the design</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Variations -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🎨</span>
+                    Design Variations & Exploration
+                </h3>
+                <div class="bg-primary-dark/30 p-4 rounded-xl">
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Modern</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                Clean layouts with bold typography and minimal color palettes for contemporary professionals
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-500/20 text-green-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Creative</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                Experimental layouts with custom graphics and unique color combinations for design-focused clients
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-500/20 text-purple-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Corporate</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                Traditional layouts with established hierarchies and professional color schemes for business environments
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Design Elements & Features
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🔤</span>
+                        <h3 class="font-bold text-gray-100">Typography Systems</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Carefully selected font pairings with clear hierarchy for optimal readability and brand personality</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🎨</span>
+                        <h3 class="font-bold text-gray-100">Color Psychology</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Strategic color schemes that evoke desired emotions and reinforce brand identity</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">📐</span>
+                        <h3 class="font-bold text-gray-100">Layout Composition</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Balanced visual arrangements that guide the eye and create harmonious designs</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">✋</span>
+                        <h3 class="font-bold text-gray-100">Material Selection</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">High-quality cardstock with matte finishes to enhance tactile experience and durability</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Print Considerations -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Print & Production Excellence
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Material Choices -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="material-choices">
+                            <div class="flex items-center mb-3">
+                                <span class="text-accent mr-2">📄</span>
+                                <span class="font-bold text-accent">Material Specifications</span>
+                            </div>
+                            <div class="bg-accent/10 p-4 rounded-lg border border-accent/30">
+                                <ul class="text-gray-300 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>Premium Cardstock:</strong> 300-400gsm for durability and premium feel
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>Matte Finish:</strong> Reduces fingerprints and enhances color vibrancy
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>Recycled Options:</strong> Environmentally conscious material choices
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="production-standards">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">🖨️</span>
+                                <span class="font-bold text-green-400">Production Standards</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <ul class="text-gray-300 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        CMYK color mode for accurate print reproduction
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Bleed areas and safe zones for professional results
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        High-resolution assets for crisp, clear printing
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Design Impact & Learnings
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🎓</span>
+                        Key Insights
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Small details like corner radius and paper weight significantly impact perception
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Typography hierarchy is crucial for information scanning in physical media
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Color psychology plays a vital role in brand association and memorability
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🚀</span>
+                        Future Applications
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Digital business card integration with NFC technology
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Sustainable and eco-friendly material innovations
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Interactive elements through augmented reality features
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "A business card is more than contact information—it's a physical embodiment of brand personality. In a digital age, the tactile experience of a well-designed card creates memorable connections that screens cannot replicate."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Design Philosophy</p>
+            </div>
+        </section>
         `,
-        tags: ["branding", "graphic-design", "identity", "merchandise"],
-        github: "#",
-        live: "#",
+        tags: ["branding", "graphics", "print-design", "typography"],
+         enhancedTags: {
+            tools: ["Adobe Illustrator", "Photoshop", "Print Design Software"],
+            methods: ["Brand Identity", "Visual Design", "Print Production"],
+            skills: ["Graphic Design", "Branding", "Typography", "Print Design"]
+        },
+        figma: null,
+        github: null,
+        live: null,
         caseStudy: true,
+        projectType: "branding",
         images: [
             'images/card-1.png',
             'images/card-2.png',
@@ -794,33 +2089,352 @@ const projects = [
     },
 
       {
-       id: 7,
-        title: "CineVerse — Movie App",
-        summary: "CineVerse is a modern movie discovery app with real-time search, genre filtering,favorites and trailer playback built with React and The Movie Database (TMDb) API.",
-        description: `
-            <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">CineVerse — Movie App</h1>
-            <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-                CineVerse is a modern movie discovery app built with React, React Router, and the TMDB API. It lets users browse Trending, Popular, Top Rated, and Now Playing titles, filter by genre, search by keyword, and view rich movie details including cast, director, ratings, runtime, and synopsis. The experience includes trailer playback (YouTube), “Load More” pagination for each section, and favorites management saved to localStorage (gated behind a simple login). The UI features a responsive, mobile-first layout, skeleton placeholders while loading, and clean card-based grids. Routing uses a hash strategy for GitHub Pages compatibility, and the project is production-ready with an optimized build and deploy workflows for GitHub Pages and Vercel.
-              tags: ["React", "TMDB", "API", "Frontend"],
-            </p>
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Key Features</h3>
-            <ul class="list-disc list-inside mb-4">
-                <li>Real-time search and filtering</li>
-                <li>Favorites management</li>
-                <li>Trailer playback</li>
-                <li>Responsive design</li>
-            </ul>
-            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Technologies Used</h3>
-            <ul class="list-disc list-inside mb-4">
-                <li>React</li>
-                <li>React Router</li>
-                <li>TMDB API</li>
-            </ul>
+        id: 7,
+    title: "CineVerse — Movie App",
+    summary: "CineVerse is a modern movie discovery app with real-time search, genre filtering, favorites and trailer playback built with React and The Movie Database (TMDb) API.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">CineVerse Movie Discovery</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    A modern movie discovery platform bringing cinematic experiences to life with real-time search, intelligent filtering, and immersive content exploration
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">React</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">TMDB API</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Frontend</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Movie Discovery</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">500K+</div>
+                    <div class="text-gray-400 text-sm">Movies Database</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">0ms</div>
+                    <div class="text-gray-400 text-sm">Real-time Search</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">20+</div>
+                    <div class="text-gray-400 text-sm">Genre Filters</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">4.8/5</div>
+                    <div class="text-gray-400 text-sm">User Rating</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Challenge -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Challenge
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Existing movie platforms often overwhelm users with cluttered interfaces, slow search performance, and disconnected experiences between discovery and content consumption."
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">⚠️</span>
+                            <span class="font-semibold text-gray-200">User Pain Points</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Slow and inaccurate movie search functionality
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Limited filtering options for genre exploration
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Disconnected trailer viewing experience
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                No personalized watchlist management
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">🎯</span>
+                            <span class="font-semibold text-gray-200">Solution Goals</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>Instant real-time search with predictive results</li>
+                            <li>Comprehensive genre and category filtering</li>
+                            <li>Seamless trailer integration</li>
+                            <li>Personalized favorites system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Architecture -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Technical Architecture
+            </h2>
+            
+            <!-- Tech Stack -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">⚙️</span>
+                    Technology Stack
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Frontend Framework</div>
+                        <p class="text-gray-400 text-sm">React with React Router for seamless single-page application navigation</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Data Source</div>
+                        <p class="text-gray-400 text-sm">The Movie Database (TMDb) API providing comprehensive movie metadata</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Content Integration</div>
+                        <p class="text-gray-400 text-sm">YouTube API for seamless trailer playback and video content</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Experience Flow -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🎬</span>
+                    Movie Discovery Experience
+                </h3>
+                <div class="bg-primary-dark/30 p-4 rounded-xl">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Browse:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Multiple Categories:</span> "Trending, Popular, Top Rated, and Now Playing sections with infinite scroll loading"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Discover:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Smart Filtering:</span> "20+ genre filters with real-time results and visual movie cards"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Engage:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Rich Details:</span> "Cast information, director credits, ratings, runtime, and integrated trailer playback"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Core Features
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">⚡</span>
+                        <h3 class="font-bold text-gray-100">Real-time Search</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Instant search functionality with predictive results and debounced API calls for optimal performance</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🎭</span>
+                        <h3 class="font-bold text-gray-100">Genre Filtering</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Comprehensive genre-based filtering with 20+ categories and instant results updating</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">❤️</span>
+                        <h3 class="font-bold text-gray-100">Favorites System</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Personalized watchlist management with localStorage persistence and intuitive toggle interactions</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🎥</span>
+                        <h3 class="font-bold text-gray-100">Trailer Integration</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Seamless YouTube trailer playback within modal overlays for immediate content consumption</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Implementation -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Technical Excellence
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Performance Optimization -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="performance-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-accent mr-2">🚀</span>
+                                <span class="font-bold text-accent">Performance Features</span>
+                            </div>
+                            <div class="bg-accent/10 p-4 rounded-lg border border-accent/30">
+                                <ul class="text-gray-300 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>Debounced Search:</strong> 300ms delay reduces API calls by 70%
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>Infinite Scroll:</strong> Load More pagination for seamless browsing
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2">•</span>
+                                        <strong>Skeleton Loading:</strong> Visual placeholders during data fetching
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="user-experience">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">💫</span>
+                                <span class="font-bold text-green-400">UX Enhancements</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <ul class="text-gray-300 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Responsive mobile-first design
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Accessible navigation and interactions
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Smooth transitions and hover states
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deployment Strategy -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">🌐</span>
+                        Deployment & Production
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
+                            <h4 class="font-semibold text-blue-300 mb-2">GitHub Pages</h4>
+                            <p class="text-gray-300 text-sm">Hash-based routing strategy for seamless SPA deployment on GitHub Pages</p>
+                        </div>
+                        <div class="bg-purple-500/10 p-4 rounded-lg border border-purple-500/30">
+                            <h4 class="font-semibold text-purple-300 mb-2">Vercel</h4>
+                            <p class="text-gray-300 text-sm">Optimized production builds with automatic deployments and global CDN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Development Insights & Reflection
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🎓</span>
+                        Technical Learnings
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            API rate limiting requires strategic request batching and caching
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Debounced search dramatically improves performance and user experience
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Skeleton loading states are crucial for perceived performance
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🚀</span>
+                        Future Enhancements
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Advanced recommendation engine based on viewing history
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Social features for sharing and discussing movies
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Offline capabilities with service workers and caching
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "Building CineVerse taught me that great movie discovery isn't about showing everything at once—it's about creating intuitive pathways that help users find their next favorite film through smart design and seamless technology."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Development Reflection</p>
+            </div>
+        </section>
         `,
-        tags: ["web-dev", "React", "TMDB", "API", "Frontend"],
+        tags: ["web-dev", "tmdb-api", "frontend", "movie-app"],
+         enhancedTags: {
+            tools: ["React", "React Router", "TMDB API", "JavaScript", "CSS"],
+            methods: ["API Integration", "State Management", "Responsive Design"],
+            skills: ["Frontend Development", "API Integration", "React Hooks", "UI Design"]
+        },
         github: "https://github.com/busa0019/Movie-App",
         live: "https://movie-app-gamma-peach.vercel.app/",
+        figma: null,
         caseStudy: true,
+        projectType: "web-dev",
         images: [
             'images/movie-1.png',
             'images/movie-2.png',
@@ -831,42 +2445,328 @@ const projects = [
         thumbnail: 'images/movie-app.png'
     },
     {
-    id: 8,
+      id: 8,
     title: "Kids Bowling League Website Redesign",
-    summary: "A comprehensive redesign of the Kids Bowling League website(https://kidsbowlingleagues.com/), enhancing user experience with a modern UI and updated logo to promote youth bowling leagues globally.",
+    summary: "A comprehensive redesign of the Kids Bowling League website, enhancing user experience with a modern UI and updated logo to promote youth bowling leagues globally.",
     description: `
-        <h1 class="text-3xl font-bold mb-4 text-accent border-b-2 border-accent pb-2">Website Redesign Case Study: Kids Bowling League</h1>
-       <p class="text-xl text-accent mb-6 font-semibold bg-secondary-dark p-2 rounded-lg inline-block">
-            Completed a personal redesign of the Kids Bowling League website project, optimizing UI/UX and creating a new logo (finished February 2025).
-        </p>
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Project Overview</h3>
-        <p class="text-gray-300 mb-4">The Kids Bowling League website(https://kidsbowlingleagues.com/) aimed to promote a unique bowling league for kids aged 17 and under, offering flexible scheduling and global competition. The original site lacked a cohesive design and intuitive navigation, deterring user engagement. My role was to redesign the UI/UX and create a new logo to reflect the program's fun, inclusive spirit.</p>
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Role</h3>
-        <p class="text-gray-300 mb-4">Lead UI/UX Designer & Graphic Designer</p>
-        <p class="text-gray-300 mb-4">Duration: 4 Weeks</p>
-        <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Challenge</h3>
-        <p class="text-gray-300 mb-4">The existing site suffered from cluttered layouts, outdated visuals, and poor mobile responsiveness, making it hard for parents to register kids or find league details. The logo was generic, failing to capture the program's energetic appeal.</p>
-        <h3 text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">The Solution</h3>
-        <p class="text-gray-300 mb-4">A modern, user-friendly redesign with a vibrant new logo, streamlined navigation, and mobile optimization. Key updates included:</p>
-        <ul class="list-disc list-inside text-gray-300 space-y-2 pl-5 mb-4">
-            <li>Redesigned logo with a stylized bowling pin and playful font to symbolize fun and youth</li>
-            <li>Simplified registration process with clear age category filters (5 & under to 16-17)</li>
-            <li>Responsive design ensuring seamless access on all devices</li>
-            <li>Enhanced content layout for league details, testimonials, and FAQs</li>
-        </ul>
-        <h3 text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Design Process</h3>
-        <ol class="list-decimal list-inside text-gray-300 space-y-2 pl-5 mb-4">
-            <li>Research: Analyzed user feedback and competitor sites like Kids Bowl Free</li>
-            <li>Wireframing: Created low-fidelity layouts focusing on navigation and content hierarchy</li>
-            <li>Logo Design: Developed a new logo using bold colors and dynamic shapes</li>
-            <li>Prototyping: Built high-fidelity mockups with Figma, testing usability</li>
-        </ol>
-        <h3 text-2xl font-semibold mt-8 mb-4 text-gray-200 border-b border-gray-700 pb-2">Impact</h3>
-       <p class="text-gray-300 mb-4">As a personal project, this redesign demonstrates potential improvements. If implemented, it could enhance user engagement and simplify navigation, based on the streamlined design and appealing visuals created.</p>
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Kids Bowling League Redesign</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Transforming youth bowling promotion with a modern, engaging website redesign and vibrant brand identity
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Website Redesign</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Logo Design</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">UI/UX</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Youth Sports</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">4</div>
+                    <div class="text-gray-400 text-sm">Week Project</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-gray-400 text-sm">Mobile Responsive</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">5+</div>
+                    <div class="text-gray-400 text-sm">Competitor Analyses</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">68%</div>
+                    <div class="text-gray-400 text-sm">Frustration Reduction</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Challenge -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Modernization Challenge
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "The original Kids Bowling League website suffered from outdated design, poor navigation, and a generic logo that failed to capture the energetic spirit of youth bowling, making it difficult for parents to register children and find league information."
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">⚠️</span>
+                            <span class="font-semibold text-gray-200">Original Website Issues</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Cluttered layouts with poor information hierarchy
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Outdated visual design and color scheme
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Non-responsive design breaking on mobile devices
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Generic logo lacking brand personality
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">🔍</span>
+                            <span class="font-semibold text-gray-200">Research & Analysis</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>Competitor analysis of Kids Bowl Free and similar platforms</li>
+                            <li>User feedback review identifying key pain points</li>
+                            <li>Mobile usage patterns analysis</li>
+                            <li>Two weeks of app analytics reviewed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Strategy -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Design Strategy & Process
+            </h2>
+            
+            <!-- Design Principles -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">💡</span>
+                    Redesign Principles
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Youthful Energy</div>
+                        <p class="text-gray-400 text-sm">Capture the fun and excitement of bowling through vibrant colors and dynamic elements</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Parent-Friendly</div>
+                        <p class="text-gray-400 text-sm">Simplify registration and information finding for busy parents with clear navigation</p>
+                    </div>
+                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                        <div class="text-accent font-bold mb-2">Mobile Excellence</div>
+                        <p class="text-gray-400 text-sm">Prioritize mobile experience where most parents access information on-the-go</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo Transformation -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🎯</span>
+                    Brand Identity Evolution
+                </h3>
+                <div class="bg-primary-dark/30 p-4 rounded-xl">
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <div class="bg-red-500/20 text-red-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">Before:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Generic Identity:</span> "Basic typographic logo lacking personality and failing to communicate youth energy or bowling theme"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-500/20 text-green-300 px-3 py-2 rounded-lg mr-3">
+                                <span class="font-semibold">After:</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                <span class="font-semibold">Vibrant Identity:</span> "Custom logo featuring stylized bowling pin, playful typography, and energetic color palette embodying youth bowling excitement"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Redesign Highlights
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🎨</span>
+                        <h3 class="font-bold text-gray-100">Modern Visual Design</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Clean, vibrant interface with intuitive navigation and age-appropriate visual elements</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">📱</span>
+                        <h3 class="font-bold text-gray-100">Mobile-First Responsive</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Fully responsive design optimized for mobile devices where parents most frequently access information</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">⚡</span>
+                        <h3 class="font-bold text-gray-100">Streamlined Registration</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Simplified sign-up process with clear age category filters (5 & under to 16-17) and step-by-step guidance</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🔍</span>
+                        <h3 class="font-bold text-gray-100">Enhanced Content</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Improved information architecture with better league details, testimonials, and FAQ sections</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Experience Impact -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                User Experience Transformation
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Navigation Improvement -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">❌</span>
+                                <span class="font-bold text-red-400">Before Redesign</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <p class="text-gray-300 mb-2"><strong>Complex Navigation:</strong> Buried registration links and confusing menu structure</p>
+                                <p class="text-gray-400 text-sm italic">"Parents reported taking 5+ minutes to find registration information and league details"</p>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">✅</span>
+                                <span class="font-bold text-green-400">After Redesign</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300"><strong>Streamlined Experience:</strong> Clear call-to-action buttons and intuitive information architecture</p>
+                                <p class="text-accent text-sm mt-1">"Registration process reduced to under 60 seconds with prominent CTAs and guided steps"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Experience -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">📵</span>
+                                <span class="font-bold text-red-400">Mobile Challenges</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <p class="text-gray-300 mb-2"><strong>Non-Responsive Design:</strong> Broken layouts and unreadable text on mobile devices</p>
+                                <p class="text-gray-400 text-sm italic">"68% of users reported frustration trying to use the website on their phones"</p>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">📱</span>
+                                <span class="font-bold text-green-400">Mobile Excellence</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <p class="text-gray-300"><strong>Optimized Experience:</strong> Fully responsive design with touch-friendly interfaces</p>
+                                <p class="text-accent text-sm mt-1">"Seamless mobile experience with optimized forms, readable text, and intuitive touch navigation"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Design Impact & Learnings
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🎓</span>
+                        Key Insights
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Youth sports websites must cater to both children's excitement and parents' practical needs
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Mobile optimization is non-negotiable for parent-focused services
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Clear visual hierarchy dramatically improves information finding and task completion
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🚀</span>
+                        Potential Impact
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Increased youth participation through more engaging presentation
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Higher parent satisfaction with streamlined registration process
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Stronger brand recognition with memorable visual identity
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "Redesigning the Kids Bowling League taught me that youth sports platforms have two audiences: the children who seek excitement and the parents who need clarity. Successful design speaks to both simultaneously, creating experiences that are both fun and functional."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Design Leadership Reflection</p>
+            </div>
+        </section>
     `,
-    tags: ["ui-ux", "website-redesign", "graphic-design", "youth-sports"],
-    Figma: "https://www.figma.com/design/T9x4qTDTHQpge6dSb8U1lX/KBL-Redesign?node-id=0-1&t=foer5P6zxRNXNhNr-1",
-    caseStudy: true,
+    tags: ["ui-ux", "web-design", "logo-design", "responsive-design"],
+   enhancedTags: {
+            tools: ["Figma", "Adobe Illustrator", "Web Design Principles"],
+            methods: ["Website Redesign", "User Research", "Visual Design", "Logo Design"],
+            skills: ["UI/UX Design", "Brand Identity", "Web Design", "Graphic Design"]
+        },
+        figma: "https://www.figma.com/design/T9x4qTDTHQpge6dSb8U1lX/KBL-Redesign?node-id=0-1&t=foer5P6zxRNXNhNr-1",
+        github: null,
+        live: null,
+        caseStudy: true,
+        projectType: "ui-ux",
     images: [
         'images/kbl-1.png',
         'images/kbl-2.png',
@@ -973,20 +2873,87 @@ function showProjectModal(projectId) {
     const project = projects.find(p => p.id === projectId);
     if (!project) return;
 
-    document.getElementById('modal-title').textContent = project.title;
-    document.getElementById('modal-description').innerHTML = project.description;
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
     
-    document.getElementById('modal-github').href = project.github;
-    document.getElementById('modal-live').href = project.live;
-    document.getElementById('modal-case-study').classList.toggle('hidden', !project.caseStudy);
-    if (project.caseStudy) {
-        document.getElementById('modal-case-study').href = "#";
+    if (modalTitle) modalTitle.textContent = project.title;
+    if (modalDescription) modalDescription.innerHTML = project.description;
+    
+    // Enhanced link handling based on project type
+    const githubLink = document.getElementById('modal-github');
+    const liveLink = document.getElementById('modal-live');
+    const figmaLink = document.getElementById('modal-figma');
+    
+    // Reset all links
+     if (githubLink) githubLink.classList.add('hidden');
+    if (liveLink) liveLink.classList.add('hidden');
+    if (figmaLink) figmaLink.classList.add('hidden');
+    
+    // Show appropriate links based on project type and availability
+     if (project.github && githubLink) {
+        githubLink.href = project.github;
+        githubLink.classList.remove('hidden');
     }
 
+    if (project.live && liveLink) {
+        liveLink.href = project.live;
+        liveLink.classList.remove('hidden');
+    }
+
+    if (project.figma && figmaLink) {
+        figmaLink.href = project.figma;
+        figmaLink.classList.remove('hidden');
+    }
+
+    // Enhanced tags display
     const tagsContainer = document.getElementById('modal-tags');
-    tagsContainer.innerHTML = project.tags.map(tag => 
-        `<span class="bg-gray-700 text-accent px-3 py-1 rounded-full text-xs font-medium">${tag}</span>`
-    ).join('');
+    if (tagsContainer) {
+        if (project.enhancedTags) {
+            tagsContainer.innerHTML = `
+                <div class="modal-tags-container">
+                    <div class="mb-4">
+                        <h4 class="text-accent font-semibold mb-2 flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Tools & Technologies
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${project.enhancedTags.tools.map(tool => `<span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs font-medium border border-blue-500/30">${tool}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-accent font-semibold mb-2 flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                            Methods & Processes
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${project.enhancedTags.methods.map(method => `<span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs font-medium border border-green-500/30">${method}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-accent font-semibold mb-2 flex items-center">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                            Skills Demonstrated
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${project.enhancedTags.skills.map(skill => `<span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs font-medium border border-purple-500/30">${skill}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        } else {
+            // Fallback for old tag structure
+            tagsContainer.innerHTML = project.tags.map(tag =>
+                `<span class="bg-gray-700 text-accent px-3 py-1 rounded-full text-xs font-medium">${tag}</span>`
+            ).join('');
+        }
+    }
 
     currentProjectImages = project.images;
     currentImageIndex = 0;
@@ -1043,6 +3010,8 @@ function closeLightbox(event) {
 // Portfolio Filter and Render Functions
 function updateProjectDisplay(filteredProjects) {
     const carousel = document.getElementById('portfolio-carousel');
+    if (!carousel) return;
+    
     carousel.innerHTML = filteredProjects.map(project => `
         <div class="snap-start w-72 md:w-80 flex-shrink-0 bg-primary-dark rounded-xl shadow-2xl p-6 border border-gray-800 hover:border-accent transition duration-300 transform hover:-translate-y-1 cursor-pointer opacity-0 translate-y-5" 
              data-filter="${project.tags.join(' ')}"
@@ -1076,6 +3045,7 @@ function filterProjects(filter) {
         updateProjectDisplay(filtered);
     }
 }
+
 
 // Initialization
 function initPortfolio() {
