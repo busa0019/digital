@@ -717,6 +717,719 @@ const projects = [
     thumbnail: 'images/on-road.png'
 },
    {
+    id: 10,
+    title: "Dirt Therapy: Adventure Motorcycling Platform",
+    summary: "A comprehensive website redesign and development project for an adventure motorcycling brand, blending GPS-enabled routes with wellness-focused experiences for the Ontario riding community.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Dirt Therapy</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Transforming adventure motorcycling through curated GPS routes, wellness integration, and community building
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Website Redesign</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">WordPress Development</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Team Leadership</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Brand Strategy</span>
+                </div>
+                <div class="bg-gradient-to-r from-accent/20 to-orange-500/20 p-4 rounded-2xl border border-accent/30 max-w-2xl mx-auto">
+                    <p class="text-lg text-gray-200 font-semibold">
+                        "Inspiring, connecting, and empowering adventure riders through curated GPS routes and wellness-focused experiences"
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">5</div>
+                    <div class="text-gray-400 text-sm">Team Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-gray-400 text-sm">Pages Redesigned</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">8+</div>
+                    <div class="text-gray-400 text-sm">Client Meetings</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">WordPress</div>
+                    <div class="text-gray-400 text-sm">Development Platform</div>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-gray-300"><strong>Team Lead:</strong> Faoziyyah Busari | <strong>Client:</strong> John Boisvenue, Valley Rally Enduro</p>
+                <p class="text-gray-400 text-sm mt-2">Current Status: Redesign Complete - Awaiting Client Content for WordPress Development</p>
+            </div>
+        </div>
+
+        <!-- The Challenge -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Organizational Challenge
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Dirt Therapy's existing website suffered from poor organization, inconsistent design, and lacked the visual appeal needed to establish authority in the adventure motorcycling space. The platform needed to transform from a basic informational site into a comprehensive digital hub for the riding community."
+                </p>
+                
+                <!-- Current Website Reference -->
+                <div class="mt-4 p-4 bg-red-500/10 rounded-lg border border-red-500/30">
+                    <div class="flex items-center mb-2">
+                        <span class="text-red-400 mr-2">🌐</span>
+                        <span class="font-semibold text-red-400">Current Website Reference</span>
+                    </div>
+                    <p class="text-gray-300 mb-2">The original website demonstrates the organizational and design challenges we aimed to solve:</p>
+                    <a href="https://www.dirttherapy.ca" 
+                       class="inline-flex items-center text-red-300 hover:text-red-200 underline"
+                       target="_blank">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        View Current Dirt Therapy Website
+                    </a>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4 mt-4">
+                    <div class="pain-point">
+                        <div class="flex items-center mb-2">
+                            <span class="text-red-400 mr-2">⚠️</span>
+                            <span class="font-semibold text-gray-200">Original Site Issues</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Disorganized content structure confusing users
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Inconsistent visual design and branding
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Poor mobile experience and responsiveness
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                                Lack of clear conversion pathways
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="research-insights">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">🎯</span>
+                            <span class="font-semibold text-gray-200">Business Objectives</span>
+                        </div>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>Increase brand awareness in Ontario ADV community</li>
+                            <li>Build loyal member base through memberships</li>
+                            <li>Generate revenue from premium content</li>
+                            <li>Establish authority in adventure riding space</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Management & Process -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Project Management & Client Collaboration
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Collaboration Tools -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">🛠️</span>
+                        Collaboration Infrastructure
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="tool-card bg-blue-500/10 p-4 rounded-lg border border-blue-500/30">
+                            <div class="flex items-center mb-2">
+                                <span class="text-blue-400 text-lg mr-2">🏕️</span>
+                                <h4 class="font-semibold text-blue-300">Basecamp</h4>
+                            </div>
+                            <p class="text-gray-300 text-sm">Centralized project management for task tracking, document sharing, and team communication</p>
+                        </div>
+                        <div class="tool-card bg-purple-500/10 p-4 rounded-lg border border-purple-500/30">
+                            <div class="flex items-center mb-2">
+                                <span class="text-purple-400 text-lg mr-2">📹</span>
+                                <h4 class="font-semibold text-purple-300">Zoom</h4>
+                            </div>
+                            <p class="text-gray-300 text-sm">Weekly client meetings for progress reviews, feedback sessions, and iterative improvements</p>
+                        </div>
+                        <div class="tool-card bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                            <div class="flex items-center mb-2">
+                                <span class="text-green-400 text-lg mr-2">🔄</span>
+                                <h4 class="font-semibold text-green-300">Iterative Process</h4>
+                            </div>
+                            <p class="text-gray-300 text-sm">Continuous client feedback integration with weekly deliverables and adjustment cycles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekly Process -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">📅</span>
+                        Weekly Collaboration Rhythm
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3 flex-shrink-0">
+                                <span class="font-semibold">Monday</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-4 py-3 rounded-lg flex-1">
+                                <span class="font-semibold">Progress Review:</span> "Team internal sync to review completed work and prepare weekly deliverables for client presentation"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-500/20 text-green-300 px-3 py-2 rounded-lg mr-3 flex-shrink-0">
+                                <span class="font-semibold">Wednesday</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-4 py-3 rounded-lg flex-1">
+                                <span class="font-semibold">Client Meeting:</span> "Weekly Zoom session with John Boisvenue to present progress, gather feedback, and align on next steps"
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-500/20 text-purple-300 px-3 py-2 rounded-lg mr-3 flex-shrink-0">
+                                <span class="font-semibold">Friday</span>
+                            </div>
+                            <div class="bg-gray-600/30 text-gray-300 px-4 py-3 rounded-lg flex-1">
+                                <span class="font-semibold">Implementation:</span> "Team works on integrating client feedback and preparing for next week's deliverables"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Collaboration Results -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">🤝</span>
+                        Client Collaboration Impact
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="collaboration-benefits">
+                            <h4 class="font-semibold text-gray-200 mb-3">Key Benefits Achieved</h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-green-400 mr-2">✓</span>
+                                    <strong>Continuous Alignment:</strong> Weekly meetings ensured client vision was consistently reflected in design decisions
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-400 mr-2">✓</span>
+                                    <strong>Rapid Iteration:</strong> Quick feedback loops allowed for immediate adjustments and improvements
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-400 mr-2">✓</span>
+                                    <strong>Transparent Process:</strong> Client could see progress evolve week-by-week, building trust and confidence
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="client-feedback">
+                            <h4 class="font-semibold text-gray-200 mb-3">Client Feedback Integration</h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    Color palette refinement based on brand identity preferences
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    Content organization adjustments for rider experience flow
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-400 mr-2">•</span>
+                                    Feature prioritization aligned with business objectives
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Audience -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Understanding the Rider Community
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Primary Audience -->
+                <div class="bg-gradient-to-br from-secondary-dark to-primary-dark p-5 rounded-xl border border-gray-600">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 bg-orange-500/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🏍️</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-100">Primary Audience</h3>
+                            <p class="text-gray-400 text-sm">Core Riders</p>
+                        </div>
+                    </div>
+                    <ul class="text-gray-300 space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <span class="text-orange-400 mr-2">•</span>
+                            Adventure & dual-sport riders in Ontario
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-400 mr-2">•</span>
+                            Ages 30-60, affluent, experienced travelers
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-400 mr-2">•</span>
+                            Growing women's rider market
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-400 mr-2">•</span>
+                            Health and wellness focused
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Secondary Audience -->
+                <div class="bg-gradient-to-br from-secondary-dark to-primary-dark p-5 rounded-xl border border-gray-600">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🌍</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-100">Secondary Audience</h3>
+                            <p class="text-gray-400 text-sm">Touring Riders</p>
+                        </div>
+                    </div>
+                    <ul class="text-gray-300 space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">•</span>
+                            Touring riders seeking unique experiences
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">•</span>
+                            Wellness-focused travelers
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">•</span>
+                            "Ride & Recover" experience seekers
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-400 mr-2">•</span>
+                            Cross-province adventure riders
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tertiary Audience -->
+                <div class="bg-gradient-to-br from-secondary-dark to-primary-dark p-5 rounded-xl border border-gray-600">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-lg">🤝</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-100">Tertiary Audience</h3>
+                            <p class="text-gray-400 text-sm">Partners & Collaborators</p>
+                        </div>
+                    </div>
+                    <ul class="text-gray-300 space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2">•</span>
+                            Tourism and wellness partners
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2">•</span>
+                            Spas, lodging, local businesses
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2">•</span>
+                            Triplecalmpmoto.com collaboration
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 mr-2">•</span>
+                            Skills instructors and trainers
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Redesign Strategy -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Redesign Strategy & Process
+            </h2>
+
+              <div class="space-y-6">
+                <!-- Brand Development -->
+                <div class="bg-[#212020] p-5 rounded-xl border border-[#507883]">
+                    <h3 class="text-xl font-semibold text-[#9D9057] mb-4 flex items-center">
+                        <span class="text-lg mr-2">🎨</span>
+                        Brand Identity & Color System
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="color-palette">
+                            <h4 class="font-semibold text-white mb-3">Curated Color Palette</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-[#507883] rounded mr-3 border border-[#DEDEDE]"></div>
+                                    <span class="text-[#DEDEDE] text-sm">Primary Blue - Brand Foundation</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-[#9D9057] rounded mr-3 border border-[#DEDEDE]"></div>
+                                    <span class="text-[#DEDEDE] text-sm">Accent Gold - Wellness & Premium</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-8 h-8 bg-[#D97236] rounded mr-3 border border-[#DEDEDE]"></div>
+                                    <span class="text-[#DEDEDE] text-sm">Accent Orange - Adventure & Action</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="design-principles">
+                            <h4 class="font-semibold text-white mb-3">Design Principles</h4>
+                            <ul class="text-[#DEDEDE] space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-[#9D9057] mr-2">•</span>
+                                    Clean, modern, adventure-inspired aesthetic
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-[#9D9057] mr-2">•</span>
+                                    Bold typography with earthy, organic tones
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-[#9D9057] mr-2">•</span>
+                                    Visual emphasis on adventure and recovery
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Information Architecture -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">🏗️</span>
+                        Information Architecture
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="before-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-red-400 mr-2">📄</span>
+                                <span class="font-bold text-red-400">Before Redesign</span>
+                            </div>
+                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                                <ul class="text-gray-300 space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-red-400 mr-2">•</span>
+                                        Disorganized page structure
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-red-400 mr-2">•</span>
+                                        Inconsistent navigation
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-red-400 mr-2">•</span>
+                                        Content scattered without clear hierarchy
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="after-section">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">✅</span>
+                                <span class="font-bold text-green-400">After Redesign</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <ul class="text-gray-300 space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Clear content categorization
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Intuitive user pathways
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Strategic conversion funnels
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Platform Features & Functionality
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🗺️</span>
+                        <h3 class="font-bold text-gray-100">GPS Route Library</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Curated GPS routes with free and premium GPX file downloads, categorized by difficulty and experience level</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">💆</span>
+                        <h3 class="font-bold text-gray-100">Ride & Recover Itineraries</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Premium packages integrating wellness experiences, spa visits, and recovery strategies with riding routes</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">👥</span>
+                        <h3 class="font-bold text-gray-100">Members-Only Portal</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Exclusive content area for premium members with advanced route planning tools and community features</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🤝</span>
+                        <h3 class="font-bold text-gray-100">Partner Integration</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Strategic collaborations with Thrash Moto Co., Ride the Vibe, Scandinave Spa, and Triplecalmpmoto.com</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Implementation -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Technical Implementation
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Development Stack -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">⚙️</span>
+                        Development Stack & Approach
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="platform-features">
+                            <h4 class="font-semibold text-gray-200 mb-3">WordPress Platform</h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Custom theme development for brand consistency
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Responsive, mobile-first design implementation
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Membership and e-commerce plugin integration
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="integration-features">
+                            <h4 class="font-semibold text-gray-200 mb-3">Third-Party Integrations</h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Mailchimp for email marketing and lead capture
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Social media integration for community engagement
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Future e-commerce functionality for merchandise
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Timeline -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">📅</span>
+                        Project Timeline & Status
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-green-500/10 rounded-lg border border-green-500/30">
+                            <span class="text-gray-300 font-semibold">Phase 1: Discovery & Strategy</span>
+                            <span class="bg-green-500 text-white px-2 py-1 rounded text-xs">Completed</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-green-500/10 rounded-lg border border-green-500/30">
+                            <span class="text-gray-300 font-semibold">Phase 2: Design & Redesign</span>
+                            <span class="bg-green-500 text-white px-2 py-1 rounded text-xs">Completed</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-yellow-500/10 rounded-lg border border-yellow-500/30">
+                            <span class="text-gray-300 font-semibold">Phase 3: Content Population</span>
+                            <span class="bg-yellow-500 text-white px-2 py-1 rounded text-xs">Awaiting Client</span>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-500/10 rounded-lg border border-gray-500/30">
+                            <span class="text-gray-300 font-semibold">Phase 4: WordPress Development</span>
+                            <span class="bg-gray-500 text-white px-2 py-1 rounded text-xs">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Leadership & Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Team Leadership & Strategic Impact
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="leadership-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">👨‍💼</span>
+                        Leadership Role
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Leading 5-person team through comprehensive website redesign
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Coordinating client communications and requirement gathering
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Managing brand strategy and visual identity development
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Overseeing information architecture and user experience design
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="business-impact-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">📈</span>
+                        Business Impact
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Establishing authority in Ontario adventure riding community
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Creating multiple revenue streams through premium content
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Building platform for strategic partnerships and collaborations
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Enhancing brand visibility through cross-platform integration
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Current Status -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-orange-500/10 p-5 rounded-xl border border-accent/30">
+                <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                    <span class="text-lg mr-2">🔄</span>
+                    Current Project Status
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-200 mb-2">Completed</h4>
+                        <ul class="text-gray-300 space-y-1 text-sm">
+                            <li class="flex items-start">
+                                <span class="text-green-400 mr-2">✓</span>
+                                Comprehensive website audit and analysis
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-400 mr-2">✓</span>
+                                Brand color palette and visual identity
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-400 mr-2">✓</span>
+                                Complete page redesign and information architecture
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-400 mr-2">✓</span>
+                                User experience strategy and wireframing
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-200 mb-2">Next Steps</h4>
+                        <ul class="text-gray-300 space-y-1 text-sm">
+                            <li class="flex items-start">
+                                <span class="text-blue-400 mr-2">→</span>
+                                Client content delivery and organization
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-400 mr-2">→</span>
+                                WordPress theme development and implementation
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-400 mr-2">→</span>
+                                Content population and SEO optimization
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-400 mr-2">→</span>
+                                Testing and launch preparation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "Dirt Therapy represents the perfect fusion of adventure and wellness—transforming how riders experience their journeys both on and off the road. Our redesign creates a digital home that reflects this unique brand philosophy while building a sustainable platform for community growth and business success."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Project Leadership Perspective</p>
+            </div>
+        </section>
+    `,
+    tags: ["web-design", "wordpress", "team-leadership", "brand-strategy", "website-redesign", "adventure-sports", "client-collaboration"],
+    enhancedTags: {
+        tools: ["WordPress", "Figma", "Figjam", "Basecamp", "Zoom", "Project Management"],
+        methods: ["Client Communication", "Team Coordination", "Brand Development", "Information Architecture", "Iterative Design"],
+        skills: ["Project Leadership", "Web Design", "WordPress Development", "Client Management", "Strategic Planning", "Stakeholder Communication"]
+    },
+    figma: "https://www.figma.com/design/4aHXjhBm0ESdhwABWPMtdh/Dirt-therapy-Redesign?node-id=2-641&t=MlzPWjwpnNlS5LhM-1",
+    github: null,
+    live: "#",
+    caseStudy: true,
+    projectType: "web-dev",
+    images: [
+        'images/b1.png',
+        'images/b2.png',
+        'images/b3.png',
+        'images/b4.png',
+        'images/b5.png',
+        'images/b6.png',
+        'images/b7.png',
+        'images/b8.png',
+        'images/b9.png',
+    ],
+    thumbnail: 'images/bike.png'
+},
+   {
     id: 1,
     title: "Multi-Modal Voice UI Design: Voice Kitchen Assistant App",
     summary: "A hands-free voice-first UI for cooking, blending voice commands with visual cues to make kitchen tasks more accessible and efficient.",
