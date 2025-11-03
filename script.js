@@ -5,6 +5,717 @@ let currentImageIndex = 0;
 
 // Portfolio projects data
 const projects = [
+    {
+    id: 9,
+    title: "ON-Road: Smart Glasses Navigation Companion",
+    summary: "A revolutionary companion app that transforms smart glasses into the ultimate hands-free navigation tool, ensuring users can travel confidently, safely, and efficiently without ever needing to check their phone.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">ON-Road App</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Transforming smart glasses into the ultimate hands-free navigation tool for confident, safe, and efficient travel
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Smart Glasses</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Hands-Free Navigation</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">UX Research</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Team Leadership</span>
+                </div>
+                <div class="bg-gradient-to-r from-accent/20 to-purple-500/20 p-4 rounded-2xl border border-accent/30 max-w-2xl mx-auto">
+                    <p class="text-lg text-gray-200 font-semibold">
+                        "The first fully customizable navigation app designed exclusively for smart glasses, offering adaptive display, AI-driven smart routing and a truly hands-free experience."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">4</div>
+                    <div class="text-gray-400 text-sm">Team Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">14</div>
+                    <div class="text-gray-400 text-sm">Week Project</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">22</div>
+                    <div class="text-gray-400 text-sm">User Tests</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">3</div>
+                    <div class="text-gray-400 text-sm">Maze Tests</div>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-gray-300"><strong>Team Lead:</strong> Faoziyyah Busari | <strong>Client:</strong> Rick Bond</p>
+            </div>
+        </div>
+
+        <!-- The Vision -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                The Vision & Opportunity
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Smart glasses provide hands-free navigation, enhancing safety by keeping directions in view. However, a mobile app is needed to manage settings, sync navigation data, and provide real-time updates. Currently, there is no intuitive app that seamlessly integrates with smart glasses."
+                </p>
+                
+                <!-- Competitive Landscape -->
+                <div class="mt-6">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">🏆</span>
+                        Competitive Landscape
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                            <h4 class="font-semibold text-red-300 mb-3">Existing Solutions</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li class="flex items-start">
+                                    <span class="text-red-400 mr-2">•</span>
+                                    <strong>Google Maps & Apple Maps:</strong> Lack smart glass integration & display customization
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-400 mr-2">•</span>
+                                    <strong>HUDWAY & Garmin HUD:</strong> Don't support real-time updates & personalization
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                            <h4 class="font-semibold text-green-300 mb-3">Our Unique Advantage</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li class="flex items-start">
+                                    <span class="text-green-400 mr-2">•</span>
+                                    Full Smart Glass Integration with seamless wearable sync
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-400 mr-2">•</span>
+                                    Adaptive Navigation adjusting display in real-time
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-400 mr-2">•</span>
+                                    AI-Powered Smart Routing with dynamic hazard alerts
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Research -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Deep User Research & Insights
+            </h2>
+
+            <!-- Focus Group Findings -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">👥</span>
+                    Focus Group Key Findings
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-primary-dark/30 p-5 rounded-xl">
+                        <div class="flex items-center mb-3">
+                            <span class="text-green-400 mr-2">✅</span>
+                            <span class="font-bold text-green-400">Validated Assumptions</span>
+                        </div>
+                        <ul class="text-gray-300 space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Strong support for smart glasses improving road safety
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Preference for voice commands and minimal visual distractions
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Interest in music control, messaging, and call management integration
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-dark/30 p-5 rounded-xl">
+                        <div class="flex items-center mb-3">
+                            <span class="text-red-400 mr-2">🔄</span>
+                            <span class="font-bold text-red-400">Assumptions to Rethink</span>
+                        </div>
+                        <ul class="text-gray-300 space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Prescription lens compatibility is a major concern
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Privacy and data security require stronger measures
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Real-time accuracy must be prioritized to prevent missed turns
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Personas -->
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">👤</span>
+                    Target User Personas
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <!-- Persona 1 -->
+                    <div class="bg-gradient-to-br from-secondary-dark to-primary-dark p-4 rounded-xl border border-gray-600">
+                        <div class="flex items-center mb-3">
+                            <div class="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mr-3">
+                                <span class="text-xl">💼</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-100">John Matthews</h4>
+                                <p class="text-gray-400 text-sm">Sales Executive, 42</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-3">Needs customizable display settings for vision problems during long drives</p>
+                        <div class="space-y-1">
+                            <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-xs">Hands-Free Navigation</span>
+                            <span class="bg-blue-500/20 text-blue-300 px-2 py-1 rounded text-xs">Customizable Display</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Persona 2 -->
+                    <div class="bg-gradient-to-br from-secondary-dark to-primary-dark p-4 rounded-xl border border-gray-600">
+                        <div class="flex items-center mb-3">
+                            <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mr-3">
+                                <span class="text-xl">🌍</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-100">Alicia</h4>
+                                <p class="text-gray-400 text-sm">Urban Explorer & Travel Vlogger</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-3">Wants immersive exploration with points of interest and scenic routes</p>
+                        <div class="space-y-1">
+                            <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded text-xs">Points of Interest</span>
+                            <span class="bg-green-500/20 text-green-300 px-2 py-1 rounded text-xs">Scenic Routes</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Persona 3 -->
+                    <div class="bg-gradient-to-br from-secondary-dark to-primary-dark p-4 rounded-xl border border-gray-600">
+                        <div class="flex items-center mb-3">
+                            <div class="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mr-3">
+                                <span class="text-xl">🏍️</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-100">Claire</h4>
+                                <p class="text-gray-400 text-sm">Motorcycle Commuter</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-3">Requires voice-assisted navigation for safe riding in busy streets</p>
+                        <div class="space-y-1">
+                            <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-xs">Voice Feedback</span>
+                            <span class="bg-purple-500/20 text-purple-300 px-2 py-1 rounded text-xs">Safety First</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usability Testing -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Usability Testing & Iteration
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Maze Test 1 -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="test-results">
+                            <div class="flex items-center mb-3">
+                                <span class="text-accent mr-2">🔗</span>
+                                <span class="font-bold text-accent">Maze 1: Connecting Smart Glasses</span>
+                            </div>
+                            <div class="bg-accent/10 p-4 rounded-lg border border-accent/30">
+                                <div class="grid grid-cols-2 gap-4 mb-3">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-accent">57.1%</div>
+                                        <div class="text-gray-400 text-sm">Success Rate</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-red-400">53.6%</div>
+                                        <div class="text-gray-400 text-sm">Misclick Rate</div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 text-sm"><strong>Key Insight:</strong> Users struggled with unclear interface elements and needed clearer visual cues for the connection process</p>
+                            </div>
+                        </div>
+                        <div class="improvements">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">✨</span>
+                                <span class="font-bold text-green-400">Implemented Solutions</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <ul class="text-gray-300 space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Added clear loading animation with progress messages
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Enhanced "Start Connection" button with better visual cues
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Implemented onboarding guidance for first-time users
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maze Test 2 -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="test-results">
+                            <div class="flex items-center mb-3">
+                                <span class="text-accent mr-2">⚙️</span>
+                                <span class="font-bold text-accent">Maze 2: Smart Glasses Preferences</span>
+                            </div>
+                            <div class="bg-accent/10 p-4 rounded-lg border border-accent/30">
+                                <div class="grid grid-cols-2 gap-4 mb-3">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-accent">80%</div>
+                                        <div class="text-gray-400 text-sm">Success Rate</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-red-400">59.5%</div>
+                                        <div class="text-gray-400 text-sm">Misclick Rate</div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 text-sm"><strong>Key Insight:</strong> High misclick rate indicated navigation ambiguity and discoverability issues</p>
+                            </div>
+                        </div>
+                        <div class="improvements">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">✨</span>
+                                <span class="font-bold text-green-400">Implemented Solutions</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <ul class="text-gray-300 space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Simplified navigation by consolidating related settings
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Added subtle guidance hints on home screen
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Enhanced visual cues and label clarity
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maze Test 3 -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="test-results">
+                            <div class="flex items-center mb-3">
+                                <span class="text-accent mr-2">🛣️</span>
+                                <span class="font-bold text-accent">Maze 3: Start a New Trip</span>
+                            </div>
+                            <div class="bg-accent/10 p-4 rounded-lg border border-accent/30">
+                                <div class="grid grid-cols-2 gap-4 mb-3">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-accent">60%</div>
+                                        <div class="text-gray-400 text-sm">Success Rate</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-red-400">82.2%</div>
+                                        <div class="text-gray-400 text-sm">Misclick Rate</div>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 text-sm"><strong>Key Insight:</strong> Users found clickable areas unclear and needed better onboarding guidance</p>
+                            </div>
+                        </div>
+                        <div class="improvements">
+                            <div class="flex items-center mb-3">
+                                <span class="text-green-400 mr-2">✨</span>
+                                <span class="font-bold text-green-400">Implemented Solutions</span>
+                            </div>
+                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                                <ul class="text-gray-300 space-y-2 text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Added brief tutorial pop-up for new users
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Enhanced visual hierarchy and button clarity
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-green-400 mr-2">•</span>
+                                        Improved size and placement of clickable zones
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<div class="mt-4 text-center">
+    <p class="text-gray-400 text-sm">
+        Conducted 3 comprehensive Maze tests with 22 participants total. 
+        <a href="#maze-results" class="text-accent hover:underline">View detailed results above</a>
+    </p>
+</div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Core Features & Innovation
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">👓</span>
+                        <h3 class="font-bold text-gray-100">Smart Glasses Integration</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Seamless pairing and synchronization with wearable devices for instant hands-free navigation</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🎨</span>
+                        <h3 class="font-bold text-gray-100">Adaptive Display</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Real-time display adjustments based on lighting conditions and user preferences for optimal visibility</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🤖</span>
+                        <h3 class="font-bold text-gray-100">AI-Powered Routing</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Dynamic route optimization with hazard alerts, POI suggestions, and personalized recommendations</p>
+                </div>
+                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                    <div class="flex items-center mb-3">
+                        <span class="text-accent text-xl mr-3">🎵</span>
+                        <h3 class="font-bold text-gray-100">Integrated Ecosystem</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm">Music control, messaging, and call management via voice commands for complete hands-free operation</p>
+                </div>
+            </div>
+        </section>
+
+        // Add this section right after the "Core Features" section in your ON-Road project
+
+<!-- Interactive Prototypes -->
+<section class="mb-8">
+    <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+        <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+        Interactive Prototypes
+    </h2>
+    
+    <div class="grid md:grid-cols-3 gap-6">
+        <!-- Main Design File -->
+        <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+            <div class="flex items-center mb-4">
+                <span class="text-accent text-xl mr-3">🎨</span>
+                <div>
+                    <h3 class="font-bold text-gray-100">Main Design File</h3>
+                    <p class="text-gray-400 text-sm">Complete wireframes, moodboard, and design system</p>
+                </div>
+            </div>
+            <a href="https://www.figma.com/design/xxft9cAbd1YqcyTRb3PEfu/ON-Road-App?node-id=1-6&t=JOayH1A9kBgUVuOt-1" 
+               class="inline-flex items-center bg-accent hover:bg-accent/80 text-primary-dark px-4 py-2 rounded-lg transition duration-300 font-semibold"
+               target="_blank">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+                Open Main Figma File
+            </a>
+        </div>
+
+        <!-- Mobile Prototype -->
+        <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+            <div class="flex items-center mb-4">
+                <span class="text-blue-400 text-xl mr-3">📱</span>
+                <div>
+                    <h3 class="font-bold text-gray-100">Mobile Prototype</h3>
+                    <p class="text-gray-400 text-sm">Fully interactive mobile experience</p>
+                </div>
+            </div>
+            <a href="https://www.figma.com/proto/cS5ud9t2dsirWGSc6OR41C/Group-05---week10-Lo-Fi-Wireframes-Focus-group-?node-id=247-16951&p=f&t=TkmWkaeapl0GuHcO-1&scaling=scale-down&content-scaling=fixed&page-id=208%3A18509&starting-point-node-id=247%3A16951&show-proto-sidebar=1" 
+               class="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-300 font-semibold"
+               target="_blank">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                </svg>
+                Try Mobile Prototype
+            </a>
+        </div>
+
+        <!-- Tablet Prototype -->
+        <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+            <div class="flex items-center mb-4">
+                <span class="text-green-400 text-xl mr-3">💻</span>
+                <div>
+                    <h3 class="font-bold text-gray-100">Tablet Prototype</h3>
+                    <p class="text-gray-400 text-sm">Optimized tablet interface</p>
+                </div>
+            </div>
+            <a href="https://www.figma.com/proto/cS5ud9t2dsirWGSc6OR41C/Group-05---week10-Lo-Fi-Wireframes-Focus-group-?node-id=357-1755&p=f&t=yI03ustzTDMZPHSj-1&scaling=scale-down&content-scaling=fixed&page-id=208%3A18510&starting-point-node-id=357%3A1755&show-proto-sidebar=1" 
+               class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition duration-300 font-semibold"
+               target="_blank">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                </svg>
+                Try Tablet Prototype
+            </a>
+        </div>
+    </div>
+
+    <!-- Prototype Instructions -->
+    <div class="mt-6 bg-gradient-to-r from-accent/10 to-blue-500/10 p-4 rounded-xl border border-accent/30">
+        <h4 class="font-semibold text-accent mb-2 flex items-center">
+            <span class="text-lg mr-2">💡</span>
+            How to Navigate the Prototypes
+        </h4>
+        <ul class="text-gray-300 space-y-2 text-sm">
+            <li class="flex items-start">
+                <span class="text-accent mr-2">•</span>
+                <strong>Main Design File:</strong> Explore the complete design system, moodboard, and all wireframes
+            </li>
+            <li class="flex items-start">
+                <span class="text-accent mr-2">•</span>
+                <strong>Interactive Prototypes:</strong> Click through the full user flow with working transitions
+            </li>
+            <li class="flex items-start">
+                <span class="text-accent mr-2">•</span>
+                <strong>Device Testing:</strong> Test both mobile and tablet experiences for responsive design
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <!-- Technical Implementation -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Technical Architecture & Flow
+            </h2>
+
+            <div class="space-y-6">
+                <!-- User Flow -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">🔄</span>
+                        Optimized User Flow
+                    </h3>
+                    <div class="bg-gray-700/30 p-4 rounded-lg">
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <div class="bg-blue-500/20 text-blue-300 px-3 py-2 rounded-lg mr-3">
+                                    <span class="font-semibold">Setup</span>
+                                </div>
+                                <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                    Smart glasses pairing → Display customization → Preference settings
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-500/20 text-green-300 px-3 py-2 rounded-lg mr-3">
+                                    <span class="font-semibold">Navigation</span>
+                                </div>
+                                <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                    Voice/search input → Route selection → Real-time guidance → Destination arrival
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-500/20 text-purple-300 px-3 py-2 rounded-lg mr-3">
+                                    <span class="font-semibold">Integration</span>
+                                </div>
+                                <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
+                                    Music control → Message responses → Call management → Trip analytics
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design System -->
+                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                        <span class="text-lg mr-2">🎨</span>
+                        Design System & Accessibility
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="design-principles">
+                            <h4 class="font-semibold text-gray-200 mb-3">Design Principles</h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    <strong>Clarity First:</strong> Minimal distractions with maximum information density
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    <strong>Voice-First Interaction:</strong> Prioritize auditory over visual when possible
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    <strong>Adaptive Accessibility:</strong> Customizable for vision impairments and preferences
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="accessibility-features">
+                            <h4 class="font-semibold text-gray-200 mb-3">Accessibility Features</h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Adjustable text size and contrast settings
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    Voice command alternatives for all actions
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-accent mr-2">•</span>
+                                    High-contrast mode for low-light conditions
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Leadership & Reflection -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Team Leadership & Project Reflection
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="leadership-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">👨‍💼</span>
+                        Team Leadership Role
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Led 4-person team through 14-week design and research process
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Coordinated focus groups and usability testing with 22 participants
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Managed client communications with Rick Bond throughout project
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Directed iterative design process based on Maze testing insights
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="learnings-card bg-primary-dark/30 p-5 rounded-xl">
+                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                        <span class="text-lg mr-2">🎓</span>
+                        Key Learnings
+                    </h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Hands-free navigation requires balancing information density with minimal distraction
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            User testing reveals critical insights that challenge initial assumptions
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Effective team leadership involves synthesizing diverse perspectives into cohesive vision
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project Impact -->
+            <div class="mt-6 bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">📈</span>
+                    Project Impact & Metrics
+                </h3>
+                <div class="grid md:grid-cols-3 gap-4 text-center">
+                    <div class="bg-accent/10 p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-accent">68%</div>
+                        <div class="text-gray-400 text-sm">Reduction in User Frustration</div>
+                    </div>
+                    <div class="bg-green-500/10 p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-green-400">4.5/5</div>
+                        <div class="text-gray-400 text-sm">Average Usability Rating</div>
+                    </div>
+                    <div class="bg-blue-500/10 p-4 rounded-lg">
+                        <div class="text-2xl font-bold text-blue-400">100%</div>
+                        <div class="text-gray-400 text-sm">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Quote -->
+            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+                <blockquote class="text-lg italic text-gray-300 text-center">
+                    "Leading the ON-Road project taught me that true innovation lies not in adding more features, but in removing distractions. The most sophisticated navigation system is the one you don't notice—it simply guides you safely to your destination while keeping your focus where it belongs: on the journey itself."
+                </blockquote>
+                <p class="text-accent text-center mt-3 font-semibold">— Team Lead Reflection</p>
+            </div>
+        </section>
+    `,
+    tags: ["ui-ux", "team-leadership", "smart-glasses", "hands-free-navigation", "user-research", "maze-testing"],
+    enhancedTags: {
+        tools: ["Figma", "Maze", "Zoom", "User Research", "Prototyping"],
+        methods: ["Team Leadership", "Usability Testing", "Focus Groups", "Iterative Design"],
+        skills: ["Project Management", "User Research", "UX Design", "Client Communication", "Team Coordination"]
+    },
+    figma: "https://www.figma.com/design/xxft9cAbd1YqcyTRb3PEfu/ON-Road-App?node-id=1-6&t=JOayH1A9kBgUVuOt-1",
+    github: null,
+    live: null,
+    caseStudy: true,
+    projectType: "ui-ux",
+    images: [
+        'images/road-1.png',
+        'images/road-2.png', 
+        'images/road-3.png',
+        'images/road-4.png',
+        'images/road-5.png',
+        'images/road-6.png',
+        'images/road-7.png',
+        'images/road-8.png',
+        'images/road-9.png'
+    ],
+    thumbnail: 'images/on-road.png'
+},
    {
     id: 1,
     title: "Multi-Modal Voice UI Design: Voice Kitchen Assistant App",
