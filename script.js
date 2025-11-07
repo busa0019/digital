@@ -3507,7 +3507,10 @@ const projects = [
             'images/card-2.png',
             'images/card-3.png',
             'images/card-4.png',
-            'images/card-5.png'
+            'images/card-7.png',
+            'images/card-6.png',
+            'images/card-8.png',
+            'images/card-9.png'
         ],
         thumbnail: 'images/b.card.png'
     },
@@ -3869,336 +3872,343 @@ const projects = [
         thumbnail: 'images/movie-app.png'
     },
     {
-      id: 8,
-    title: "Kids Bowling League Website Redesign",
-    summary: "A comprehensive redesign of the Kids Bowling League website, enhancing user experience with a modern UI and updated logo to promote youth bowling leagues globally.",
-    description: `
-        <!-- Hero Section -->
-        <div class="case-study-hero mb-8">
-            <div class="text-center mb-8">
-                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Kids Bowling League Redesign</h1>
-                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
-                    Transforming youth bowling promotion with a modern, engaging website redesign and vibrant brand identity
-                </p>
-                <div class="flex flex-wrap justify-center gap-3 mb-6">
-                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Website Redesign</span>
-                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Logo Design</span>
-                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">UI/UX</span>
-                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Youth Sports</span>
-                </div>
-            </div>
-        </div>
+  id: 8,
+  title: "EcoSwap - Sustainable Item Exchange Platform",
+  summary: "A mobile app that connects people to exchange items they no longer need, promoting sustainability and building community while reducing waste.",
+  description: `
+      <!-- Hero Section -->
+      <div class="case-study-hero mb-8">
+          <div class="text-center mb-8">
+              <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">EcoSwap</h1>
+              <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                  Connecting communities through sustainable item exchange with a trust-first mobile platform
+              </p>
+              <div class="flex flex-wrap justify-center gap-3 mb-6">
+                  <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Mobile App Design</span>
+                  <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">UX Research</span>
+                  <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Sustainable Design</span>
+                  <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Community Platform</span>
+              </div>
+          </div>
+      </div>
 
-        <!-- Project Overview -->
-        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
-            <div class="grid md:grid-cols-4 gap-6 text-center">
-                <div class="stat-card">
-                    <div class="text-3xl font-bold text-accent mb-2">4</div>
-                    <div class="text-gray-400 text-sm">Week Project</div>
-                </div>
-                <div class="stat-card">
-                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
-                    <div class="text-gray-400 text-sm">Mobile Responsive</div>
-                </div>
-                <div class="stat-card">
-                    <div class="text-3xl font-bold text-accent mb-2">5+</div>
-                    <div class="text-gray-400 text-sm">Competitor Analyses</div>
-                </div>
-                <div class="stat-card">
-                    <div class="text-3xl font-bold text-accent mb-2">68%</div>
-                    <div class="text-gray-400 text-sm">Frustration Reduction</div>
-                </div>
-            </div>
-        </div>
+      <!-- Project Overview -->
+      <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+          <div class="grid md:grid-cols-4 gap-6 text-center">
+              <div class="stat-card">
+                  <div class="text-3xl font-bold text-accent mb-2">6</div>
+                  <div class="text-gray-400 text-sm">Week Project</div>
+              </div>
+              <div class="stat-card">
+                  <div class="text-3xl font-bold text-accent mb-2">92%</div>
+                  <div class="text-gray-400 text-sm">Task Success Rate</div>
+              </div>
+              <div class="stat-card">
+                  <div class="text-3xl font-bold text-accent mb-2">84</div>
+                  <div class="text-gray-400 text-sm">SUS Score</div>
+              </div>
+              <div class="stat-card">
+                  <div class="text-3xl font-bold text-accent mb-2">11/12</div>
+                  <div class="text-gray-400 text-sm">Would Recommend</div>
+              </div>
+          </div>
+      </div>
 
-        <!-- The Challenge -->
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
-                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
-                The Modernization Challenge
-            </h2>
-            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
-                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
-                    "The original Kids Bowling League website suffered from outdated design, poor navigation, and a generic logo that failed to capture the energetic spirit of youth bowling, making it difficult for parents to register children and find league information."
-                </p>
-                <div class="grid md:grid-cols-2 gap-4 mt-4">
-                    <div class="pain-point">
-                        <div class="flex items-center mb-2">
-                            <span class="text-red-400 mr-2">⚠️</span>
-                            <span class="font-semibold text-gray-200">Original Website Issues</span>
-                        </div>
-                        <ul class="text-gray-400 space-y-2">
-                            <li class="flex items-center">
-                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
-                                Cluttered layouts with poor information hierarchy
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
-                                Outdated visual design and color scheme
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
-                                Non-responsive design breaking on mobile devices
-                            </li>
-                            <li class="flex items-center">
-                                <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
-                                Generic logo lacking brand personality
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="research-insights">
-                        <div class="flex items-center mb-2">
-                            <span class="text-accent mr-2">🔍</span>
-                            <span class="font-semibold text-gray-200">Research & Analysis</span>
-                        </div>
-                        <ul class="text-gray-400 space-y-2">
-                            <li>Competitor analysis of Kids Bowl Free and similar platforms</li>
-                            <li>User feedback review identifying key pain points</li>
-                            <li>Mobile usage patterns analysis</li>
-                            <li>Two weeks of app analytics reviewed</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- The Challenge -->
+      <section class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+              <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+              The Sustainability Exchange Challenge
+          </h2>
+          <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+              <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                  "People accumulate items they no longer use, contributing to waste and clutter, while existing platforms focus on monetary transactions rather than community-building exchanges, creating trust barriers and environmental inefficiencies."
+              </p>
+              <div class="grid md:grid-cols-2 gap-4 mt-4">
+                  <div class="pain-point">
+                      <div class="flex items-center mb-2">
+                          <span class="text-red-400 mr-2">⚠️</span>
+                          <span class="font-semibold text-gray-200">User Pain Points</span>
+                      </div>
+                      <ul class="text-gray-400 space-y-2">
+                          <li class="flex items-center">
+                              <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                              Limited trust in existing exchange platforms
+                          </li>
+                          <li class="flex items-center">
+                              <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                              Complex exchange processes causing abandonment
+                          </li>
+                          <li class="flex items-center">
+                              <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                              Lack of community connection in current solutions
+                          </li>
+                          <li class="flex items-center">
+                              <span class="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                              Environmental concerns about item waste
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="research-insights">
+                      <div class="flex items-center mb-2">
+                          <span class="text-accent mr-2">🔍</span>
+                          <span class="font-semibold text-gray-200">Research Insights</span>
+                      </div>
+                      <ul class="text-gray-400 space-y-2">
+                          <li>78% want to reduce waste but find it challenging</li>
+                          <li>65% prefer local exchanges for community building</li>
+                          <li>82% have unused items but hesitate to throw away</li>
+                          <li>71% would exchange if process was simple and trustworthy</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-        <!-- Design Strategy -->
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
-                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
-                Design Strategy & Process
-            </h2>
-            
-            <!-- Design Principles -->
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
-                    <span class="text-lg mr-2">💡</span>
-                    Redesign Principles
-                </h3>
-                <div class="grid md:grid-cols-3 gap-4">
-                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
-                        <div class="text-accent font-bold mb-2">Youthful Energy</div>
-                        <p class="text-gray-400 text-sm">Capture the fun and excitement of bowling through vibrant colors and dynamic elements</p>
-                    </div>
-                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
-                        <div class="text-accent font-bold mb-2">Parent-Friendly</div>
-                        <p class="text-gray-400 text-sm">Simplify registration and information finding for busy parents with clear navigation</p>
-                    </div>
-                    <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
-                        <div class="text-accent font-bold mb-2">Mobile Excellence</div>
-                        <p class="text-gray-400 text-sm">Prioritize mobile experience where most parents access information on-the-go</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Design Strategy -->
+      <section class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+              <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+              Design Strategy & Process
+          </h2>
+          
+          <!-- Design Principles -->
+          <div class="mb-6">
+              <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                  <span class="text-lg mr-2">💡</span>
+                  Design Principles
+              </h3>
+              <div class="grid md:grid-cols-4 gap-4">
+                  <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                      <div class="text-accent font-bold mb-2">Trust & Safety</div>
+                      <p class="text-gray-400 text-sm">Build confidence through verified profiles and transparent rating systems</p>
+                  </div>
+                  <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                      <div class="text-accent font-bold mb-2">Simplicity</div>
+                      <p class="text-gray-400 text-sm">Make exchanging items as easy as sending a message</p>
+                  </div>
+                  <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                      <div class="text-accent font-bold mb-2">Community</div>
+                      <p class="text-gray-400 text-sm">Foster local connections and sustainable habits</p>
+                  </div>
+                  <div class="bg-primary-dark/50 p-4 rounded-lg border border-accent/20">
+                      <div class="text-accent font-bold mb-2">Delight</div>
+                      <p class="text-gray-400 text-sm">Create engaging experiences users want to return to</p>
+                  </div>
+              </div>
+          </div>
 
-            <!-- Logo Transformation -->
-            <div class="mb-6">
-                <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
-                    <span class="text-lg mr-2">🎯</span>
-                    Brand Identity Evolution
-                </h3>
-                <div class="bg-primary-dark/30 p-4 rounded-xl">
-                    <div class="space-y-3">
-                        <div class="flex items-start">
-                            <div class="bg-red-500/20 text-red-300 px-3 py-2 rounded-lg mr-3">
-                                <span class="font-semibold">Before:</span>
-                            </div>
-                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
-                                <span class="font-semibold">Generic Identity:</span> "Basic typographic logo lacking personality and failing to communicate youth energy or bowling theme"
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-green-500/20 text-green-300 px-3 py-2 rounded-lg mr-3">
-                                <span class="font-semibold">After:</span>
-                            </div>
-                            <div class="bg-gray-600/30 text-gray-300 px-3 py-2 rounded-lg flex-1">
-                                <span class="font-semibold">Vibrant Identity:</span> "Custom logo featuring stylized bowling pin, playful typography, and energetic color palette embodying youth bowling excitement"
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <!-- User Personas -->
+          <div class="mb-6">
+              <h3 class="text-xl font-semibold text-accent mb-4 flex items-center">
+                  <span class="text-lg mr-2">👥</span>
+                  Target Users
+              </h3>
+              <div class="grid md:grid-cols-3 gap-4">
+                  <div class="bg-primary-dark/30 p-4 rounded-xl">
+                      <div class="font-bold text-gray-100 mb-2">Sarah, 28</div>
+                      <div class="text-gray-400 text-sm mb-2">Environmental Educator</div>
+                      <p class="text-gray-300 text-sm">"I want to give my items a second life while meeting people who share my values."</p>
+                  </div>
+                  <div class="bg-primary-dark/30 p-4 rounded-xl">
+                      <div class="font-bold text-gray-100 mb-2">Marcus, 35</div>
+                      <div class="text-gray-400 text-sm mb-2">Parent & Designer</div>
+                      <p class="text-gray-300 text-sm">"My kids grow so fast. I need an easy way to exchange what they've outgrown."</p>
+                  </div>
+                  <div class="bg-primary-dark/30 p-4 rounded-xl">
+                      <div class="font-bold text-gray-100 mb-2">Zoe, 22</div>
+                      <div class="text-gray-400 text-sm mb-2">College Student</div>
+                      <p class="text-gray-300 text-sm">"I love finding unique items, and knowing it has a story makes it even better."</p>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-        <!-- Key Features -->
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
-                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
-                Redesign Highlights
-            </h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
-                    <div class="flex items-center mb-3">
-                        <span class="text-accent text-xl mr-3">🎨</span>
-                        <h3 class="font-bold text-gray-100">Modern Visual Design</h3>
-                    </div>
-                    <p class="text-gray-400 text-sm">Clean, vibrant interface with intuitive navigation and age-appropriate visual elements</p>
-                </div>
-                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
-                    <div class="flex items-center mb-3">
-                        <span class="text-accent text-xl mr-3">📱</span>
-                        <h3 class="font-bold text-gray-100">Mobile-First Responsive</h3>
-                    </div>
-                    <p class="text-gray-400 text-sm">Fully responsive design optimized for mobile devices where parents most frequently access information</p>
-                </div>
-                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
-                    <div class="flex items-center mb-3">
-                        <span class="text-accent text-xl mr-3">⚡</span>
-                        <h3 class="font-bold text-gray-100">Streamlined Registration</h3>
-                    </div>
-                    <p class="text-gray-400 text-sm">Simplified sign-up process with clear age category filters (5 & under to 16-17) and step-by-step guidance</p>
-                </div>
-                <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
-                    <div class="flex items-center mb-3">
-                        <span class="text-accent text-xl mr-3">🔍</span>
-                        <h3 class="font-bold text-gray-100">Enhanced Content</h3>
-                    </div>
-                    <p class="text-gray-400 text-sm">Improved information architecture with better league details, testimonials, and FAQ sections</p>
-                </div>
-            </div>
-        </section>
+      <!-- Key Features -->
+      <section class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+              <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+              Solution Features
+          </h2>
+          <div class="grid md:grid-cols-2 gap-4">
+              <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                  <div class="flex items-center mb-3">
+                      <span class="text-accent text-xl mr-3">📍</span>
+                      <h3 class="font-bold text-gray-100">Location-Based Matching</h3>
+                  </div>
+                  <p class="text-gray-400 text-sm">Find exchange partners in your community with proximity-based item discovery</p>
+              </div>
+              <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                  <div class="flex items-center mb-3">
+                      <span class="text-accent text-xl mr-3">🛡️</span>
+                      <h3 class="font-bold text-gray-100">Trust Building</h3>
+                  </div>
+                  <p class="text-gray-400 text-sm">Verified profiles, ratings, and transparent exchange history for safe interactions</p>
+              </div>
+              <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                  <div class="flex items-center mb-3">
+                      <span class="text-accent text-xl mr-3">💬</span>
+                      <h3 class="font-bold text-gray-100">Integrated Messaging</h3>
+                  </div>
+                  <p class="text-gray-400 text-sm">Real-time chat with exchange partners to negotiate and arrange meetups</p>
+              </div>
+              <div class="feature-card bg-primary-dark/50 p-4 rounded-lg border border-gray-600 hover:border-accent/50 transition duration-300">
+                  <div class="flex items-center mb-3">
+                      <span class="text-accent text-xl mr-3">🎮</span>
+                      <h3 class="font-bold text-gray-100">Gamification</h3>
+                  </div>
+                  <p class="text-gray-400 text-sm">Encourage sustainable behavior through achievements and community engagement</p>
+              </div>
+          </div>
+      </section>
 
-        <!-- User Experience Impact -->
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
-                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
-                User Experience Transformation
-            </h2>
+      <!-- User Experience Impact -->
+      <section class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+              <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+              Research & Validation
+          </h2>
 
-            <div class="space-y-6">
-                <!-- Navigation Improvement -->
-                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="before-section">
-                            <div class="flex items-center mb-3">
-                                <span class="text-red-400 mr-2">❌</span>
-                                <span class="font-bold text-red-400">Before Redesign</span>
-                            </div>
-                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
-                                <p class="text-gray-300 mb-2"><strong>Complex Navigation:</strong> Buried registration links and confusing menu structure</p>
-                                <p class="text-gray-400 text-sm italic">"Parents reported taking 5+ minutes to find registration information and league details"</p>
-                            </div>
-                        </div>
-                        <div class="after-section">
-                            <div class="flex items-center mb-3">
-                                <span class="text-green-400 mr-2">✅</span>
-                                <span class="font-bold text-green-400">After Redesign</span>
-                            </div>
-                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
-                                <p class="text-gray-300"><strong>Streamlined Experience:</strong> Clear call-to-action buttons and intuitive information architecture</p>
-                                <p class="text-accent text-sm mt-1">"Registration process reduced to under 60 seconds with prominent CTAs and guided steps"</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="space-y-6">
+              <!-- Trust Building -->
+              <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                  <div class="grid md:grid-cols-2 gap-6">
+                      <div class="before-section">
+                          <div class="flex items-center mb-3">
+                              <span class="text-red-400 mr-2">❌</span>
+                              <span class="font-bold text-red-400">User Concerns</span>
+                          </div>
+                          <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                              <p class="text-gray-300 mb-2"><strong>Trust Barriers:</strong> Users hesitant to exchange with strangers without verification</p>
+                              <p class="text-gray-400 text-sm italic">"65% of users cited trust as their primary concern in item exchange platforms"</p>
+                          </div>
+                      </div>
+                      <div class="after-section">
+                          <div class="flex items-center mb-3">
+                              <span class="text-green-400 mr-2">✅</span>
+                              <span class="font-bold text-green-400">Solution Approach</span>
+                          </div>
+                          <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                              <p class="text-gray-300"><strong>Multi-Layer Verification:</strong> Profile verification, rating systems, and exchange history</p>
+                              <p class="text-accent text-sm mt-1">"92% task success rate in usability testing with verified trust features"</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
-                <!-- Mobile Experience -->
-                <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="before-section">
-                            <div class="flex items-center mb-3">
-                                <span class="text-red-400 mr-2">📵</span>
-                                <span class="font-bold text-red-400">Mobile Challenges</span>
-                            </div>
-                            <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
-                                <p class="text-gray-300 mb-2"><strong>Non-Responsive Design:</strong> Broken layouts and unreadable text on mobile devices</p>
-                                <p class="text-gray-400 text-sm italic">"68% of users reported frustration trying to use the website on their phones"</p>
-                            </div>
-                        </div>
-                        <div class="after-section">
-                            <div class="flex items-center mb-3">
-                                <span class="text-green-400 mr-2">📱</span>
-                                <span class="font-bold text-green-400">Mobile Excellence</span>
-                            </div>
-                            <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
-                                <p class="text-gray-300"><strong>Optimized Experience:</strong> Fully responsive design with touch-friendly interfaces</p>
-                                <p class="text-accent text-sm mt-1">"Seamless mobile experience with optimized forms, readable text, and intuitive touch navigation"</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+              <!-- Simplicity -->
+              <div class="bg-primary-dark/30 p-5 rounded-xl border border-gray-700">
+                  <div class="grid md:grid-cols-2 gap-6">
+                      <div class="before-section">
+                          <div class="flex items-center mb-3">
+                              <span class="text-red-400 mr-2">📵</span>
+                              <span class="font-bold text-red-400">Process Complexity</span>
+                          </div>
+                          <div class="bg-red-500/10 p-4 rounded-lg border border-red-500/30">
+                              <p class="text-gray-300 mb-2"><strong>Friction Points:</strong> Complex exchange processes causing user abandonment</p>
+                              <p class="text-gray-400 text-sm italic">"71% would exchange items if the process was simple and trustworthy"</p>
+                          </div>
+                      </div>
+                      <div class="after-section">
+                          <div class="flex items-center mb-3">
+                              <span class="text-green-400 mr-2">📱</span>
+                              <span class="font-bold text-green-400">Streamlined Flow</span>
+                          </div>
+                          <div class="bg-green-500/10 p-4 rounded-lg border border-green-500/30">
+                              <p class="text-gray-300"><strong>Intuitive Exchange:</strong> Simple 4-step process from discovery to completion</p>
+                              <p class="text-accent text-sm mt-1">"Average SUS score of 84 indicating excellent usability and simplicity"</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
-        <!-- Reflection -->
-        <section class="mb-8">
-            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
-                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
-                Design Impact & Learnings
-            </h2>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
-                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
-                        <span class="text-lg mr-2">🎓</span>
-                        Key Insights
-                    </h3>
-                    <ul class="text-gray-300 space-y-2">
-                        <li class="flex items-start">
-                            <span class="text-accent mr-2">•</span>
-                            Youth sports websites must cater to both children's excitement and parents' practical needs
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent mr-2">•</span>
-                            Mobile optimization is non-negotiable for parent-focused services
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent mr-2">•</span>
-                            Clear visual hierarchy dramatically improves information finding and task completion
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
-                    <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
-                        <span class="text-lg mr-2">🚀</span>
-                        Potential Impact
-                    </h3>
-                    <ul class="text-gray-300 space-y-2">
-                        <li class="flex items-start">
-                            <span class="text-accent mr-2">•</span>
-                            Increased youth participation through more engaging presentation
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent mr-2">•</span>
-                            Higher parent satisfaction with streamlined registration process
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-accent mr-2">•</span>
-                            Stronger brand recognition with memorable visual identity
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <!-- Reflection -->
+      <section class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+              <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+              Design Impact & Learnings
+          </h2>
+          
+          <div class="grid md:grid-cols-2 gap-6">
+              <div class="learning-card bg-primary-dark/30 p-5 rounded-xl">
+                  <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                      <span class="text-lg mr-2">🎓</span>
+                      Key Insights
+                  </h3>
+                  <ul class="text-gray-300 space-y-2">
+                      <li class="flex items-start">
+                          <span class="text-accent mr-2">•</span>
+                          Trust must be established before transactions can happen successfully
+                      </li>
+                      <li class="flex items-start">
+                          <span class="text-accent mr-2">•</span>
+                          Every extra step in the exchange flow caused significant user drop-off
+                      </li>
+                      <li class="flex items-start">
+                          <span class="text-accent mr-2">•</span>
+                          Community connection motivates users more than just acquiring free items
+                      </li>
+                  </ul>
+              </div>
+              
+              <div class="future-card bg-primary-dark/30 p-5 rounded-xl">
+                  <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                      <span class="text-lg mr-2">🚀</span>
+                      Future Iterations
+                  </h3>
+                  <ul class="text-gray-300 space-y-2">
+                      <li class="flex items-start">
+                          <span class="text-accent mr-2">•</span>
+                          Community events feature for local swap meets and sustainability events
+                      </li>
+                      <li class="flex items-start">
+                          <span class="text-accent mr-2">•</span>
+                          AR try-on to visualize items before exchange commitment
+                      </li>
+                      <li class="flex items-start">
+                          <span class="text-accent mr-2">•</span>
+                          Impact dashboard showing environmental savings and waste reduction
+                      </li>
+                  </ul>
+              </div>
+          </div>
 
-            <!-- Final Quote -->
-            <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
-                <blockquote class="text-lg italic text-gray-300 text-center">
-                    "Redesigning the Kids Bowling League taught me that youth sports platforms have two audiences: the children who seek excitement and the parents who need clarity. Successful design speaks to both simultaneously, creating experiences that are both fun and functional."
-                </blockquote>
-                <p class="text-accent text-center mt-3 font-semibold">— Design Leadership Reflection</p>
-            </div>
-        </section>
-    `,
-    tags: ["ui-ux", "web-design", "logo-design", "responsive-design"],
-   enhancedTags: {
-            tools: ["Figma", "Adobe Illustrator", "Web Design Principles"],
-            methods: ["Website Redesign", "User Research", "Visual Design", "Logo Design"],
-            skills: ["UI/UX Design", "Brand Identity", "Web Design", "Graphic Design"]
-        },
-        figma: "https://www.figma.com/design/T9x4qTDTHQpge6dSb8U1lX/KBL-Redesign?node-id=0-1&t=foer5P6zxRNXNhNr-1",
-        github: null,
-        live: null,
-        caseStudy: true,
-        projectType: "ui-ux",
-    images: [
-        'images/kbl-1.png',
-        'images/kbl-2.png',
-        'images/kbl-3.png',
-        'images/kbl-4.png',
-        'images/kbl-5.png'
-    ],
-    thumbnail: 'images/kbl.png'
+          <!-- Final Quote -->
+          <div class="mt-6 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+              <blockquote class="text-lg italic text-gray-300 text-center">
+                  "Designing EcoSwap taught me that sustainable platforms succeed when they build trust first and transactions second. The most powerful motivation wasn't getting free items, but connecting with like-minded people who share values around sustainability and community."
+              </blockquote>
+              <p class="text-accent text-center mt-3 font-semibold">— UX Design Reflection</p>
+          </div>
+      </section>
+  `,
+  tags: ["ui-ux", "mobile-design", "sustainability", "community-platform"],
+  enhancedTags: {
+    tools: ["Figma", "FigJam", "Maze", "Google Forms", "Notion"],
+    methods: ["User Research", "Usability Testing", "Wireframing", "Visual Design", "Prototyping"],
+    skills: ["UX Research", "Mobile UI Design", "Information Architecture", "Interaction Design"]
+  },
+  figma: "https://www.figma.com/design/KDdwP4yfHTn689ryO7lySi/EcoSwap?node-id=1-7869&t=m1iDr5nn4JB0YaIz-1",
+  github: null,
+  live: null,
+  caseStudy: true,
+  projectType: "ui-ux",
+  images: [
+    'images/eco-1.png',
+    'images/eco-2.png',
+    'images/eco-3.png',
+    'images/eco1.png',
+    'images/eco3.png',
+    'images/eco-4.png',
+    'images/eco-5.png',
+    'images/eco-6.png',
+    'images/eco-7.png',
+    'images/eco2.png',
+    'images/eco4.png'
+  ],
+  thumbnail: 'images/eco.png'
 }
 ];
 
