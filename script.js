@@ -4209,6 +4209,566 @@ const projects = [
     'images/eco4.png'
   ],
   thumbnail: 'images/eco.png'
+},
+
+{
+    id: 11,
+    title: "Photography ",
+    summary: "A collection of my photography work capturing moments, landscapes, and creative compositions.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Photography Portfolio</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Capturing moments through the lens - a visual journey of landscapes, portraits, and creative compositions
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Photography</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Visual Art</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Creative</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Portfolio</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">50+</div>
+                    <div class="text-gray-400 text-sm">Photos Captured</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">4</div>
+                    <div class="text-gray-400 text-sm">Categories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-gray-400 text-sm">Original Work</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photography Statement -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                About My Photography
+            </h2>
+            <div class="bg-primary-dark/50 p-6 rounded-xl border border-gray-700">
+                <p class="text-lg text-gray-300 mb-4 leading-relaxed">
+                    "Photography is my way of capturing the world's beauty, telling stories without words, and preserving moments that would otherwise fade away. Each image represents a unique perspective and emotional connection to the subject."
+                </p>
+                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                    <div class="approach">
+                        <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                            <span class="text-lg mr-2">🎯</span>
+                            My Approach
+                        </h3>
+                        <ul class="text-gray-300 space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Focus on natural lighting and authentic moments
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Emphasis on composition and visual storytelling
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                Minimal post-processing to maintain authenticity
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="categories">
+                        <h3 class="text-xl font-semibold text-accent mb-3 flex items-center">
+                            <span class="text-lg mr-2">📸</span>
+                            Categories
+                        </h3>
+                        <ul class="text-gray-300 space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                <strong>Landscape:</strong> Nature and urban environments
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                <strong>Portrait:</strong> Character and emotion capture
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                <strong>Street:</strong> Candid moments and urban life
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-accent mr-2">•</span>
+                                <strong>Creative:</strong> Experimental and artistic shots
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Quote -->
+        <div class="mt-8 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+            <blockquote class="text-lg italic text-gray-300 text-center">
+                "Photography is the story I fail to put into words. It's about finding something interesting in an ordinary place... I've found it has little to do with the things you see and everything to do with the way you see them."
+            </blockquote>
+            <p class="text-accent text-center mt-3 font-semibold">— Photography Philosophy</p>
+        </div>
+    `,
+    tags: ["photography", "visual-art", "creative", "portfolio"],
+    enhancedTags: {
+        tools: ["DSLR Camera", "Adobe Lightroom", "Photoshop", "Mobile Photography"],
+        methods: ["Composition", "Lighting", "Post-Processing", "Visual Storytelling"],
+        skills: ["Photography", "Photo Editing", "Creative Direction", "Visual Composition"]
+    },
+    figma: null,
+    github: null,
+    live: null,
+    caseStudy: true,
+    projectType: "photography",
+    images: [
+        'images/Busari_F_1.jpg',
+        'images/Busari_F_2.jpg',
+        'images/Busari_F_3.jpg',
+        'images/Busari_F_4.jpg',
+        'images/Busari_F_5.jpg',
+        'images/Busari_F_6.jpg',
+        'images/Busari_F_7.jpg',
+        'images/Busari_F_8.jpg',
+        'images/Busari_F_9.jpg',
+        'images/Busari_F_10.jpg',
+        'images/Busari_F_11.jpg'
+        
+    ],
+    thumbnail: 'images/busari_f.jpg' // Use one of your best photos as thumbnail
+},
+
+{
+    id: 12,
+    title: "Video Production ",
+    summary: "A collection of short films, cinematography tutorials, and creative video projects showcasing storytelling through motion pictures.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Video Production Portfolio</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Telling stories through motion pictures - from short films to cinematography education
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Video Production</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Cinematography</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Film Making</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Storytelling</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">2</div>
+                    <div class="text-gray-400 text-sm">Video Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-gray-400 text-sm">Original Content</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">Multi-Role</div>
+                    <div class="text-gray-400 text-sm">Director/Editor</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Projects -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Featured Video Projects
+            </h2>
+
+            <!-- Video 1: First Come, First Serve -->
+            <div class="video-project bg-primary-dark/30 p-6 rounded-xl border border-gray-700 mb-6">
+                <h3 class="text-2xl font-bold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🎬</span>
+                    First Come, First Serve – A Short Film About Friendly Rivalry
+                </h3>
+                <div class="video-container mb-4 bg-black rounded-lg overflow-hidden">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe 
+                            src="https://www.youtube.com/embed/4v5XTayjkOI" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            class="w-full h-64 md:h-96"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="video-details">
+                    <p class="text-gray-300 mb-3">
+                        <strong>Synopsis:</strong> A lighthearted short film exploring the dynamics of friendly rivalry and competition in everyday situations. This project showcases character development and comedic timing.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">Short Film</span>
+                        <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs">Comedy</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs">Character Study</span>
+                    </div>
+                    <div class="mt-4 flex justify-center">
+                        <a href="https://youtu.be/4v5XTayjkOI" 
+                           target="_blank"
+                           class="flex items-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                            Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2: Camera Angles Tutorial -->
+            <div class="video-project bg-primary-dark/30 p-6 rounded-xl border border-gray-700">
+                <h3 class="text-2xl font-bold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🎥</span>
+                    Directors' Secret Weapon: Camera Angles Explained
+                </h3>
+                <div class="video-container mb-4 bg-black rounded-lg overflow-hidden">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe 
+                            src="https://www.youtube.com/embed/b6n1pVlUdps" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            class="w-full h-64 md:h-96"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="video-details">
+                    <p class="text-gray-300 mb-3">
+                        <strong>Description:</strong> An educational breakdown of how directors use different camera angles to shape scenes and evoke specific emotions. This tutorial explores the art of cinematography and demonstrates how creative angles can transform storytelling.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full text-xs">Tutorial</span>
+                        <span class="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-xs">Cinematography</span>
+                        <span class="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-xs">Education</span>
+                    </div>
+                    <div class="mt-4 flex justify-center">
+                        <a href="https://youtu.be/b6n1pVlUdps" 
+                           target="_blank"
+                           class="flex items-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition duration-300">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                            Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production Process -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Production Process
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="process-step bg-primary-dark/50 p-4 rounded-lg text-center">
+                    <div class="text-3xl mb-3">📝</div>
+                    <h4 class="font-bold text-accent mb-2">Pre-Production</h4>
+                    <p class="text-gray-400 text-sm">Scriptwriting, storyboarding, shot planning, and crew coordination</p>
+                </div>
+                <div class="process-step bg-primary-dark/50 p-4 rounded-lg text-center">
+                    <div class="text-3xl mb-3">🎥</div>
+                    <h4 class="font-bold text-accent mb-2">Production</h4>
+                    <p class="text-gray-400 text-sm">Cinematography, directing, lighting, and audio recording</p>
+                </div>
+                <div class="process-step bg-primary-dark/50 p-4 rounded-lg text-center">
+                    <div class="text-3xl mb-3">✂️</div>
+                    <h4 class="font-bold text-accent mb-2">Post-Production</h4>
+                    <p class="text-gray-400 text-sm">Editing, color grading, sound design, and visual effects</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Quote -->
+        <div class="mt-8 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+            <blockquote class="text-lg italic text-gray-300 text-center">
+                "Video allows us to capture not just images, but emotions, stories, and moments in time. Every frame is an opportunity to connect with the audience on a deeper level."
+            </blockquote>
+            <p class="text-accent text-center mt-3 font-semibold">— Film Making Philosophy</p>
+        </div>
+    `,
+    tags: ["video", "film", "cinematography", "editing", "directing"],
+    enhancedTags: {
+        tools: ["Premiere Pro", "After Effects", "DSLR Camera", "Audio Recording Equipment"],
+        methods: ["Storyboarding", "Shot Composition", "Color Grading", "Sound Design"],
+        skills: ["Video Editing", "Directing", "Cinematography", "Post-Production"]
+    },
+    figma: null,
+    github: null,
+    live: null,
+    caseStudy: true,
+    projectType: "video",
+    images: [
+        'images/vid-1.jpg',
+        'images/vid-6.jpg',
+        'images/vid-4.jpg',
+        'images/vid-2.jpg',
+        'images/vid-3.jpg'
+    ],
+    thumbnail: 'images/vid-2.jpg'
+},
+
+{
+    id: 13,
+    title: "Sound Design & Audio Production",
+    summary: "Showcasing comedic storytelling through immersive sound design in 'The Fry Heist' - a short film about hunger, temptation, and getting caught.",
+    description: `
+        <!-- Hero Section -->
+        <div class="case-study-hero mb-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-accent mb-4 gradient-text">Sound Design & Audio Production</h1>
+                <p class="text-xl text-gray-300 mb-6 max-w-3xl mx-auto leading-relaxed">
+                    "The Fry Heist" - A comedic short film where sound tells the story of hunger, temptation, and the consequences of getting caught
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 mb-6">
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Sound Design</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Foley Art</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Comedic Timing</span>
+                    <span class="bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium border border-accent/30">Sonic Storytelling</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="project-overview bg-gradient-to-r from-secondary-dark to-primary-dark p-6 rounded-2xl mb-8 border-l-4 border-accent">
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">Comedic</div>
+                    <div class="text-gray-400 text-sm">Storytelling</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                    <div class="text-gray-400 text-sm">Original Sound Design</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-3xl font-bold text-accent mb-2">Foley</div>
+                    <div class="text-gray-400 text-sm">Art Excellence</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Video Showcase -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                "The Fry Heist" - Short Film
+            </h2>
+
+            <!-- Sound-Focused Video -->
+            <div class="video-project bg-primary-dark/30 p-6 rounded-xl border border-gray-700 mb-6">
+                <h3 class="text-2xl font-bold text-accent mb-4 flex items-center">
+                    <span class="text-lg mr-2">🍟</span>
+                    The Fry Heist: A Comedy of Temptation
+                </h3>
+                <div class="video-container mb-4 bg-black rounded-lg overflow-hidden">
+                    <video controls class="w-full h-auto max-w-3xl mx-auto" poster="images/sound-video-poster.jpg">
+                        <source src="images/sound-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-details">
+                    <p class="text-gray-300 mb-3">
+                        <strong>Story Synopsis:</strong> A hungry woman finds all the food stores closed and spots someone enjoying fries while reading. Overcome by hunger, she attempts to stealthily steal fries one by one, leading to a comedic clash of hands, discovery, and an angry confrontation. This short film uses sound as the primary storytelling element to enhance the comedic timing and emotional journey.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs">Comedy</span>
+                        <span class="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-xs">Foley Art</span>
+                        <span class="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-xs">Sound Design</span>
+                        <span class="bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-xs">Short Film</span>
+                    </div>
+                    <div class="bg-accent/10 p-4 rounded-lg border border-accent/30">
+                        <div class="flex items-center mb-2">
+                            <span class="text-accent mr-2">🎧</span>
+                            <span class="font-semibold text-accent">Sound Design Focus</span>
+                        </div>
+                        <p class="text-gray-300 text-sm">Pay special attention to the detailed sound design - from the stomach growls of hunger to the crisp fries sounds, and the comedic timing of the hand clash. Best experienced with headphones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sound Design Breakdown -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Sound Design Breakdown
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="key-sounds">
+                    <h3 class="text-xl font-semibold text-accent mb-3">Key Sound Elements</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <strong>Hunger sounds:</strong> Stomach rumbles and subtle bodily cues
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <strong>Foley artistry:</strong> Crisp fry sounds, chewing, bag rustling
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <strong>Comedic timing:</strong> Perfectly timed hand clash and reactions
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <strong>Emotional sounds:</strong> Sighs of disappointment and frustration
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            <strong>Environmental audio:</strong> Park ambiance and distant city sounds
+                        </li>
+                    </ul>
+                </div>
+                <div class="storytelling-techniques">
+                    <h3 class="text-xl font-semibold text-accent mb-3">Storytelling Through Sound</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Sound builds tension as the theft escalates
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Audio cues reveal character emotions without dialogue
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Comedic timing enhanced through precise sound effects
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Sound creates physical comedy through exaggerated audio
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene-by-Scene Sound -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Scene-by-Scene Sound Design
+            </h2>
+            <div class="space-y-4">
+                <div class="scene bg-primary-dark/30 p-4 rounded-lg border border-gray-700">
+                    <h4 class="font-semibold text-accent mb-2">Opening Scene - The Hunger</h4>
+                    <p class="text-gray-300 text-sm">Subtle stomach rumbles and sighs of disappointment as the character discovers closed stores, establishing the motivation through sound.</p>
+                </div>
+                <div class="scene bg-primary-dark/30 p-4 rounded-lg border border-gray-700">
+                    <h4 class="font-semibold text-accent mb-2">Discovery - The Temptation</h4>
+                    <p class="text-gray-300 text-sm">Crisp fry sounds and satisfying chewing noises make the food irresistibly appealing, building the temptation through audio.</p>
+                </div>
+                <div class="scene bg-primary-dark/30 p-4 rounded-lg border border-gray-700">
+                    <h4 class="font-semibold text-accent mb-2">The Heist - Stealth & Tension</h4>
+                    <p class="text-gray-300 text-sm">Delicate hand movements, careful fry extraction, and escalating tension through subtle audio cues and breathing patterns.</p>
+                </div>
+                <div class="scene bg-primary-dark/30 p-4 rounded-lg border border-gray-700">
+                    <h4 class="font-semibold text-accent mb-2">The Clash - Comedic Peak</h4>
+                    <p class="text-gray-300 text-sm">Exaggerated hand collision sound, sharp intake of breath, and the perfect comedic timing of the discovery moment.</p>
+                </div>
+                <div class="scene bg-primary-dark/30 p-4 rounded-lg border border-gray-700">
+                    <h4 class="font-semibold text-accent mb-2">Confrontation - Emotional Release</h4>
+                    <p class="text-gray-300 text-sm">Angry sounds, dramatic exit, and the lingering atmosphere of the comedic confrontation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold text-gray-100 mb-6 flex items-center">
+                <span class="w-3 h-3 bg-accent rounded-full mr-3"></span>
+                Technical Execution
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="software-skills">
+                    <h3 class="text-xl font-semibold text-accent mb-3">Sound Techniques Used</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Multi-layered Foley for realistic food sounds
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Dynamic range control for comedic impact
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Spatial audio placement for immersive experience
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Precise timing and rhythm for comedic beats
+                        </li>
+                    </ul>
+                </div>
+                <div class="technical-skills">
+                    <h3 class="text-xl font-semibold text-accent mb-3">Creative Approach</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Sound as the primary comedic device
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Building character through audio cues
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Using silence and subtle sounds for tension
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Exaggerated sounds for comedic effect
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Quote -->
+        <div class="mt-8 bg-gradient-to-r from-accent/10 to-transparent p-6 rounded-2xl border-l-4 border-accent">
+            <blockquote class="text-lg italic text-gray-300 text-center">
+                "In comedy, sound isn't just an effect, it's the punchline. The crunch of a fry, the rumble of a hungry stomach, the clash of hands.These sounds tell the story of temptation and consequence in a way that dialogue alone never could."
+            </blockquote>
+            <p class="text-accent text-center mt-3 font-semibold">— Sound Design Philosophy</p>
+        </div>
+    `,
+    tags: ["sound", "audio", "sound-design", "foley", "comedy", "short-film", "storytelling"],
+    enhancedTags: {
+        tools: ["Professional Microphones", "Pro Tools", "Adobe Audition", "Foley Props", "Audio Interfaces"],
+        methods: ["Comedic Sound Design", "Foley Art", "Timing & Rhythm", "Emotional Audio", "Spatial Placement"],
+        skills: ["Audio Production", "Sound Design", "Foley Art", "Comedic Timing", "Storytelling Through Sound"]
+    },
+    figma: null,
+    github: null,
+    live: null,
+    caseStudy: true,
+    projectType: "sound",
+    images: [
+        'images/vid-s-1.jpg',
+        'images/vid-s-2.jpg',
+        'images/vid-s-3.jpg',
+        'images/vid-s-4.jpg',
+        'images/vid-s-5.jpg'
+        
+    ],
+    thumbnail: 'images/vid-s-3.jpg'
 }
 ];
 
