@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cross-Functional Designer Portfolio</title>
     <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com/"></script>
     <!-- Configure Tailwind -->
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
                         'primary-dark': '#121212',
                         'secondary-dark': '#1F1F1F',
                         'accent': '#10B981',
+                        'primary-light': '#FFFFFF',
+                        'secondary-light': '#F8F9FA',
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -26,19 +29,17 @@
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="bg-primary-dark text-gray-100 font-sans antialiased">
+<body class="bg-primary-dark text-gray-100 font-sans antialiased dark">
     <!-- Header & Navigation -->
     <header class="sticky top-0 z-50 bg-primary-dark/95 backdrop-blur-sm shadow-xl">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <!-- <a href="#" class="flex items-center">
-                <img src="images/my logo.jpg" alt="my_logo.png" class="h-10 w-auto rounded">
-            </a> -->
             <a href="#" class="flex items-center">
-                <!-- Logo Placement: Placeholder used for my_logo.png -->
                 <img src="https://placehold.co/120x40/1F1F1F/10B981?text=FAOZEE" alt="my_logo.png" class="h-10 w-auto rounded">
             </a>
             <div class="space-x-4 hidden md:flex">
                 <a href="#about" class="hover:text-accent transition duration-200">About</a>
+                <a href="#experience" class="hover:text-accent transition duration-200">Experience</a>
+                <a href="#skills" class="hover:text-accent transition duration-200">Skills</a>
                 <a href="#services" class="hover:text-accent transition duration-200">Services</a>
                 <a href="#portfolio" class="hover:text-accent transition duration-200">Portfolio</a>
                 <a href="#contact" class="hover:text-accent transition duration-200">Contact</a>
@@ -58,6 +59,8 @@
     </div>
     <div class="flex flex-col items-center justify-center h-full space-y-8 text-2xl px-6">
         <a href="#about" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">About</a>
+        <a href="#experience" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">Experience</a>
+        <a href="#skills" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">Skills</a>
         <a href="#services" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">Services</a>
         <a href="#portfolio" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">Portfolio</a>
         <a href="#contact" class="text-white hover:text-accent transition duration-300 transform hover:scale-110 py-3" onclick="closeMenu()">Contact</a>
@@ -66,69 +69,341 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section id="hero" class="relative h-[60vh] md:h-[80vh] overflow-hidden">
-            <div id="slideshow" class="absolute inset-0">
-                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-100" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1920&auto=format&fit=crop');"></div>
-                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1920&auto=format&fit=crop');"></div>
-                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1920&auto=format&fit=crop');"></div>
-            </div>
-            <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center p-4">
-                <h1 class="text-4xl md:text-7xl font-extrabold mb-4 opacity-0 translate-y-5 transition-all duration-700" data-animate data-delay="200">
-                    The <span class="text-accent">Designer</span>, The Developer
-                </h1>
-                <p id="dynamic-tagline" class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto h-12 flex items-center justify-center opacity-0 translate-y-5 transition-all duration-700" data-animate data-delay="400"></p>
-                <div class="flex space-x-4 opacity-0 translate-y-5 duration-700" data-animate data-delay="600">
-                    <a href="#contact" class="bg-gray-700 text-gray-100 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-600 transition duration-300 transform hover:scale-105">Contact Me</a>
-                    <a href="#portfolio" class="bg-accent text-primary-dark font-bold py-3 px-8 rounded-full shadow-lg cta-glow-button hover:bg-emerald-600 transition duration-300 transform hover:scale-105 animate-pulse-subtle">View Portfolio</a>
-                </div>
-            </div>
-        </section>
+      <!-- Hero Section -->
+ <section id="hero" class="relative h-[60vh] md:h-[80vh] overflow-hidden">
+    <div id="slideshow" class="absolute inset-0">
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-100" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1920&auto=format&fit=crop');"></div>
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1920&auto=format&fit=crop');"></div>
+        <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" style="background-image: url('https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=1920&auto=format&fit=crop');"></div>
+    </div>
+    <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center p-4">
+        <h1 id="dynamic-header" class="text-4xl md:text-7xl font-extrabold mb-4 opacity-0 translate-y-5 transition-all duration-700" data-animate data-delay="200">
+            The <span class="text-accent">Developer</span>, The <span class="text-accent">Designer</span>
+        </h1>
+        <p id="dynamic-tagline" class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto h-12 flex items-center justify-center opacity-0 translate-y-5 transition-all duration-700" data-animate data-delay="400"></p>
+        <div class="flex space-x-4 opacity-0 translate-y-5 duration-700" data-animate data-delay="600">
+            <a href="#contact" class="bg-gray-700 text-gray-100 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-600 transition duration-300 transform hover:scale-105">Contact Me</a>
+            <a href="#portfolio" class="bg-accent text-primary-dark font-bold py-3 px-8 rounded-full shadow-lg cta-glow-button hover:bg-emerald-600 transition duration-300 transform hover:scale-105 animate-pulse-subtle">View Portfolio</a>
+        </div>
+    </div>
+</section> 
+
 
         <!-- About Section -->
         <section id="about" class="container mx-auto px-4 py-16">
-            <h2 class="text-3xl font-bold text-center mb-10 border-b-2 border-accent/50 pb-2 opacity-0 translate-y-5" data-animate>The Designer Who Does It All</h2>
+            <h2 class="text-3xl font-bold text-center mb-10 border-b-2 border-accent/50 pb-2 opacity-0 translate-y-5" data-animate>The Developer Who Does It All</h2>
             <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-start">
                 <div class="lg:w-2/3 text-lg leading-relaxed opacity-0 translate-y-5" data-animate data-delay="100">
                     <h1 class="text-3xl font-extrabold mb-6">I am a <span class="highlight-text font-bold"></span></h1>
-                    <p class="text-xl md:text-2xl text-gray-100 leading-relaxed mb-8">
-                        Hi, I’m <span class="text-gray-50 font-extrabold">Faoziyyah Busari</span>. I design digital products that feel <span class="text-accent font-semibold">effortless to use</span> and <span class="text-accent font-semibold">impossible to ignore</span>.
-                    </p>
-                    <p class="text-lg text-gray-300 mb-6">
-                        My process leads with <span class="text-accent font-semibold">UI/UX</span>, guided by <span class="text-accent font-semibold">data</span> and grounded in real <span class="text-accent font-semibold">human needs</span>. Understanding people is where my work begins: what they want, what slows them down, what sparks delight. From insights to design systems, I create experiences that are measurable, scalable, and built to perform.
-                    </p>
-                    <p class="text-lg text-gray-300 mb-8">
-                        My <span class="text-accent font-semibold">technical fluency</span> isn’t a bonus. It’s a bridge. As a developer, I work seamlessly with engineers and craft interfaces that translate beautifully from idea to implementation. This eliminates guesswork and friction, ensuring thoughtful design ships successfully.
-                    </p>
-                    <p class="text-lg text-gray-300 mb-8">
-                        When you add my background in <span class="text-accent font-semibold">branding and visual storytelling</span>, you get digital products that don’t simply function, but connect emotionally through clarity and character.
-                    </p>
-                    <p class="text-xl text-gray-100 font-semibold border-t pt-4 border-gray-700">
-                        If you’re seeking a designer who thinks deeply, builds boldly, and cares about the humans behind the screen, let’s create something meaningful.
-                    </p>
+                 <p class="text-xl md:text-2xl text-gray-100 leading-relaxed mb-8">
+    Hi, I'm <span class="text-gray-50 font-extrabold">Faoziyyah Busari</span>. I build digital products that are <span class="text-accent font-semibold">technically robust</span> and <span class="text-accent font-semibold">user-centered by design</span>.
+</p>
+<p class="text-lg text-gray-300 mb-6">
+    My <span class="text-accent font-semibold">full-stack development expertise</span> enables me to transform complex requirements into scalable, performant applications. I specialize in creating solutions that are measurable, maintainable, and built to perform under real-world conditions.
+</p>
+<p class="text-lg text-gray-300 mb-6">
+    My background in <span class="text-accent font-semibold">UI/UX design</span> isn't just an add-on, it's a strategic advantage. I understand user needs from both design and development perspectives, ensuring that interfaces translate beautifully from concept to code without losing their human-centered approach.
+</p>
+<p class="text-lg text-gray-300 mb-8">
+    This dual expertise allows me to bridge the gap between design and engineering, eliminating guesswork and friction throughout the development process. I speak both languages fluently, ensuring thoughtful design ships successfully as functional, accessible code.
+</p>
+<p class="text-lg text-gray-300 mb-8">
+    Combined with my experience in <span class="text-accent font-semibold">branding and visual storytelling</span>, I create digital products that don't just function efficiently but also connect emotionally through clean architecture and thoughtful user experiences.
+</p>
+<p class="text-xl text-gray-100 font-semibold border-t pt-4 border-gray-700">
+    If you're seeking a developer who builds with precision, thinks about user experience, and understands the entire product lifecycle, let's create something impactful.
+</p>
                     <a href="#contact" class="inline-flex items-center bg-accent text-primary-dark font-bold py-3 px-8 rounded-full shadow-lg hover:bg-emerald-600 transition duration-300 transform hover:scale-[1.02] mt-6 cta-glow-button">
                         Start a Project
                         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
-                <div class="lg:w-1/3 w-full opacity-0 translate-y-5 lg:order-last order-first" data-animate data-delay="200">
-                    <img src="images/Faozee.jpg" alt="professional headshot photo" class="w-full h-auto object-cover rounded-xl shadow-2xl border-4 border-accent/50">
-                </div>
+                 <div class="lg:w-1/3 w-full opacity-0 translate-y-5 lg:order-last order-first" data-animate data-delay="200">
+                    <img src="images/Faozee.jpeg" alt="professional headshot photo" class="w-full h-auto object-cover rounded-xl shadow-2xl border-4 border-accent/50">
+                </div> 
+             
+</div>
             </div>
         </section>
+
+       <!-- Experience Section -->
+<section id="experience" class="bg-primary-dark px-4 py-16">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 text-white">Professional Experience</h2>
+        
+        <!-- Experience Tabs -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <button class="company-tab bg-accent text-primary-dark px-6 py-3 rounded-lg font-semibold transition duration-300" data-company="softmark">
+                Softmark
+            </button>
+            <button class="company-tab bg-secondary-dark text-gray-300 px-6 py-3 rounded-lg font-semibold transition duration-300" data-company="codveda">
+                Codveda
+            </button>
+            <button class="company-tab bg-secondary-dark text-gray-300 px-6 py-3 rounded-lg font-semibold transition duration-300" data-company="derrands">
+                D'Errands
+            </button>
+        </div>
+
+        <!-- Experience Content -->
+        <div id="experience-content" class="opacity-0 translate-y-5" data-animate data-delay="200">
+            <!-- Softmark Experience (Default) -->
+            <div id="softmark-content" class="experience-item bg-primary-dark rounded-xl shadow-2xl p-6 md:p-8">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-accent mb-2">Frontend Developer</h3>
+                        <p class="text-lg text-gray-300 mb-2">Softmark Technologies Inc (Internship) | May 2025 - Oct 2025</p>
+                        <p class="text-lg text-gray-300 mb-2">Ottawa, ON</p>
+                    </div>
+                  <a href="./faozee-resume.pdf" download class="inline-flex items-center bg-accent/20 text-accent hover:bg-accent hover:text-primary-dark px-4 py-2 rounded-lg transition duration-300 mt-4 md:mt-0">
+    Download Full Resume
+</a>
+                </div>
+                
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-100 mb-4">Responsibilities & Achievements</h4>
+                    <ul class="text-gray-300 space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Engineered responsive and accessible user interfaces using modern technologies (HTML5, CSS3, JavaScript ES6+, React.js), resulting in improved cross-device compatibility and user satisfaction
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Converted design mockups (Figma/Adobe XD) into high-quality, functional code, ensuring pixel-perfect implementation and adherence to design specifications
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Integrated RESTful APIs and optimized frontend performance, reducing page load times and enhancing the overall user experience
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Collaborated in an Agile team environment, utilizing Git for version control and participating in code reviews to maintain code quality and share knowledge
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-100 mb-4">Technologies Used</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Angular</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Figma</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">RESTful APIs</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">JavaScript (ES6+)</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">HTML</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">CSS</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Git</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Adobe XD</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Vue</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Codveda Experience -->
+            <div id="codveda-content" class="experience-item hidden bg-primary-dark rounded-xl shadow-2xl p-6 md:p-8">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-accent mb-2">Full Stack Developer</h3>
+                        <p class="text-lg text-gray-300 mb-2">Codveda Technologies (Internship) | Sept 2025 - Oct 2025</p>
+                        <p class="text-lg text-gray-300 mb-2">Remote</p>
+                    </div>
+                <a href="./faozee-resume.pdf" download class="inline-flex items-center bg-accent/20 text-accent hover:bg-accent hover:text-primary-dark px-4 py-2 rounded-lg transition duration-300 mt-4 md:mt-0">
+    Download Full Resume
+</a>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-100 mb-4">Responsibilities & Achievements</h4>
+                    <ul class="text-gray-300 space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Developed full-stack applications using React and Node.js, reducing development time by 35% through component reusability
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Built and integrated 10+ RESTful APIs, improving data retrieval speed by 50% and system reliability by 40%
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Optimized database performance, reducing query response times by 60% and handling 50+ concurrent users
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Collaborated with product designers to implement and maintain design system components
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-100 mb-4">Technologies Used</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">RESTful APIs</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Express</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- D'Errands Nig Ltd Experience -->
+            <div id="derrands-content" class="experience-item hidden bg-primary-dark rounded-xl shadow-2xl p-6 md:p-8">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-accent mb-2">Product Designer and UX Researcher</h3>
+                        <p class="text-lg text-gray-300 mb-2">D'Errands Nig Ltd | Sept 2019 - Oct 2020</p>
+                    </div>
+                   <!-- Update all three buttons like this -->
+<a href="./faozee-resume.pdf" download class="inline-flex items-center bg-accent/20 text-accent hover:bg-accent hover:text-primary-dark px-4 py-2 rounded-lg transition duration-300 mt-4 md:mt-0">
+    Download Full Resume
+</a>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-xl font-semibold text-gray-100 mb-4">Roles & Responsibilities</h4>
+                    <ul class="text-gray-300 space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Conducted user research and usability testing, leading to a 25% increase in user satisfaction and a 15% reduction in task completion time
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Designed wireframes and interactive prototypes using Figma, resulting in a 30% faster design-to-development handoff
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Collaborated with cross-functional teams to implement user-centered design principles, enhancing overall product usability
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-accent mr-2">•</span>
+                            Created and maintained a design system that improved consistency across products and reduced design time by 20%
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-100 mb-4">Technologies Used</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Figma</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Adobe XD</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">User Research</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Prototyping</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Wireframing</span>
+                        <span class="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm">Usability Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Education Section -->
+    <section id="education" class="bg-primary-dark px-4 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 text-white">Education</h2>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- First Education Card -->
+                <div class="bg-secondary-dark rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-xl">🎓</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-accent">Algonquin College, Ottawa, ON</h3>
+                            <p class="text-gray-400">Jan 2024 - Dec 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-2">Diploma in Interactive Media Design</p>
+                    <p class="text-gray-400 text-sm">Focus on UI/UX, Full-Stack Development, and Mobile Platforms</p>
+                    <p class="text-gray-400 text-sm">Grade: 4.0 Dean's Honor List</p>
+                </div>
+
+                <!-- Second Education Card -->
+                <div class="bg-secondary-dark rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-xl">🌟</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-accent">Algonquin College, Ottawa, ON</h3>
+                            <p class="text-gray-400">Sept 2024 - Apr 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-2">Student Leadership Program</p>
+                    <p class="text-gray-400 text-sm">Developed leadership skills through workshops, team projects, and community engagement</p>
+                </div>
+
+                <!-- Third Education Card -->
+                <div class="bg-secondary-dark rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-xl">📚</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-accent">FUDMA, Katsina State, Nig</h3>
+                            <p class="text-gray-400">Dec 2013 - Oct 2018</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-2">Bsc, Agricultural Economics & Extension</p>
+                    <p class="text-gray-400 text-sm">Focus on Agricultural Policy, Rural Development, and Extension Services</p>
+                    <p class="text-gray-400 text-sm">Grade: 3.98</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Skills Section -->
+<section id="skills" class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 opacity-0 translate-y-5" data-animate>Technical Skills & Tools</h2>
+    
+    <!-- Skills Category Tabs -->
+    <div class="flex flex-wrap justify-center space-x-2 mb-8 opacity-0 translate-y-5" data-animate data-delay="100">
+        <button class="skill-tab py-2 px-4 rounded-full text-sm font-semibold bg-accent text-primary-dark transition duration-200" data-category="design">Design & UX</button>
+        <button class="skill-tab py-2 px-4 rounded-full text-sm font-semibold bg-secondary-dark text-gray-300 hover:bg-accent hover:text-primary-dark transition duration-200" data-category="frontend">Frontend</button>
+        <button class="skill-tab py-2 px-4 rounded-full text-sm font-semibold bg-secondary-dark text-gray-300 hover:bg-accent hover:text-primary-dark transition duration-200" data-category="backend">Backend</button>
+        <button class="skill-tab py-2 px-4 rounded-full text-sm font-semibold bg-secondary-dark text-gray-300 hover:bg-accent hover:text-primary-dark transition duration-200" data-category="tools">Tools & Platforms</button>
+    </div>
+
+    <!-- Skills Content -->
+    <div id="skills-content" class="opacity-0 translate-y-5" data-animate data-delay="200">
+        <!-- Design & UX Skills (Default) -->
+        <div id="design-content" class="skills-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"> 
+            
+            <!-- Design skills will be populated by JavaScript -->
+        </div>
+        
+         <!-- Frontend Skills -->
+        <div id="frontend-content" class="skills-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Frontend skills will be populated by JavaScript -->
+        </div>
+
+         <!-- Backend Skills -->
+        <div id="backend-content" class="skills-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Backend skills will be populated by JavaScript -->
+        </div>
+       
+
+        <!-- Tools & Platforms Skills -->
+        <div id="tools-content" class="skills-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Tools skills will be populated by JavaScript -->
+        </div>
+        
+    </div>
+</section>
 
         <!-- Services Section -->
         <section id="services" class="bg-secondary-dark px-4 py-16">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold text-center mb-12 border-b-2 border-accent/50 pb-2 opacity-0 translate-y-5" data-animate>My End-to-End Digital Services</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="service-card bg-primary-dark rounded-xl shadow-2xl p-6 cursor-pointer hover:bg-gray-800 transition duration-300 transform hover:-translate-y-1 opacity-0 translate-y-5" onclick="toggleService(this)" data-animate data-delay="100">
+                     <div class="service-card bg-primary-dark rounded-xl shadow-2xl p-6 cursor-pointer hover:bg-gray-800 transition duration-300 transform hover:-translate-y-1 opacity-0 translate-y-5" onclick="toggleService(this)" data-animate data-delay="100">
                         <div class="flex justify-between items-center mb-4">
                             <h3 class="text-xl font-semibold text-accent">Product Design (UI/UX)</h3>
                             <span class="click-sign text-2xl font-bold text-gray-400">&plus;</span>
                         </div>
 <p class="service-details hidden text-gray-400">
-    <strong>Strategic Product Design Process:</strong>
+    <strong>Strategic Product Design Process:</strong> 
     <br><strong>Discovery:</strong> User research, competitive analysis, stakeholder interviews
     <br><strong>Strategy:</strong> User personas, journey maps, information architecture
     <br><strong>Design:</strong> Wireframing, prototyping, visual design, design systems
@@ -255,8 +530,39 @@
 
         <!-- Footer -->
         <footer class="bg-primary-dark py-8 text-center text-gray-400 text-sm border-t border-gray-800">
+             
+            <!-- Trusted By Section -->
+    <div class="container mx-auto px-4 mb-12">
+        <h3 class="text-lg text-gray-400 mb-8 font-semibold">Trusted By Innovative Companies</h3>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
+            <!-- Company 1 -->
+            <div class="w-32 h-16 flex items-center justify-center ">
+                <img src="images/SM.png" alt="softmark" class="max-h-12 max-w-full object-contain">
+            </div>
+            
+            <!-- Company 2 -->
+            <div class="w-32 h-16 flex items-center justify-center  ">
+                <img src="images/DE.jpeg" alt="D'Errands" class="max-h-12 max-w-full object-contain">
+            </div>
+
+            <!-- Company 3 -->
+            <div class="w-32 h-16 flex items-center justify-center ">
+                <img src="images/CD.png" alt="Codveda Technologies" class="max-h-12 max-w-full object-contain">
+            </div>
+
+            <!-- Company 4 -->
+            <div class="w-32 h-16 flex items-center justify-center ">
+                <img src="images/10alytics_cover.jpeg" alt="ASMS" class="max-h-12 max-w-full object-contain">
+            </div>
+
+            <!-- Company 5 -->
+            <div class="w-32 h-16 flex items-center justify-center ">
+                <img src="images/AHWI.jpg" alt="MediaKrafts" class="max-h-12 max-w-full object-contain">
+            </div>
+        </div>
+    </div>
             <p>&copy; <span id="current-year"></span> Faozee. All rights reserved.</p>
-            <p class="mt-2">Built with HTML, Tailwind CSS, and JavaScript.</p>
+            <!-- <p class="mt-2">Built with HTML, Tailwind CSS, and JavaScript.</p> -->
         </footer>
 
         <!-- Project Modal -->
